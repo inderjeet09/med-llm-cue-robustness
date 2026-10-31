@@ -1,0 +1,337 @@
+{
+ "models": {
+  "Qwen__Qwen2.5-7B-Instruct": {
+   "education_side_effects_pp": {
+    "clean_base": 59.66666666666667,
+    "clean+edu:false_consensus": 58.666666666666664,
+    "clean+edu:frequency": 59.333333333333336,
+    "clean+edu:recency": 59.0,
+    "false_consensus+helpful": 81.33333333333333,
+    "frequency+helpful": 89.0,
+    "recency+helpful": 86.33333333333333,
+    "false_consensus+helpful+edu": 62.33333333333333,
+    "frequency+helpful+edu": 72.66666666666667,
+    "recency+helpful+edu": 77.0
+   },
+   "all7": {
+    "acc_pp": {
+     "clean_base": 59.66666666666667,
+     "clean_ft": 64.66666666666666,
+     "misleading_base": 34.11111111111111,
+     "misleading_edu": 46.22222222222222,
+     "misleading_ft": 61.11111111111111,
+     "false_consensus_ft": 61.33333333333333,
+     "frequency_ft": 60.66666666666667,
+     "recency_ft": 61.33333333333333
+    },
+    "recovery_fraction": 1.0565217391304345,
+    "clean_cost": {
+     "diff_pp": -5.0,
+     "ci95_pp": [
+      -9.666666666666666,
+      0.0
+     ]
+    },
+    "ft_minus_edu_misleading": {
+     "diff_pp": 14.888888888888891,
+     "ci95_pp": [
+      10.444444444444446,
+      19.222222222222225
+     ]
+    },
+    "helpful_acc_pp": {
+     "false_consensus": {
+      "base": 81.33333333333333,
+      "ft": 72.33333333333334
+     },
+     "frequency": {
+      "base": 89.0,
+      "ft": 72.0
+     },
+     "recency": {
+      "base": 86.33333333333333,
+      "ft": 66.0
+     }
+    },
+    "criteria": {
+     "recovery>=0.5": true,
+     "clean_cost<=2pp": true,
+     "beats_edu_CI>0": true
+    },
+    "pass": true
+   },
+   "heldout4": {
+    "acc_pp": {
+     "clean_base": 59.66666666666667,
+     "clean_ft": 64.0,
+     "misleading_base": 34.11111111111111,
+     "misleading_edu": 46.22222222222222,
+     "misleading_ft": 62.22222222222222,
+     "false_consensus_ft": 59.0,
+     "frequency_ft": 63.0,
+     "recency_ft": 64.66666666666666
+    },
+    "recovery_fraction": 1.1,
+    "clean_cost": {
+     "diff_pp": -4.333333333333334,
+     "ci95_pp": [
+      -9.333333333333334,
+      1.0
+     ]
+    },
+    "ft_minus_edu_misleading": {
+     "diff_pp": 16.0,
+     "ci95_pp": [
+      11.555555555555557,
+      20.333333333333332
+     ]
+    },
+    "helpful_acc_pp": {
+     "false_consensus": {
+      "base": 81.33333333333333,
+      "ft": 72.66666666666667
+     },
+     "frequency": {
+      "base": 89.0,
+      "ft": 68.0
+     },
+     "recency": {
+      "base": 86.33333333333333,
+      "ft": 63.0
+     }
+    },
+    "criteria": {
+     "recovery>=0.5": true,
+     "clean_cost<=2pp": true,
+     "beats_edu_CI>0": true
+    },
+    "pass": true
+   },
+   "sft_clean": {
+    "acc_pp": {
+     "clean_base": 59.66666666666667,
+     "clean_ft": 64.33333333333333,
+     "misleading_base": 34.11111111111111,
+     "misleading_edu": 46.22222222222222,
+     "misleading_ft": 55.8888888888889,
+     "false_consensus_ft": 49.0,
+     "frequency_ft": 58.666666666666664,
+     "recency_ft": 60.0
+    },
+    "recovery_fraction": 0.8521739130434787,
+    "clean_cost": {
+     "diff_pp": -4.666666666666667,
+     "ci95_pp": [
+      -9.333333333333334,
+      0.33333333333333337
+     ]
+    },
+    "ft_minus_edu_misleading": {
+     "diff_pp": 9.666666666666666,
+     "ci95_pp": [
+      5.886111111111111,
+      13.444444444444445
+     ]
+    },
+    "helpful_acc_pp": {
+     "false_consensus": {
+      "base": 81.33333333333333,
+      "ft": 81.33333333333333
+     },
+     "frequency": {
+      "base": 89.0,
+      "ft": 63.33333333333333
+     },
+     "recency": {
+      "base": 86.33333333333333,
+      "ft": 70.0
+     }
+    },
+    "criteria": {
+     "recovery>=0.5": true,
+     "clean_cost<=2pp": true,
+     "beats_edu_CI>0": true
+    },
+    "pass": true
+   }
+  },
+  "meta-llama__Llama-3.1-8B-Instruct": {
+   "education_side_effects_pp": {
+    "clean_base": 65.33333333333333,
+    "clean+edu:false_consensus": 63.66666666666667,
+    "clean+edu:frequency": 63.33333333333333,
+    "clean+edu:recency": 64.33333333333333,
+    "false_consensus+helpful": 87.33333333333333,
+    "frequency+helpful": 90.0,
+    "recency+helpful": 83.66666666666667,
+    "false_consensus+helpful+edu": 33.666666666666664,
+    "frequency+helpful+edu": 73.0,
+    "recency+helpful+edu": 61.33333333333333
+   },
+   "all7": {
+    "acc_pp": {
+     "clean_base": 65.33333333333333,
+     "clean_ft": 69.33333333333334,
+     "misleading_base": 38.888888888888886,
+     "misleading_edu": 56.666666666666664,
+     "misleading_ft": 66.77777777777779,
+     "false_consensus_ft": 67.33333333333333,
+     "frequency_ft": 67.0,
+     "recency_ft": 66.0
+    },
+    "recovery_fraction": 1.0546218487394958,
+    "clean_cost": {
+     "diff_pp": -4.0,
+     "ci95_pp": [
+      -8.333333333333332,
+      1.0
+     ]
+    },
+    "ft_minus_edu_misleading": {
+     "diff_pp": 10.111111111111114,
+     "ci95_pp": [
+      5.333333333333334,
+      14.558333333333321
+     ]
+    },
+    "helpful_acc_pp": {
+     "false_consensus": {
+      "base": 87.33333333333333,
+      "ft": 74.33333333333333
+     },
+     "frequency": {
+      "base": 90.0,
+      "ft": 76.0
+     },
+     "recency": {
+      "base": 83.66666666666667,
+      "ft": 73.0
+     }
+    },
+    "criteria": {
+     "recovery>=0.5": true,
+     "clean_cost<=2pp": true,
+     "beats_edu_CI>0": true
+    },
+    "pass": true
+   },
+   "heldout4": {
+    "acc_pp": {
+     "clean_base": 65.33333333333333,
+     "clean_ft": 68.33333333333333,
+     "misleading_base": 38.888888888888886,
+     "misleading_edu": 56.666666666666664,
+     "misleading_ft": 67.11111111111111,
+     "false_consensus_ft": 66.33333333333333,
+     "frequency_ft": 66.66666666666666,
+     "recency_ft": 68.33333333333333
+    },
+    "recovery_fraction": 1.0672268907563025,
+    "clean_cost": {
+     "diff_pp": -3.0,
+     "ci95_pp": [
+      -7.333333333333333,
+      2.0
+     ]
+    },
+    "ft_minus_edu_misleading": {
+     "diff_pp": 10.444444444444445,
+     "ci95_pp": [
+      5.66388888888889,
+      15.0
+     ]
+    },
+    "helpful_acc_pp": {
+     "false_consensus": {
+      "base": 87.33333333333333,
+      "ft": 73.33333333333333
+     },
+     "frequency": {
+      "base": 90.0,
+      "ft": 73.66666666666667
+     },
+     "recency": {
+      "base": 83.66666666666667,
+      "ft": 75.0
+     }
+    },
+    "criteria": {
+     "recovery>=0.5": true,
+     "clean_cost<=2pp": true,
+     "beats_edu_CI>0": true
+    },
+    "pass": true
+   },
+   "sft_clean": {
+    "acc_pp": {
+     "clean_base": 65.33333333333333,
+     "clean_ft": 70.0,
+     "misleading_base": 38.888888888888886,
+     "misleading_edu": 56.666666666666664,
+     "misleading_ft": 58.666666666666664,
+     "false_consensus_ft": 57.333333333333336,
+     "frequency_ft": 53.0,
+     "recency_ft": 65.66666666666666
+    },
+    "recovery_fraction": 0.7478991596638657,
+    "clean_cost": {
+     "diff_pp": -4.666666666666667,
+     "ci95_pp": [
+      -8.666666666666668,
+      -0.6666666666666667
+     ]
+    },
+    "ft_minus_edu_misleading": {
+     "diff_pp": 2.0,
+     "ci95_pp": [
+      -2.0,
+      6.0
+     ]
+    },
+    "helpful_acc_pp": {
+     "false_consensus": {
+      "base": 87.33333333333333,
+      "ft": 83.33333333333334
+     },
+     "frequency": {
+      "base": 90.0,
+      "ft": 84.0
+     },
+     "recency": {
+      "base": 83.66666666666667,
+      "ft": 73.33333333333333
+     }
+    },
+    "criteria": {
+     "recovery>=0.5": true,
+     "clean_cost<=2pp": true,
+     "beats_edu_CI>0": false
+    },
+    "pass": false
+   }
+  }
+ },
+ "stage2_decision": "GO",
+ "rule": "per model (all7): recovery>=0.5 AND clean cost<=2pp AND FT-minus-edu CI lower bound > 0",
+ "provenance": {
+  "git_commit": "5fbcecfd05344da3a9701a9c1cd74c26df00a634",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "results/costs/gpu_ledger.csv"
+  ],
+  "git_code_dirty": false,
+  "script": "scripts/analyze_kill_a2.py",
+  "command": "python3 scripts/analyze_kill_a2.py",
+  "args": {
+   "stage1": "results/pilot/killA",
+   "stage2": "results/pilot/killA2"
+  },
+  "seed": null,
+  "device": null,
+  "date": "2026-10-18T15:36:55",
+  "host": "macOS-26.3-arm64-arm-64bit",
+  "python": "3.11.17",
+  "numpy": "2.4.6",
+  "torch": "2.14.1"
+ }
+}

@@ -1,0 +1,11 @@
+# Phase 5 batch P5-1 (docs/preregistration.md B8): TEST baselines for Qwen and Llama + CIFT seed 0. Prompts and settings frozen (D020, D021).
+# Order balances the two GPUs (longest first); generic-warning jobs last (cheapest to resume if the session ends).
+results/main/Qwen__Qwen2.5-7B-Instruct/fewshot_test/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm fewshot --split test
+results/main/meta-llama__Llama-3.1-8B-Instruct/cift_s0_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm cift --seed 0 --split test
+results/main/Qwen__Qwen2.5-7B-Instruct/cift_s0_test/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm cift --seed 0 --split test
+results/main/meta-llama__Llama-3.1-8B-Instruct/warn_oracle_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm warn_oracle --split test
+results/main/Qwen__Qwen2.5-7B-Instruct/warn_oracle_test/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm warn_oracle --split test
+results/main/Qwen__Qwen2.5-7B-Instruct/base_test/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm base --split test
+results/main/meta-llama__Llama-3.1-8B-Instruct/base_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm base --split test
+results/main/meta-llama__Llama-3.1-8B-Instruct/warn_generic_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm warn_generic --split test
+results/main/Qwen__Qwen2.5-7B-Instruct/warn_generic_test/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm warn_generic --split test

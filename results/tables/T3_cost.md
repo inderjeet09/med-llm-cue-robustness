@@ -1,0 +1,13 @@
+Table 3. Wall-clock minutes per run on one Kaggle T4 (4-bit). Project totals: 154.5 GPU-job-hours (Kaggle quota ≈ half, two GPUs per session); Azure API $15.03.
+
+| arm | runs | training min / run | evaluation min / run (test + transfer) |
+|---|---|---|---|
+| No mitigation | 3 | 0 | 72 |
+| Generic warning | 3 | 0 | 49 |
+| Oracle warning | 3 | 0 | 106 |
+| Few-shot | 1 | 0 | 294 |
+| Plain SFT | 9 | 47 | 101 |
+| BCT | 9 | 49 | 99 |
+| CIFT (ours) | 9 | 90 | 96 |
+| CIFT w/o KL | 3 | 85 | 87 |
+| CIFT w/o helpful pairs | 3 | 99 | 106 |

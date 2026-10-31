@@ -1,0 +1,388 @@
+{
+ "n": 600,
+ "accuracy_strict": {
+  "self_diagnosis+fewshot": 48.0,
+  "status_quo+fewshot": 43.666666666666664,
+  "false_consensus": 27.333333333333332,
+  "recency+fewshot": 34.833333333333336,
+  "confirmation": 44.0,
+  "frequency+fewshot": 38.166666666666664,
+  "cultural": 24.0,
+  "false_consensus+edu": 43.0,
+  "confirmation+fewshot": 52.33333333333333,
+  "self_diagnosis": 28.499999999999996,
+  "frequency+edu": 36.0,
+  "status_quo+edu": 38.5,
+  "recency+edu": 31.833333333333336,
+  "cultural+fewshot": 34.0,
+  "nobias": 52.5,
+  "cultural+edu": 23.666666666666668,
+  "self_diagnosis+edu": 42.66666666666667,
+  "false_consensus+fewshot": 49.666666666666664,
+  "status_quo": 21.333333333333336,
+  "frequency": 21.166666666666668,
+  "confirmation+edu": 46.0,
+  "recency": 26.333333333333332
+ },
+ "accuracy_excl_nonresponse": {
+  "self_diagnosis+fewshot": 48.0,
+  "status_quo+fewshot": 43.666666666666664,
+  "false_consensus": 27.333333333333332,
+  "recency+fewshot": 34.833333333333336,
+  "confirmation": 44.0,
+  "frequency+fewshot": 38.166666666666664,
+  "cultural": 24.0,
+  "false_consensus+edu": 43.0,
+  "confirmation+fewshot": 52.33333333333333,
+  "self_diagnosis": 28.499999999999996,
+  "frequency+edu": 36.0,
+  "status_quo+edu": 38.5,
+  "recency+edu": 31.833333333333336,
+  "cultural+fewshot": 34.0,
+  "nobias": 52.5,
+  "cultural+edu": 23.666666666666668,
+  "self_diagnosis+edu": 42.66666666666667,
+  "false_consensus+fewshot": 49.666666666666664,
+  "status_quo": 21.333333333333336,
+  "frequency": 21.166666666666668,
+  "confirmation+edu": 46.0,
+  "recency": 26.333333333333332
+ },
+ "nonresponse_rate": {
+  "self_diagnosis+fewshot": 0.0,
+  "status_quo+fewshot": 0.0,
+  "false_consensus": 0.0,
+  "recency+fewshot": 0.0,
+  "confirmation": 0.0,
+  "frequency+fewshot": 0.0,
+  "cultural": 0.0,
+  "false_consensus+edu": 0.0,
+  "confirmation+fewshot": 0.0,
+  "self_diagnosis": 0.0,
+  "frequency+edu": 0.0,
+  "status_quo+edu": 0.0,
+  "recency+edu": 0.0,
+  "cultural+fewshot": 0.0,
+  "nobias": 0.0,
+  "cultural+edu": 0.0,
+  "self_diagnosis+edu": 0.0,
+  "false_consensus+fewshot": 0.0,
+  "status_quo": 0.0,
+  "frequency": 0.0,
+  "confirmation+edu": 0.0,
+  "recency": 0.0
+ },
+ "paper_style_table_excl_nonresponse": {
+  "none": {
+   "nobias": 52.5,
+   "self_diagnosis": 28.499999999999996,
+   "recency": 26.333333333333332,
+   "confirmation": 44.0,
+   "frequency": 21.166666666666668,
+   "cultural": 24.0,
+   "status_quo": 21.333333333333336,
+   "false_consensus": 27.333333333333332,
+   "avg": 27.523809523809526
+  },
+  "edu": {
+   "nobias": 52.5,
+   "self_diagnosis": 42.66666666666667,
+   "recency": 31.833333333333336,
+   "confirmation": 46.0,
+   "frequency": 36.0,
+   "cultural": 23.666666666666668,
+   "status_quo": 38.5,
+   "false_consensus": 43.0,
+   "avg": 37.38095238095237
+  },
+  "fewshot": {
+   "nobias": 52.5,
+   "self_diagnosis": 48.0,
+   "recency": 34.833333333333336,
+   "confirmation": 52.33333333333333,
+   "frequency": 38.166666666666664,
+   "cultural": 34.0,
+   "status_quo": 43.666666666666664,
+   "false_consensus": 49.666666666666664,
+   "avg": 42.952380952380956
+  }
+ },
+ "drops_vs_nobias_strict": {
+  "self_diagnosis": {
+   "drop_pp": 24.0,
+   "ci95_pp": [
+    20.333333333333332,
+    27.666666666666668
+   ],
+   "mcnemar_p": 2.679161649478647e-34,
+   "paper_ztest_p": 2.4943244994419135e-17
+  },
+  "recency": {
+   "drop_pp": 26.166666666666664,
+   "ci95_pp": [
+    22.495833333333334,
+    30.0
+   ],
+   "mcnemar_p": 1.2478252186982291e-36,
+   "paper_ztest_p": 1.7838278241530067e-20
+  },
+  "confirmation": {
+   "drop_pp": 8.5,
+   "ci95_pp": [
+    5.166666666666667,
+    12.0
+   ],
+   "mcnemar_p": 1.7300043785001778e-06,
+   "paper_ztest_p": 0.0032160912747164383
+  },
+  "frequency": {
+   "drop_pp": 31.333333333333336,
+   "ci95_pp": [
+    27.500000000000004,
+    35.16666666666667
+   ],
+   "mcnemar_p": 7.907986174526034e-49,
+   "paper_ztest_p": 2.2820149688647084e-29
+  },
+  "cultural": {
+   "drop_pp": 28.499999999999996,
+   "ci95_pp": [
+    24.833333333333332,
+    32.33333333333333
+   ],
+   "mcnemar_p": 8.10507493531231e-45,
+   "paper_ztest_p": 3.0798943721432554e-24
+  },
+  "status_quo": {
+   "drop_pp": 31.166666666666664,
+   "ci95_pp": [
+    27.495833333333337,
+    35.00416666666664
+   ],
+   "mcnemar_p": 1.0086302797932262e-47,
+   "paper_ztest_p": 4.764377167345898e-29
+  },
+  "false_consensus": {
+   "drop_pp": 25.166666666666664,
+   "ci95_pp": [
+    21.5,
+    29.166666666666668
+   ],
+   "mcnemar_p": 1.938296898630695e-34,
+   "paper_ztest_p": 5.5413460490618755e-19
+  }
+ },
+ "avg_drop_pp_excl": 24.976190476190474,
+ "mitigation_gain_pp_excl": {
+  "edu": 9.857142857142847,
+  "fewshot": 15.42857142857143
+ },
+ "meta": {
+  "backend": "hf",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "device": "cuda",
+  "nobias_letter_mass": 0.9999683308601379,
+  "merged": {
+   "main_dir": "results/reproduction/Qwen__Qwen2.5-7B-Instruct_n600_s0",
+   "extra_dir": "results/reproduction/Qwen__Qwen2.5-7B-Instruct_n600_s0_fewshot",
+   "conditions_from_extra": [
+    "confirmation+fewshot",
+    "cultural+fewshot",
+    "false_consensus+fewshot",
+    "frequency+fewshot",
+    "recency+fewshot",
+    "self_diagnosis+fewshot",
+    "status_quo+fewshot"
+   ],
+   "overlap_agreement": {
+    "confirmation": {
+     "n": 600,
+     "same_pred": 587,
+     "max_prob_diff": 0.3175734132528305
+    },
+    "confirmation+fewshot": {
+     "n": 600,
+     "same_pred": 592,
+     "max_prob_diff": 0.33051690459251404
+    },
+    "cultural": {
+     "n": 600,
+     "same_pred": 591,
+     "max_prob_diff": 0.42520612478256226
+    },
+    "false_consensus": {
+     "n": 600,
+     "same_pred": 586,
+     "max_prob_diff": 0.4478195309638977
+    },
+    "frequency": {
+     "n": 600,
+     "same_pred": 586,
+     "max_prob_diff": 0.5863964855670929
+    },
+    "nobias": {
+     "n": 600,
+     "same_pred": 591,
+     "max_prob_diff": 0.3378928452730179
+    },
+    "recency": {
+     "n": 600,
+     "same_pred": 593,
+     "max_prob_diff": 0.3515132665634155
+    },
+    "recency+fewshot": {
+     "n": 600,
+     "same_pred": 592,
+     "max_prob_diff": 0.6356960907578468
+    },
+    "self_diagnosis": {
+     "n": 600,
+     "same_pred": 589,
+     "max_prob_diff": 0.40371382236480713
+    },
+    "self_diagnosis+fewshot": {
+     "n": 600,
+     "same_pred": 589,
+     "max_prob_diff": 0.2756615877151489
+    },
+    "status_quo": {
+     "n": 600,
+     "same_pred": 595,
+     "max_prob_diff": 0.4141292870044708
+    }
+   }
+  }
+ },
+ "provenance": {
+  "git_commit": "1bcd37ef859962d35788f90ace4b2ca69f15db1f",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "results/costs/gpu_ledger.csv",
+   "results/reproduction/Qwen__Qwen2.5-7B-Instruct_n600_s0/records.jsonl"
+  ],
+  "git_code_dirty": false,
+  "script": "scripts/merge_repro_runs.py",
+  "command": "python3 scripts/merge_repro_runs.py results/reproduction/Qwen__Qwen2.5-7B-Instruct_n600_s0 results/reproduction/Qwen__Qwen2.5-7B-Instruct_n600_s0_fewshot --take_from_extra fewshot",
+  "args": {
+   "main_dir": "results/reproduction/Qwen__Qwen2.5-7B-Instruct_n600_s0",
+   "extra_dir": "results/reproduction/Qwen__Qwen2.5-7B-Instruct_n600_s0_fewshot",
+   "take_from_extra": [
+    "fewshot"
+   ]
+  },
+  "seed": null,
+  "device": null,
+  "date": "2026-10-19T17:26:40",
+  "host": "macOS-26.3-arm64-arm-64bit",
+  "python": "3.11.17",
+  "numpy": "2.4.6",
+  "torch": "2.14.1",
+  "extra_run_provenance": {
+   "git_commit": "76fe3ca",
+   "git_dirty": true,
+   "git_dirty_files": [
+    "unknown"
+   ],
+   "git_code_dirty": true,
+   "script": "scripts/reproduce_biasmedqa.py",
+   "command": "python3 scripts/reproduce_biasmedqa.py --backend hf --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --n 600 --skip edu oneshot --tag Qwen__Qwen2.5-7B-Instruct_n600_s0_fewshot",
+   "args": {
+    "backend": "hf",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "split": "dev",
+    "n": 600,
+    "seed": 0,
+    "skip": [
+     "edu",
+     "oneshot"
+    ],
+    "batch_size": 16,
+    "max_batch_tokens": 8192,
+    "workers": 8,
+    "max_tokens": 5,
+    "run_cap": null,
+    "min_letter_mass": 0.5,
+    "tag": "Qwen__Qwen2.5-7B-Instruct_n600_s0_fewshot"
+   },
+   "seed": 0,
+   "device": null,
+   "date": "2026-10-18T20:42:52",
+   "host": "Linux-6.18.48+-x86_64-with-glibc2.39",
+   "python": "3.13.15",
+   "numpy": "2.1.3",
+   "torch": "2.11.0+cu128",
+   "templates": {
+    "nobias": [
+     "biasmedqa_faithful_instruction_v1"
+    ],
+    "self_diagnosis": [
+     "biasmedqa_faithful_instruction_v1"
+    ],
+    "recency": [
+     "biasmedqa_faithful_instruction_v1"
+    ],
+    "confirmation": [
+     "biasmedqa_faithful_instruction_v1"
+    ],
+    "frequency": [
+     "biasmedqa_faithful_instruction_v1"
+    ],
+    "cultural": [
+     "biasmedqa_faithful_instruction_v1"
+    ],
+    "status_quo": [
+     "biasmedqa_faithful_instruction_v1"
+    ],
+    "false_consensus": [
+     "biasmedqa_faithful_instruction_v1"
+    ],
+    "self_diagnosis+fewshot": [
+     "biasmedqa_faithful_instruction_v1",
+     "demo_incorrect:train-07117|self_diagnosis-",
+     "demo_correct:train-00799|self_diagnosis-",
+     "biasmedqa_next_question_v1"
+    ],
+    "recency+fewshot": [
+     "biasmedqa_faithful_instruction_v1",
+     "demo_incorrect:train-09360|recency-",
+     "demo_correct:train-07575|recency-",
+     "biasmedqa_next_question_v1"
+    ],
+    "confirmation+fewshot": [
+     "biasmedqa_faithful_instruction_v1",
+     "demo_incorrect:train-06072|confirmation-",
+     "demo_correct:train-09941|confirmation-",
+     "biasmedqa_next_question_v1"
+    ],
+    "frequency+fewshot": [
+     "biasmedqa_faithful_instruction_v1",
+     "demo_incorrect:train-08909|frequency-",
+     "demo_correct:train-03942|frequency-",
+     "biasmedqa_next_question_v1"
+    ],
+    "cultural+fewshot": [
+     "biasmedqa_faithful_instruction_v1",
+     "demo_incorrect:train-02271|cultural-",
+     "demo_correct:train-03472|cultural-",
+     "biasmedqa_next_question_v1"
+    ],
+    "status_quo+fewshot": [
+     "biasmedqa_faithful_instruction_v1",
+     "demo_incorrect:train-04632|status_quo-",
+     "demo_correct:train-00069|status_quo-",
+     "biasmedqa_next_question_v1"
+    ],
+    "false_consensus+fewshot": [
+     "biasmedqa_faithful_instruction_v1",
+     "demo_incorrect:train-08974|false_consensus-",
+     "demo_correct:train-05695|false_consensus-",
+     "biasmedqa_next_question_v1"
+    ]
+   },
+   "split": "dev",
+   "options": 5,
+   "runtime_s": 5997.0
+  }
+ }
+}

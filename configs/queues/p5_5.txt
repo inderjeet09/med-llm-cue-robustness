@@ -1,0 +1,10 @@
+# Phase 5 batch P5-5 (docs/preregistration.md B4/B6 H4): ablations on Llama-3.1-8B, TEST, seeds 0-2. Frozen settings (D020).
+#   cift_nokl   = CIFT without the KL consistency term (lam = 0): gold labels on clean + cued prompts only
+#   cift_nohelp = CIFT without helpful-cue pairs (all cues misleading)
+# 6 jobs, ~3.3-3.7 h each, 3 per GPU -> ~10-11 h wall.
+results/main/meta-llama__Llama-3.1-8B-Instruct/cift_nokl_s0_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm cift_nokl --seed 0 --split test
+results/main/meta-llama__Llama-3.1-8B-Instruct/cift_nohelp_s0_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm cift_nohelp --seed 0 --split test
+results/main/meta-llama__Llama-3.1-8B-Instruct/cift_nokl_s1_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm cift_nokl --seed 1 --split test
+results/main/meta-llama__Llama-3.1-8B-Instruct/cift_nohelp_s1_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm cift_nohelp --seed 1 --split test
+results/main/meta-llama__Llama-3.1-8B-Instruct/cift_nokl_s2_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm cift_nokl --seed 2 --split test
+results/main/meta-llama__Llama-3.1-8B-Instruct/cift_nohelp_s2_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm cift_nohelp --seed 2 --split test

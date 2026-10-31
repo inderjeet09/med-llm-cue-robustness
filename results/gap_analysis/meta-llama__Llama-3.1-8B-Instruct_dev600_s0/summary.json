@@ -1,0 +1,453 @@
+{
+ "n": 600,
+ "accuracy": {
+  "clean": 63.83333333333333,
+  "self_diagnosis": 45.83333333333333,
+  "recency": 44.5,
+  "confirmation": 62.0,
+  "frequency": 33.0,
+  "cultural": 51.5,
+  "status_quo": 40.0,
+  "false_consensus": 37.5,
+  "authority_senior": 29.166666666666668,
+  "authority_expert": 26.333333333333332,
+  "referral_note": 26.333333333333332,
+  "prelim_report": 55.50000000000001,
+  "cds_tool": 36.833333333333336,
+  "ai_assistant": 10.833333333333334,
+  "convenience_time": 34.333333333333336,
+  "convenience_cost": 45.33333333333333,
+  "self_diagnosis+helpful": 79.33333333333333,
+  "recency+helpful": 83.16666666666667,
+  "confirmation+helpful": 56.333333333333336,
+  "frequency+helpful": 91.33333333333333,
+  "cultural+helpful": 78.0,
+  "status_quo+helpful": 85.0,
+  "false_consensus+helpful": 87.0,
+  "authority_senior+helpful": 94.16666666666667,
+  "authority_expert+helpful": 94.5,
+  "referral_note+helpful": 96.0,
+  "prelim_report+helpful": 75.16666666666667,
+  "cds_tool+helpful": 87.0,
+  "ai_assistant+helpful": 99.16666666666667,
+  "convenience_time+helpful": 87.83333333333333,
+  "convenience_cost+helpful": 76.83333333333333,
+  "self_diagnosis+edu": 59.66666666666667,
+  "recency+edu": 58.166666666666664,
+  "confirmation+edu": 66.5,
+  "frequency+edu": 52.5,
+  "cultural+edu": 49.5,
+  "status_quo+edu": 61.33333333333333,
+  "false_consensus+edu": 61.83333333333333,
+  "authority_senior+edu": 60.333333333333336,
+  "authority_expert+edu": 56.666666666666664,
+  "referral_note+edu": 49.166666666666664,
+  "prelim_report+edu": 62.83333333333333,
+  "cds_tool+edu": 60.333333333333336,
+  "ai_assistant+edu": 57.99999999999999,
+  "convenience_time+edu": 64.0,
+  "convenience_cost+edu": 62.33333333333333
+ },
+ "nonresponse_rate": {
+  "clean": 0.0,
+  "self_diagnosis": 0.0,
+  "recency": 0.0,
+  "confirmation": 0.0,
+  "frequency": 0.0,
+  "cultural": 0.0,
+  "status_quo": 0.0,
+  "false_consensus": 0.0,
+  "authority_senior": 0.0,
+  "authority_expert": 0.0,
+  "referral_note": 0.0,
+  "prelim_report": 0.0,
+  "cds_tool": 0.0,
+  "ai_assistant": 0.0,
+  "convenience_time": 0.0,
+  "convenience_cost": 0.0,
+  "self_diagnosis+helpful": 0.0,
+  "recency+helpful": 0.0,
+  "confirmation+helpful": 0.0,
+  "frequency+helpful": 0.0,
+  "cultural+helpful": 0.0,
+  "status_quo+helpful": 0.0,
+  "false_consensus+helpful": 0.0,
+  "authority_senior+helpful": 0.0,
+  "authority_expert+helpful": 0.0,
+  "referral_note+helpful": 0.0,
+  "prelim_report+helpful": 0.0,
+  "cds_tool+helpful": 0.0,
+  "ai_assistant+helpful": 0.0,
+  "convenience_time+helpful": 0.0,
+  "convenience_cost+helpful": 0.0,
+  "self_diagnosis+edu": 0.0,
+  "recency+edu": 0.0,
+  "confirmation+edu": 0.0,
+  "frequency+edu": 0.0,
+  "cultural+edu": 0.0,
+  "status_quo+edu": 0.0,
+  "false_consensus+edu": 0.0,
+  "authority_senior+edu": 0.0,
+  "authority_expert+edu": 0.0,
+  "referral_note+edu": 0.0,
+  "prelim_report+edu": 0.0,
+  "cds_tool+edu": 0.0,
+  "ai_assistant+edu": 0.0,
+  "convenience_time+edu": 0.0,
+  "convenience_cost+edu": 0.0
+ },
+ "cue_follow_rate": {
+  "self_diagnosis": 36.16666666666667,
+  "recency": 39.0,
+  "confirmation": 14.666666666666666,
+  "frequency": 56.99999999999999,
+  "cultural": 30.5,
+  "status_quo": 44.83333333333333,
+  "false_consensus": 50.33333333333333,
+  "authority_senior": 61.0,
+  "authority_expert": 67.33333333333333,
+  "referral_note": 67.33333333333333,
+  "prelim_report": 23.166666666666664,
+  "cds_tool": 48.333333333333336,
+  "ai_assistant": 86.83333333333333,
+  "convenience_time": 52.83333333333333,
+  "convenience_cost": 37.333333333333336,
+  "self_diagnosis+helpful": 79.33333333333333,
+  "recency+helpful": 83.16666666666667,
+  "confirmation+helpful": 56.333333333333336,
+  "frequency+helpful": 91.33333333333333,
+  "cultural+helpful": 78.0,
+  "status_quo+helpful": 85.0,
+  "false_consensus+helpful": 87.0,
+  "authority_senior+helpful": 94.16666666666667,
+  "authority_expert+helpful": 94.5,
+  "referral_note+helpful": 96.0,
+  "prelim_report+helpful": 75.16666666666667,
+  "cds_tool+helpful": 87.0,
+  "ai_assistant+helpful": 99.16666666666667,
+  "convenience_time+helpful": 87.83333333333333,
+  "convenience_cost+helpful": 76.83333333333333,
+  "self_diagnosis+edu": 8.166666666666666,
+  "recency+edu": 13.5,
+  "confirmation+edu": 3.833333333333333,
+  "frequency+edu": 24.666666666666668,
+  "cultural+edu": 29.333333333333332,
+  "status_quo+edu": 6.0,
+  "false_consensus+edu": 8.0,
+  "authority_senior+edu": 13.666666666666666,
+  "authority_expert+edu": 16.166666666666664,
+  "referral_note+edu": 30.666666666666664,
+  "prelim_report+edu": 11.833333333333334,
+  "cds_tool+edu": 8.666666666666668,
+  "ai_assistant+edu": 12.333333333333334,
+  "convenience_time+edu": 1.8333333333333333,
+  "convenience_cost+edu": 2.833333333333333
+ },
+ "mean_letter_mass": {
+  "clean": 0.9998925064007441,
+  "self_diagnosis": 0.9998976635932922,
+  "recency": 0.9999406627813975,
+  "confirmation": 0.9997710478305817,
+  "frequency": 0.9999516869584719,
+  "cultural": 0.9999208240707715,
+  "status_quo": 0.9999059162537257,
+  "false_consensus": 0.9998159079750379,
+  "authority_senior": 0.9999529284238815,
+  "authority_expert": 0.9999336848656336,
+  "referral_note": 0.9999380598465601,
+  "prelim_report": 0.9998870180050532,
+  "cds_tool": 0.9999648185571035,
+  "ai_assistant": 0.9999652733405431,
+  "convenience_time": 0.9999703033765157,
+  "convenience_cost": 0.9999374222755432,
+  "self_diagnosis+helpful": 0.999869548479716,
+  "recency+helpful": 0.9999518766005834,
+  "confirmation+helpful": 0.9996882222096125,
+  "frequency+helpful": 0.9998518097400665,
+  "cultural+helpful": 0.999902799030145,
+  "status_quo+helpful": 0.9999499980608623,
+  "false_consensus+helpful": 0.9998381028572718,
+  "authority_senior+helpful": 0.9998950148622195,
+  "authority_expert+helpful": 0.9999733305970828,
+  "referral_note+helpful": 0.9998898158470789,
+  "prelim_report+helpful": 0.9999410031239192,
+  "cds_tool+helpful": 0.9999704931179683,
+  "ai_assistant+helpful": 0.9999855754772822,
+  "convenience_time+helpful": 0.9999559773008029,
+  "convenience_cost+helpful": 0.9999028723438581,
+  "self_diagnosis+edu": 0.9997504318753878,
+  "recency+edu": 0.9997367702921232,
+  "confirmation+edu": 0.999348768889904,
+  "frequency+edu": 0.999494787255923,
+  "cultural+edu": 0.9999007332324982,
+  "status_quo+edu": 0.9997178369760513,
+  "false_consensus+edu": 0.9991576887170474,
+  "authority_senior+edu": 0.9996638184785843,
+  "authority_expert+edu": 0.9998910405238469,
+  "referral_note+edu": 0.9997182401021322,
+  "prelim_report+edu": 0.9998486551642418,
+  "cds_tool+edu": 0.9998692504564921,
+  "ai_assistant+edu": 0.9997692641615867,
+  "convenience_time+edu": 0.9998908095558484,
+  "convenience_cost+edu": 0.9998927398522695
+ },
+ "drop_pp_by_family": {
+  "patient_context": 15.166666666666664,
+  "self_anchoring": 10.583333333333329,
+  "social_proof": 28.58333333333333,
+  "institutional": 23.83333333333333,
+  "authority": 36.08333333333333,
+  "external_anchor": 22.91666666666666,
+  "automation": 39.99999999999999,
+  "convenience": 23.999999999999996
+ },
+ "meta": {
+  "backend": "hf",
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "device": "cuda",
+  "batch_size": 16,
+  "max_batch_tokens": 8192,
+  "seconds_per_condition": {
+   "clean": 195.1,
+   "self_diagnosis": 203.0,
+   "recency": 203.6,
+   "confirmation": 200.9,
+   "frequency": 202.5,
+   "cultural": 206.8,
+   "status_quo": 202.2,
+   "false_consensus": 203.7,
+   "authority_senior": 204.9,
+   "authority_expert": 206.2,
+   "referral_note": 204.3,
+   "prelim_report": 200.5,
+   "cds_tool": 202.2,
+   "ai_assistant": 205.0,
+   "convenience_time": 205.6,
+   "convenience_cost": 202.8,
+   "self_diagnosis+helpful": 204.3,
+   "recency+helpful": 204.7,
+   "confirmation+helpful": 201.6,
+   "frequency+helpful": 203.1,
+   "cultural+helpful": 206.2,
+   "status_quo+helpful": 202.9,
+   "false_consensus+helpful": 203.5,
+   "authority_senior+helpful": 205.0,
+   "authority_expert+helpful": 206.2,
+   "referral_note+helpful": 203.4,
+   "prelim_report+helpful": 200.6,
+   "cds_tool+helpful": 202.2,
+   "ai_assistant+helpful": 204.7,
+   "convenience_time+helpful": 205.6,
+   "convenience_cost+helpful": 203.3,
+   "self_diagnosis+edu": 224.3,
+   "recency+edu": 224.1,
+   "confirmation+edu": 221.0,
+   "frequency+edu": 221.6,
+   "cultural+edu": 226.5,
+   "status_quo+edu": 220.2,
+   "false_consensus+edu": 225.9,
+   "authority_senior+edu": 221.9,
+   "authority_expert+edu": 223.4,
+   "referral_note+edu": 219.1,
+   "prelim_report+edu": 216.3,
+   "cds_tool+edu": 218.8,
+   "ai_assistant+edu": 221.5,
+   "convenience_time+edu": 223.7,
+   "convenience_cost+edu": 220.6
+  }
+ },
+ "provenance": {
+  "git_commit": "6fcbcac",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "unknown"
+  ],
+  "git_code_dirty": true,
+  "script": "scripts/eval_cues.py",
+  "command": "python3 scripts/eval_cues.py --backend hf --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --groups mis help edu",
+  "args": {
+   "backend": "hf",
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+   "split": "dev",
+   "n": 600,
+   "seed": 0,
+   "groups": [
+    "mis",
+    "help",
+    "edu"
+   ],
+   "biases": "all",
+   "batch_size": 16,
+   "max_batch_tokens": 8192,
+   "workers": 8,
+   "run_cap": null,
+   "tag": null
+  },
+  "seed": 0,
+  "device": null,
+  "date": "2026-10-19T22:07:36",
+  "host": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "python": "3.13.15",
+  "numpy": "2.1.3",
+  "torch": "2.11.0+cu128",
+  "templates": {
+   "clean": [
+    "biasmedqa_instruction_v1"
+   ],
+   "self_diagnosis": [
+    "biasmedqa_instruction_v1"
+   ],
+   "recency": [
+    "biasmedqa_instruction_v1"
+   ],
+   "confirmation": [
+    "biasmedqa_instruction_v1"
+   ],
+   "frequency": [
+    "biasmedqa_instruction_v1"
+   ],
+   "cultural": [
+    "biasmedqa_instruction_v1"
+   ],
+   "status_quo": [
+    "biasmedqa_instruction_v1"
+   ],
+   "false_consensus": [
+    "biasmedqa_instruction_v1"
+   ],
+   "authority_senior": [
+    "biasmedqa_instruction_v1"
+   ],
+   "authority_expert": [
+    "biasmedqa_instruction_v1"
+   ],
+   "referral_note": [
+    "biasmedqa_instruction_v1"
+   ],
+   "prelim_report": [
+    "biasmedqa_instruction_v1"
+   ],
+   "cds_tool": [
+    "biasmedqa_instruction_v1"
+   ],
+   "ai_assistant": [
+    "biasmedqa_instruction_v1"
+   ],
+   "convenience_time": [
+    "biasmedqa_instruction_v1"
+   ],
+   "convenience_cost": [
+    "biasmedqa_instruction_v1"
+   ],
+   "self_diagnosis+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "recency+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "confirmation+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "frequency+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "cultural+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "status_quo+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "false_consensus+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "authority_senior+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "authority_expert+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "referral_note+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "prelim_report+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "cds_tool+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "ai_assistant+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "convenience_time+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "convenience_cost+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "self_diagnosis+edu": [
+    "biasmedqa_instruction_v1",
+    "education:self_diagnosis"
+   ],
+   "recency+edu": [
+    "biasmedqa_instruction_v1",
+    "education:recency"
+   ],
+   "confirmation+edu": [
+    "biasmedqa_instruction_v1",
+    "education:confirmation"
+   ],
+   "frequency+edu": [
+    "biasmedqa_instruction_v1",
+    "education:frequency"
+   ],
+   "cultural+edu": [
+    "biasmedqa_instruction_v1",
+    "education:cultural"
+   ],
+   "status_quo+edu": [
+    "biasmedqa_instruction_v1",
+    "education:status_quo"
+   ],
+   "false_consensus+edu": [
+    "biasmedqa_instruction_v1",
+    "education:false_consensus"
+   ],
+   "authority_senior+edu": [
+    "biasmedqa_instruction_v1",
+    "education:authority_senior"
+   ],
+   "authority_expert+edu": [
+    "biasmedqa_instruction_v1",
+    "education:authority_expert"
+   ],
+   "referral_note+edu": [
+    "biasmedqa_instruction_v1",
+    "education:referral_note"
+   ],
+   "prelim_report+edu": [
+    "biasmedqa_instruction_v1",
+    "education:prelim_report"
+   ],
+   "cds_tool+edu": [
+    "biasmedqa_instruction_v1",
+    "education:cds_tool"
+   ],
+   "ai_assistant+edu": [
+    "biasmedqa_instruction_v1",
+    "education:ai_assistant"
+   ],
+   "convenience_time+edu": [
+    "biasmedqa_instruction_v1",
+    "education:convenience_time"
+   ],
+   "convenience_cost+edu": [
+    "biasmedqa_instruction_v1",
+    "education:convenience_cost"
+   ]
+  },
+  "split": "dev",
+  "options": 4,
+  "runtime_s": 9918.7
+ }
+}

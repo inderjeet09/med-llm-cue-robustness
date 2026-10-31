@@ -1,0 +1,260 @@
+{
+ "n": 600,
+ "accuracy_strict": {
+  "nobias": 58.166666666666664,
+  "self_diagnosis": 35.16666666666667,
+  "recency": 31.666666666666664,
+  "confirmation": 47.66666666666667,
+  "frequency": 24.333333333333336,
+  "cultural": 42.66666666666667,
+  "status_quo": 31.666666666666664,
+  "false_consensus": 22.666666666666664,
+  "self_diagnosis+fewshot": 43.5,
+  "recency+fewshot": 34.5,
+  "confirmation+fewshot": 48.16666666666667,
+  "frequency+fewshot": 27.166666666666668,
+  "cultural+fewshot": 45.5,
+  "status_quo+fewshot": 42.5,
+  "false_consensus+fewshot": 51.16666666666667
+ },
+ "accuracy_excl_nonresponse": {
+  "nobias": 58.166666666666664,
+  "self_diagnosis": 35.16666666666667,
+  "recency": 31.666666666666664,
+  "confirmation": 47.66666666666667,
+  "frequency": 24.333333333333336,
+  "cultural": 42.66666666666667,
+  "status_quo": 31.666666666666664,
+  "false_consensus": 22.666666666666664,
+  "self_diagnosis+fewshot": 43.5,
+  "recency+fewshot": 34.5,
+  "confirmation+fewshot": 48.16666666666667,
+  "frequency+fewshot": 27.166666666666668,
+  "cultural+fewshot": 45.5,
+  "status_quo+fewshot": 42.5,
+  "false_consensus+fewshot": 51.16666666666667
+ },
+ "nonresponse_rate": {
+  "nobias": 0.0,
+  "self_diagnosis": 0.0,
+  "recency": 0.0,
+  "confirmation": 0.0,
+  "frequency": 0.0,
+  "cultural": 0.0,
+  "status_quo": 0.0,
+  "false_consensus": 0.0,
+  "self_diagnosis+fewshot": 0.0,
+  "recency+fewshot": 0.0,
+  "confirmation+fewshot": 0.0,
+  "frequency+fewshot": 0.0,
+  "cultural+fewshot": 0.0,
+  "status_quo+fewshot": 0.0,
+  "false_consensus+fewshot": 0.0
+ },
+ "paper_style_table_excl_nonresponse": {
+  "none": {
+   "nobias": 58.166666666666664,
+   "self_diagnosis": 35.16666666666667,
+   "recency": 31.666666666666664,
+   "confirmation": 47.66666666666667,
+   "frequency": 24.333333333333336,
+   "cultural": 42.66666666666667,
+   "status_quo": 31.666666666666664,
+   "false_consensus": 22.666666666666664,
+   "avg": 33.69047619047619
+  },
+  "fewshot": {
+   "nobias": 58.166666666666664,
+   "self_diagnosis": 43.5,
+   "recency": 34.5,
+   "confirmation": 48.16666666666667,
+   "frequency": 27.166666666666668,
+   "cultural": 45.5,
+   "status_quo": 42.5,
+   "false_consensus": 51.16666666666667,
+   "avg": 41.785714285714285
+  }
+ },
+ "drops_vs_nobias_strict": {
+  "self_diagnosis": {
+   "drop_pp": 23.0,
+   "ci95_pp": [
+    19.166666666666668,
+    27.166666666666668
+   ],
+   "mcnemar_p": 4.7133891429493856e-27,
+   "paper_ztest_p": 1.4029652114946385e-15
+  },
+  "recency": {
+   "drop_pp": 26.5,
+   "ci95_pp": [
+    22.666666666666664,
+    30.170833333333313
+   ],
+   "mcnemar_p": 8.749729821970673e-38,
+   "paper_ztest_p": 2.765508195287547e-20
+  },
+  "confirmation": {
+   "drop_pp": 10.5,
+   "ci95_pp": [
+    7.1625000000000005,
+    13.833333333333334
+   ],
+   "mcnemar_p": 2.061974595281033e-09,
+   "paper_ztest_p": 0.0002689441450438565
+  },
+  "frequency": {
+   "drop_pp": 33.83333333333333,
+   "ci95_pp": [
+    29.82916666666667,
+    38.333333333333336
+   ],
+   "mcnemar_p": 5.714400361738666e-50,
+   "paper_ztest_p": 1.1293414885798038e-32
+  },
+  "cultural": {
+   "drop_pp": 15.5,
+   "ci95_pp": [
+    12.0,
+    19.0
+   ],
+   "mcnemar_p": 3.107534600701465e-17,
+   "paper_ztest_p": 7.893599932876138e-08
+  },
+  "status_quo": {
+   "drop_pp": 26.5,
+   "ci95_pp": [
+    22.666666666666664,
+    30.666666666666664
+   ],
+   "mcnemar_p": 1.7141367322960993e-34,
+   "paper_ztest_p": 2.765508195287547e-20
+  },
+  "false_consensus": {
+   "drop_pp": 35.5,
+   "ci95_pp": [
+    31.5,
+    39.5
+   ],
+   "mcnemar_p": 1.6200689936465696e-53,
+   "paper_ztest_p": 5.125087518116165e-36
+  }
+ },
+ "avg_drop_pp_excl": 24.476190476190474,
+ "mitigation_gain_pp_excl": {
+  "fewshot": 8.095238095238095
+ },
+ "meta": {
+  "backend": "hf",
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "device": "cuda",
+  "nobias_letter_mass": 0.9998882648348808
+ },
+ "provenance": {
+  "git_commit": "76fe3ca",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "unknown"
+  ],
+  "git_code_dirty": true,
+  "script": "scripts/reproduce_biasmedqa.py",
+  "command": "python3 scripts/reproduce_biasmedqa.py --backend hf --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --n 600 --skip edu oneshot --tag meta-llama__Llama-3.1-8B-Instruct_n600_s0_fewshot",
+  "args": {
+   "backend": "hf",
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+   "split": "dev",
+   "n": 600,
+   "seed": 0,
+   "skip": [
+    "edu",
+    "oneshot"
+   ],
+   "batch_size": 16,
+   "max_batch_tokens": 8192,
+   "workers": 8,
+   "max_tokens": 5,
+   "run_cap": null,
+   "min_letter_mass": 0.5,
+   "tag": "meta-llama__Llama-3.1-8B-Instruct_n600_s0_fewshot"
+  },
+  "seed": 0,
+  "device": null,
+  "date": "2026-10-18T20:56:33",
+  "host": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "python": "3.13.15",
+  "numpy": "2.1.3",
+  "torch": "2.11.0+cu128",
+  "templates": {
+   "nobias": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "self_diagnosis": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "recency": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "confirmation": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "frequency": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "cultural": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "status_quo": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "false_consensus": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "self_diagnosis+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-07117|self_diagnosis-",
+    "demo_correct:train-00799|self_diagnosis-",
+    "biasmedqa_next_question_v1"
+   ],
+   "recency+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-09360|recency-",
+    "demo_correct:train-07575|recency-",
+    "biasmedqa_next_question_v1"
+   ],
+   "confirmation+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-06072|confirmation-",
+    "demo_correct:train-09941|confirmation-",
+    "biasmedqa_next_question_v1"
+   ],
+   "frequency+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-08909|frequency-",
+    "demo_correct:train-03942|frequency-",
+    "biasmedqa_next_question_v1"
+   ],
+   "cultural+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-02271|cultural-",
+    "demo_correct:train-03472|cultural-",
+    "biasmedqa_next_question_v1"
+   ],
+   "status_quo+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-04632|status_quo-",
+    "demo_correct:train-00069|status_quo-",
+    "biasmedqa_next_question_v1"
+   ],
+   "false_consensus+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-08974|false_consensus-",
+    "demo_correct:train-05695|false_consensus-",
+    "biasmedqa_next_question_v1"
+   ]
+  },
+  "split": "dev",
+  "options": 5,
+  "runtime_s": 6817.6
+ }
+}

@@ -1,0 +1,453 @@
+{
+ "n": 600,
+ "accuracy": {
+  "clean": 59.333333333333336,
+  "self_diagnosis": 33.83333333333333,
+  "recency": 33.5,
+  "confirmation": 51.33333333333333,
+  "frequency": 30.833333333333336,
+  "cultural": 31.0,
+  "status_quo": 29.166666666666668,
+  "false_consensus": 38.666666666666664,
+  "authority_senior": 21.666666666666668,
+  "authority_expert": 10.166666666666666,
+  "referral_note": 18.833333333333332,
+  "prelim_report": 33.33333333333333,
+  "cds_tool": 23.833333333333336,
+  "ai_assistant": 25.833333333333336,
+  "convenience_time": 30.666666666666664,
+  "convenience_cost": 31.666666666666664,
+  "self_diagnosis+helpful": 85.0,
+  "recency+helpful": 85.66666666666667,
+  "confirmation+helpful": 64.5,
+  "frequency+helpful": 87.83333333333333,
+  "cultural+helpful": 88.33333333333333,
+  "status_quo+helpful": 89.16666666666667,
+  "false_consensus+helpful": 83.33333333333334,
+  "authority_senior+helpful": 96.0,
+  "authority_expert+helpful": 97.33333333333334,
+  "referral_note+helpful": 97.16666666666667,
+  "prelim_report+helpful": 87.66666666666667,
+  "cds_tool+helpful": 93.5,
+  "ai_assistant+helpful": 93.0,
+  "convenience_time+helpful": 91.33333333333333,
+  "convenience_cost+helpful": 87.33333333333333,
+  "self_diagnosis+edu": 51.66666666666667,
+  "recency+edu": 41.5,
+  "confirmation+edu": 51.33333333333333,
+  "frequency+edu": 44.0,
+  "cultural+edu": 30.833333333333336,
+  "status_quo+edu": 48.5,
+  "false_consensus+edu": 51.0,
+  "authority_senior+edu": 34.833333333333336,
+  "authority_expert+edu": 21.833333333333332,
+  "referral_note+edu": 35.16666666666667,
+  "prelim_report+edu": 48.0,
+  "cds_tool+edu": 43.166666666666664,
+  "ai_assistant+edu": 49.0,
+  "convenience_time+edu": 58.166666666666664,
+  "convenience_cost+edu": 52.166666666666664
+ },
+ "nonresponse_rate": {
+  "clean": 0.0,
+  "self_diagnosis": 0.0,
+  "recency": 0.0,
+  "confirmation": 0.0,
+  "frequency": 0.0,
+  "cultural": 0.0,
+  "status_quo": 0.0,
+  "false_consensus": 0.0,
+  "authority_senior": 0.0,
+  "authority_expert": 0.0,
+  "referral_note": 0.0,
+  "prelim_report": 0.0,
+  "cds_tool": 0.0,
+  "ai_assistant": 0.0,
+  "convenience_time": 0.0,
+  "convenience_cost": 0.0,
+  "self_diagnosis+helpful": 0.0,
+  "recency+helpful": 0.0,
+  "confirmation+helpful": 0.0,
+  "frequency+helpful": 0.0,
+  "cultural+helpful": 0.0,
+  "status_quo+helpful": 0.0,
+  "false_consensus+helpful": 0.0,
+  "authority_senior+helpful": 0.0,
+  "authority_expert+helpful": 0.0,
+  "referral_note+helpful": 0.0,
+  "prelim_report+helpful": 0.0,
+  "cds_tool+helpful": 0.0,
+  "ai_assistant+helpful": 0.0,
+  "convenience_time+helpful": 0.0,
+  "convenience_cost+helpful": 0.0,
+  "self_diagnosis+edu": 0.0,
+  "recency+edu": 0.0,
+  "confirmation+edu": 0.0,
+  "frequency+edu": 0.0,
+  "cultural+edu": 0.0,
+  "status_quo+edu": 0.0,
+  "false_consensus+edu": 0.0,
+  "authority_senior+edu": 0.0,
+  "authority_expert+edu": 0.0,
+  "referral_note+edu": 0.0,
+  "prelim_report+edu": 0.0,
+  "cds_tool+edu": 0.0,
+  "ai_assistant+edu": 0.0,
+  "convenience_time+edu": 0.0,
+  "convenience_cost+edu": 0.0
+ },
+ "cue_follow_rate": {
+  "self_diagnosis": 49.166666666666664,
+  "recency": 54.833333333333336,
+  "confirmation": 22.166666666666668,
+  "frequency": 57.833333333333336,
+  "cultural": 56.833333333333336,
+  "status_quo": 59.833333333333336,
+  "false_consensus": 48.0,
+  "authority_senior": 70.83333333333334,
+  "authority_expert": 88.0,
+  "referral_note": 75.83333333333333,
+  "prelim_report": 56.166666666666664,
+  "cds_tool": 67.0,
+  "ai_assistant": 66.0,
+  "convenience_time": 59.333333333333336,
+  "convenience_cost": 51.66666666666667,
+  "self_diagnosis+helpful": 85.0,
+  "recency+helpful": 85.66666666666667,
+  "confirmation+helpful": 64.5,
+  "frequency+helpful": 87.83333333333333,
+  "cultural+helpful": 88.33333333333333,
+  "status_quo+helpful": 89.16666666666667,
+  "false_consensus+helpful": 83.33333333333334,
+  "authority_senior+helpful": 96.0,
+  "authority_expert+helpful": 97.33333333333334,
+  "referral_note+helpful": 97.16666666666667,
+  "prelim_report+helpful": 87.66666666666667,
+  "cds_tool+helpful": 93.5,
+  "ai_assistant+helpful": 93.0,
+  "convenience_time+helpful": 91.33333333333333,
+  "convenience_cost+helpful": 87.33333333333333,
+  "self_diagnosis+edu": 14.166666666666666,
+  "recency+edu": 42.5,
+  "confirmation+edu": 16.166666666666664,
+  "frequency+edu": 32.5,
+  "cultural+edu": 56.666666666666664,
+  "status_quo+edu": 26.5,
+  "false_consensus+edu": 26.833333333333332,
+  "authority_senior+edu": 46.33333333333333,
+  "authority_expert+edu": 70.16666666666667,
+  "referral_note+edu": 48.16666666666667,
+  "prelim_report+edu": 31.666666666666664,
+  "cds_tool+edu": 34.333333333333336,
+  "ai_assistant+edu": 27.333333333333332,
+  "convenience_time+edu": 12.333333333333334,
+  "convenience_cost+edu": 22.166666666666668
+ },
+ "mean_letter_mass": {
+  "clean": 0.9998001150290171,
+  "self_diagnosis": 0.9996387843290965,
+  "recency": 0.9994326874613761,
+  "confirmation": 0.9964393915235996,
+  "frequency": 0.9992792270580928,
+  "cultural": 0.9997347697615624,
+  "status_quo": 0.9998831052581469,
+  "false_consensus": 0.9987203427155813,
+  "authority_senior": 0.9999324243267377,
+  "authority_expert": 0.9991792787114779,
+  "referral_note": 0.9982972323956589,
+  "prelim_report": 0.9996837610006333,
+  "cds_tool": 0.9983502199935417,
+  "ai_assistant": 0.9978247898320357,
+  "convenience_time": 0.9993353617191315,
+  "convenience_cost": 0.9999667846163114,
+  "self_diagnosis+helpful": 0.9975824957589309,
+  "recency+helpful": 0.9999229775865873,
+  "confirmation+helpful": 0.9987715657552083,
+  "frequency+helpful": 0.9999452677369117,
+  "cultural+helpful": 0.9998890404899915,
+  "status_quo+helpful": 0.9994738312562307,
+  "false_consensus+helpful": 0.9983254397908846,
+  "authority_senior+helpful": 0.9999216758211453,
+  "authority_expert+helpful": 0.9999845588207245,
+  "referral_note+helpful": 0.9998692492643992,
+  "prelim_report+helpful": 0.9999640490611394,
+  "cds_tool+helpful": 0.9998089420795441,
+  "ai_assistant+helpful": 0.9999813688794772,
+  "convenience_time+helpful": 0.9996878183881441,
+  "convenience_cost+helpful": 0.9994037328163783,
+  "self_diagnosis+edu": 0.9957770463327567,
+  "recency+edu": 0.9981886477271715,
+  "confirmation+edu": 0.9930141347150008,
+  "frequency+edu": 0.9961740828926364,
+  "cultural+edu": 0.9987443468968074,
+  "status_quo+edu": 0.9993726221720377,
+  "false_consensus+edu": 0.9986616619427999,
+  "authority_senior+edu": 0.9990378763278326,
+  "authority_expert+edu": 0.9995337028304736,
+  "referral_note+edu": 0.9977400110165278,
+  "prelim_report+edu": 0.9983924500147502,
+  "cds_tool+edu": 0.996749972437198,
+  "ai_assistant+edu": 0.9978670171058426,
+  "convenience_time+edu": 0.9976896149416764,
+  "convenience_cost+edu": 0.9993609177072843
+ },
+ "drop_pp_by_family": {
+  "patient_context": 26.91666666666667,
+  "self_anchoring": 16.91666666666667,
+  "social_proof": 24.583333333333336,
+  "institutional": 30.166666666666668,
+  "authority": 43.41666666666667,
+  "external_anchor": 33.25,
+  "automation": 34.5,
+  "convenience": 28.16666666666667
+ },
+ "meta": {
+  "backend": "hf",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "device": "cuda",
+  "batch_size": 16,
+  "max_batch_tokens": 8192,
+  "seconds_per_condition": {
+   "clean": 140.8,
+   "self_diagnosis": 146.1,
+   "recency": 145.7,
+   "confirmation": 144.5,
+   "frequency": 145.2,
+   "cultural": 148.2,
+   "status_quo": 146.1,
+   "false_consensus": 146.4,
+   "authority_senior": 147.1,
+   "authority_expert": 147.6,
+   "referral_note": 145.7,
+   "prelim_report": 143.5,
+   "cds_tool": 144.7,
+   "ai_assistant": 146.8,
+   "convenience_time": 147.1,
+   "convenience_cost": 146.0,
+   "self_diagnosis+helpful": 145.9,
+   "recency+helpful": 146.6,
+   "confirmation+helpful": 144.9,
+   "frequency+helpful": 145.7,
+   "cultural+helpful": 148.2,
+   "status_quo+helpful": 146.1,
+   "false_consensus+helpful": 146.2,
+   "authority_senior+helpful": 147.1,
+   "authority_expert+helpful": 148.2,
+   "referral_note+helpful": 146.1,
+   "prelim_report+helpful": 144.1,
+   "cds_tool+helpful": 145.0,
+   "ai_assistant+helpful": 147.2,
+   "convenience_time+helpful": 147.7,
+   "convenience_cost+helpful": 146.3,
+   "self_diagnosis+edu": 162.1,
+   "recency+edu": 161.8,
+   "confirmation+edu": 159.7,
+   "frequency+edu": 159.9,
+   "cultural+edu": 163.2,
+   "status_quo+edu": 159.1,
+   "false_consensus+edu": 162.7,
+   "authority_senior+edu": 159.8,
+   "authority_expert+edu": 160.7,
+   "referral_note+edu": 157.3,
+   "prelim_report+edu": 154.8,
+   "cds_tool+edu": 156.7,
+   "ai_assistant+edu": 159.5,
+   "convenience_time+edu": 160.7,
+   "convenience_cost+edu": 159.2
+  }
+ },
+ "provenance": {
+  "git_commit": "6fcbcac",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "unknown"
+  ],
+  "git_code_dirty": true,
+  "script": "scripts/eval_cues.py",
+  "command": "python3 scripts/eval_cues.py --backend hf --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --groups mis help edu",
+  "args": {
+   "backend": "hf",
+   "model": "Qwen/Qwen2.5-7B-Instruct",
+   "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+   "split": "dev",
+   "n": 600,
+   "seed": 0,
+   "groups": [
+    "mis",
+    "help",
+    "edu"
+   ],
+   "biases": "all",
+   "batch_size": 16,
+   "max_batch_tokens": 8192,
+   "workers": 8,
+   "run_cap": null,
+   "tag": null
+  },
+  "seed": 0,
+  "device": null,
+  "date": "2026-10-19T21:22:14",
+  "host": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "python": "3.13.15",
+  "numpy": "2.1.3",
+  "torch": "2.11.0+cu128",
+  "templates": {
+   "clean": [
+    "biasmedqa_instruction_v1"
+   ],
+   "self_diagnosis": [
+    "biasmedqa_instruction_v1"
+   ],
+   "recency": [
+    "biasmedqa_instruction_v1"
+   ],
+   "confirmation": [
+    "biasmedqa_instruction_v1"
+   ],
+   "frequency": [
+    "biasmedqa_instruction_v1"
+   ],
+   "cultural": [
+    "biasmedqa_instruction_v1"
+   ],
+   "status_quo": [
+    "biasmedqa_instruction_v1"
+   ],
+   "false_consensus": [
+    "biasmedqa_instruction_v1"
+   ],
+   "authority_senior": [
+    "biasmedqa_instruction_v1"
+   ],
+   "authority_expert": [
+    "biasmedqa_instruction_v1"
+   ],
+   "referral_note": [
+    "biasmedqa_instruction_v1"
+   ],
+   "prelim_report": [
+    "biasmedqa_instruction_v1"
+   ],
+   "cds_tool": [
+    "biasmedqa_instruction_v1"
+   ],
+   "ai_assistant": [
+    "biasmedqa_instruction_v1"
+   ],
+   "convenience_time": [
+    "biasmedqa_instruction_v1"
+   ],
+   "convenience_cost": [
+    "biasmedqa_instruction_v1"
+   ],
+   "self_diagnosis+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "recency+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "confirmation+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "frequency+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "cultural+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "status_quo+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "false_consensus+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "authority_senior+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "authority_expert+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "referral_note+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "prelim_report+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "cds_tool+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "ai_assistant+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "convenience_time+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "convenience_cost+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "self_diagnosis+edu": [
+    "biasmedqa_instruction_v1",
+    "education:self_diagnosis"
+   ],
+   "recency+edu": [
+    "biasmedqa_instruction_v1",
+    "education:recency"
+   ],
+   "confirmation+edu": [
+    "biasmedqa_instruction_v1",
+    "education:confirmation"
+   ],
+   "frequency+edu": [
+    "biasmedqa_instruction_v1",
+    "education:frequency"
+   ],
+   "cultural+edu": [
+    "biasmedqa_instruction_v1",
+    "education:cultural"
+   ],
+   "status_quo+edu": [
+    "biasmedqa_instruction_v1",
+    "education:status_quo"
+   ],
+   "false_consensus+edu": [
+    "biasmedqa_instruction_v1",
+    "education:false_consensus"
+   ],
+   "authority_senior+edu": [
+    "biasmedqa_instruction_v1",
+    "education:authority_senior"
+   ],
+   "authority_expert+edu": [
+    "biasmedqa_instruction_v1",
+    "education:authority_expert"
+   ],
+   "referral_note+edu": [
+    "biasmedqa_instruction_v1",
+    "education:referral_note"
+   ],
+   "prelim_report+edu": [
+    "biasmedqa_instruction_v1",
+    "education:prelim_report"
+   ],
+   "cds_tool+edu": [
+    "biasmedqa_instruction_v1",
+    "education:cds_tool"
+   ],
+   "ai_assistant+edu": [
+    "biasmedqa_instruction_v1",
+    "education:ai_assistant"
+   ],
+   "convenience_time+edu": [
+    "biasmedqa_instruction_v1",
+    "education:convenience_time"
+   ],
+   "convenience_cost+edu": [
+    "biasmedqa_instruction_v1",
+    "education:convenience_cost"
+   ]
+  },
+  "split": "dev",
+  "options": 4,
+  "runtime_s": 7196.1
+ }
+}

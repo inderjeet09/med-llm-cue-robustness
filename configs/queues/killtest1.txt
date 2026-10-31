@@ -1,0 +1,6 @@
+# Kill tests A (stage 1) and B (open model). Format: <done-marker relative to repo root> <command ...>
+# Jobs run one per GPU; order matters (longest first so both GPUs stay busy).
+results/pilot/killB/Qwen__Qwen2.5-7B-Instruct_n300_s0/summary.json python scripts/kill_test_b.py --backend hf --model Qwen/Qwen2.5-7B-Instruct --n 300 --batch_size 16
+results/pilot/killA/Qwen__Qwen2.5-7B-Instruct/n300_s0/summary.json python scripts/kill_test_a.py --model Qwen/Qwen2.5-7B-Instruct --n 300
+results/pilot/killA/meta-llama__Llama-3.1-8B-Instruct/n300_s0/summary.json python scripts/kill_test_a.py --model meta-llama/Llama-3.1-8B-Instruct --n 300
+results/pilot/killA/aaditya__Llama3-OpenBioLLM-8B/n300_s0/summary.json python scripts/kill_test_a.py --model aaditya/Llama3-OpenBioLLM-8B --n 300

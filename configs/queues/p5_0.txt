@@ -1,0 +1,11 @@
+# Phase 5 batch P5-0 (docs/preregistration.md B8, as amended): DEV only (600 questions, seed 0).
+# (1) base with prefix-shared evaluation -> acceptance check vs gap1 standard-path records (scripts/check_prefix_eval.py)
+# (2) prompt arms on dev -> best prompt baseline per model (frozen rule). Qwen and Llama. Cheap jobs first, few-shot last: if the weekly quota runs out, the rest resumes next week.
+results/main/Qwen__Qwen2.5-7B-Instruct/base_dev/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm base --split dev
+results/main/meta-llama__Llama-3.1-8B-Instruct/base_dev/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm base --split dev
+results/main/Qwen__Qwen2.5-7B-Instruct/warn_generic_dev/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm warn_generic --split dev
+results/main/meta-llama__Llama-3.1-8B-Instruct/warn_generic_dev/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm warn_generic --split dev
+results/main/Qwen__Qwen2.5-7B-Instruct/warn_oracle_dev/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm warn_oracle --split dev
+results/main/meta-llama__Llama-3.1-8B-Instruct/warn_oracle_dev/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm warn_oracle --split dev
+results/main/Qwen__Qwen2.5-7B-Instruct/fewshot_dev/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm fewshot --split dev
+results/main/meta-llama__Llama-3.1-8B-Instruct/fewshot_dev/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm fewshot --split dev

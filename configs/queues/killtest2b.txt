@@ -1,0 +1,6 @@
+# Kill test A stage 2, SECONDARY arms (run only if killtest2's all7 arm passes): held-out cue generalisation and the
+# plain-SFT control. Same pinned revisions.
+results/pilot/killA2/Qwen__Qwen2.5-7B-Instruct/heldout4_s0/summary.json python scripts/kill_test_a2.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm heldout4
+results/pilot/killA2/meta-llama__Llama-3.1-8B-Instruct/heldout4_s0/summary.json python scripts/kill_test_a2.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm heldout4
+results/pilot/killA2/Qwen__Qwen2.5-7B-Instruct/sft_clean_s0/summary.json python scripts/kill_test_a2.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm sft_clean
+results/pilot/killA2/meta-llama__Llama-3.1-8B-Instruct/sft_clean_s0/summary.json python scripts/kill_test_a2.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm sft_clean

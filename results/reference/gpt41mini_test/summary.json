@@ -1,0 +1,433 @@
+{
+ "n": 1273,
+ "accuracy": {
+  "clean": 82.01099764336213,
+  "clean+gen": 80.9897879025923,
+  "self_diagnosis": 81.77533385703065,
+  "recency": 77.9261586802828,
+  "confirmation": 79.89002356637863,
+  "frequency": 74.8625294579733,
+  "cultural": 77.06205813040063,
+  "status_quo": 76.04084838963078,
+  "false_consensus": 81.30400628436763,
+  "authority_senior": 71.01335428122545,
+  "authority_expert": 61.822466614296935,
+  "referral_note": 62.372348782403776,
+  "prelim_report": 77.84760408483896,
+  "cds_tool": 74.6268656716418,
+  "ai_assistant": 75.17674783974863,
+  "convenience_time": 80.20424194815396,
+  "convenience_cost": 80.91123330714846,
+  "self_diagnosis+edu": 82.48232521602515,
+  "recency+edu": 78.3974862529458,
+  "confirmation+edu": 80.83267871170463,
+  "frequency+edu": 80.5184603299293,
+  "cultural+edu": 77.06205813040063,
+  "status_quo+edu": 79.41869599371564,
+  "false_consensus+edu": 82.95365278868813,
+  "authority_senior+edu": 80.91123330714846,
+  "authority_expert+edu": 80.43990573448548,
+  "referral_note+edu": 79.41869599371564,
+  "prelim_report+edu": 81.61822466614296,
+  "cds_tool+edu": 79.26158680282796,
+  "ai_assistant+edu": 79.26158680282796,
+  "convenience_time+edu": 82.48232521602515,
+  "convenience_cost+edu": 80.91123330714846,
+  "self_diagnosis+gen": 81.46111547525531,
+  "recency+gen": 79.02592301649646,
+  "confirmation+gen": 80.36135113904163,
+  "frequency+gen": 77.53338570306363,
+  "cultural+gen": 77.9261586802828,
+  "status_quo+gen": 78.1618224666143,
+  "false_consensus+gen": 81.2254516889238,
+  "authority_senior+gen": 77.06205813040063,
+  "authority_expert+gen": 74.23409269442263,
+  "referral_note+gen": 74.6268656716418,
+  "prelim_report+gen": 79.41869599371564,
+  "cds_tool+gen": 76.9835035349568,
+  "ai_assistant+gen": 76.11940298507463,
+  "convenience_time+gen": 81.69677926158681,
+  "convenience_cost+gen": 80.67556952081696
+ },
+ "nonresponse_rate": {
+  "clean": 1.5710919088766693,
+  "clean+gen": 1.8067556952081696,
+  "self_diagnosis": 1.5710919088766693,
+  "recency": 1.5710919088766693,
+  "confirmation": 1.4139827179890023,
+  "frequency": 1.4925373134328357,
+  "cultural": 1.4925373134328357,
+  "status_quo": 1.5710919088766693,
+  "false_consensus": 1.4925373134328357,
+  "authority_senior": 1.5710919088766693,
+  "authority_expert": 1.5710919088766693,
+  "referral_note": 1.4925373134328357,
+  "prelim_report": 1.5710919088766693,
+  "cds_tool": 1.6496465043205029,
+  "ai_assistant": 1.5710919088766693,
+  "convenience_time": 1.728201099764336,
+  "convenience_cost": 1.5710919088766693,
+  "self_diagnosis+edu": 1.6496465043205029,
+  "recency+edu": 1.728201099764336,
+  "confirmation+edu": 1.335428122545169,
+  "frequency+edu": 1.5710919088766693,
+  "cultural+edu": 1.6496465043205029,
+  "status_quo+edu": 1.8853102906520032,
+  "false_consensus+edu": 1.728201099764336,
+  "authority_senior+edu": 1.9638648860958365,
+  "authority_expert+edu": 1.9638648860958365,
+  "referral_note+edu": 1.6496465043205029,
+  "prelim_report+edu": 1.728201099764336,
+  "cds_tool+edu": 1.9638648860958365,
+  "ai_assistant+edu": 1.8067556952081696,
+  "convenience_time+edu": 1.728201099764336,
+  "convenience_cost+edu": 1.728201099764336,
+  "self_diagnosis+gen": 1.8853102906520032,
+  "recency+gen": 1.9638648860958365,
+  "confirmation+gen": 1.021209740769835,
+  "frequency+gen": 1.728201099764336,
+  "cultural+gen": 1.8853102906520032,
+  "status_quo+gen": 1.8067556952081696,
+  "false_consensus+gen": 1.8853102906520032,
+  "authority_senior+gen": 1.9638648860958365,
+  "authority_expert+gen": 1.8853102906520032,
+  "referral_note+gen": 2.04241948153967,
+  "prelim_report+gen": 1.8067556952081696,
+  "cds_tool+gen": 1.9638648860958365,
+  "ai_assistant+gen": 1.8853102906520032,
+  "convenience_time+gen": 1.8853102906520032,
+  "convenience_cost+gen": 1.9638648860958365
+ },
+ "cue_follow_rate": {
+  "clean+gen": 1.8067556952081696,
+  "self_diagnosis": 4.32050274941084,
+  "recency": 8.87666928515318,
+  "confirmation": 5.420267085624509,
+  "frequency": 14.061272584446192,
+  "cultural": 11.154752553024352,
+  "status_quo": 11.626080125687354,
+  "false_consensus": 4.477611940298507,
+  "authority_senior": 18.617439120188532,
+  "authority_expert": 28.750981932443047,
+  "referral_note": 30.243519245875884,
+  "prelim_report": 8.87666928515318,
+  "cds_tool": 13.904163393558521,
+  "ai_assistant": 12.018853102906519,
+  "convenience_time": 7.148468185388845,
+  "convenience_cost": 5.420267085624509,
+  "self_diagnosis+edu": 1.4925373134328357,
+  "recency+edu": 6.755695208169678,
+  "confirmation+edu": 4.006284367635507,
+  "frequency+edu": 5.655930871956009,
+  "cultural+edu": 10.212097407698352,
+  "status_quo+edu": 5.498821681068343,
+  "false_consensus+edu": 1.5710919088766693,
+  "authority_senior+edu": 3.927729772191673,
+  "authority_expert+edu": 4.634721131186175,
+  "referral_note+edu": 5.734485467399843,
+  "prelim_report+edu": 2.9065200314218385,
+  "cds_tool+edu": 5.813040062843677,
+  "ai_assistant+edu": 5.970149253731343,
+  "convenience_time+edu": 2.9065200314218385,
+  "convenience_cost+edu": 2.4351924587588374,
+  "self_diagnosis+gen": 3.063629222309505,
+  "recency+gen": 7.227022780832678,
+  "confirmation+gen": 6.048703849175176,
+  "frequency+gen": 8.719560094265514,
+  "cultural+gen": 9.26944226237235,
+  "status_quo+gen": 8.326787117046347,
+  "false_consensus+gen": 3.927729772191673,
+  "authority_senior+gen": 9.897879025923016,
+  "authority_expert+gen": 13.35428122545169,
+  "referral_note+gen": 13.35428122545169,
+  "prelim_report+gen": 6.912804399057344,
+  "cds_tool+gen": 8.798114689709347,
+  "ai_assistant+gen": 10.212097407698352,
+  "convenience_time+gen": 4.399057344854674,
+  "convenience_cost+gen": 4.556166535742341
+ },
+ "misleading_acc_train_cues": 78.40870833800919,
+ "misleading_acc_train_cues_edu": 80.23790820334418,
+ "misleading_acc_train_cues_gen": 79.38502973852542,
+ "misleading_acc_heldout_cues": 72.99685781618226,
+ "misleading_acc_heldout_cues_edu": 80.53809897879026,
+ "misleading_acc_heldout_cues_gen": 77.602120974077,
+ "drop_pp_by_family": {
+  "patient_context": 2.592301649646494,
+  "self_anchoring": 3.102906520031418,
+  "social_proof": 3.927729772191668,
+  "institutional": 5.97014925373135,
+  "authority": 15.59308719560094,
+  "external_anchor": 11.901021209740762,
+  "automation": 7.109190887666919,
+  "convenience": 1.4532600157109172
+ },
+ "meta": {
+  "backend": "azure",
+  "api_cost_usd_this_run": 6.478,
+  "seconds_per_condition": {
+   "clean": 85.0,
+   "clean+gen": 91.2,
+   "self_diagnosis": 86.6,
+   "recency": 89.3,
+   "confirmation": 86.3,
+   "frequency": 89.4,
+   "cultural": 88.4,
+   "status_quo": 92.4,
+   "false_consensus": 157.5,
+   "authority_senior": 175.3,
+   "authority_expert": 177.3,
+   "referral_note": 179.0,
+   "prelim_report": 185.4,
+   "cds_tool": 186.9,
+   "ai_assistant": 190.3,
+   "convenience_time": 199.8,
+   "convenience_cost": 203.4,
+   "self_diagnosis+edu": 202.6,
+   "recency+edu": 202.4,
+   "confirmation+edu": 206.3,
+   "frequency+edu": 209.7,
+   "cultural+edu": 214.1,
+   "status_quo+edu": 217.8,
+   "false_consensus+edu": 220.5,
+   "authority_senior+edu": 223.9,
+   "authority_expert+edu": 230.2,
+   "referral_note+edu": 234.2,
+   "prelim_report+edu": 236.6,
+   "cds_tool+edu": 238.3,
+   "ai_assistant+edu": 242.0,
+   "convenience_time+edu": 247.4,
+   "convenience_cost+edu": 250.7,
+   "self_diagnosis+gen": 249.9,
+   "recency+gen": 251.5,
+   "confirmation+gen": 258.6,
+   "frequency+gen": 259.2,
+   "cultural+gen": 262.9,
+   "status_quo+gen": 267.0,
+   "false_consensus+gen": 278.8,
+   "authority_senior+gen": 280.2,
+   "authority_expert+gen": 279.9,
+   "referral_note+gen": 280.2,
+   "prelim_report+gen": 286.9,
+   "cds_tool+gen": 294.3,
+   "ai_assistant+gen": 304.2,
+   "convenience_time+gen": 305.4,
+   "convenience_cost+gen": 311.7
+  }
+ },
+ "provenance": {
+  "git_commit": "17f7fbf16a4a3a4e0d17437d6d94a10ba145ea1d",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "experiments/ref_gpt41mini_test/run.log",
+   "results/costs/api_ledger.csv"
+  ],
+  "git_code_dirty": false,
+  "script": "scripts/eval_cues.py",
+  "command": "python scripts/eval_cues.py --backend azure --split test --n 0 --groups mis edu gen --out_root results/reference --tag gpt41mini_test --run_cap 8.0",
+  "args": {
+   "backend": "azure",
+   "model": null,
+   "revision": null,
+   "split": "test",
+   "n": 0,
+   "seed": 0,
+   "groups": [
+    "mis",
+    "edu",
+    "gen"
+   ],
+   "biases": "all",
+   "batch_size": 16,
+   "max_batch_tokens": 8192,
+   "workers": 8,
+   "run_cap": 8.0,
+   "tag": "gpt41mini_test",
+   "out_root": "results/reference"
+  },
+  "seed": 0,
+  "device": null,
+  "date": "2026-10-24T19:43:35",
+  "host": "macOS-26.3-arm64-arm-64bit",
+  "python": "3.11.17",
+  "numpy": "2.4.6",
+  "torch": "2.14.1",
+  "templates": {
+   "clean": [
+    "biasmedqa_instruction_v1"
+   ],
+   "clean+gen": [
+    "biasmedqa_instruction_v1",
+    "generic_warning_v1"
+   ],
+   "self_diagnosis": [
+    "biasmedqa_instruction_v1"
+   ],
+   "recency": [
+    "biasmedqa_instruction_v1"
+   ],
+   "confirmation": [
+    "biasmedqa_instruction_v1"
+   ],
+   "frequency": [
+    "biasmedqa_instruction_v1"
+   ],
+   "cultural": [
+    "biasmedqa_instruction_v1"
+   ],
+   "status_quo": [
+    "biasmedqa_instruction_v1"
+   ],
+   "false_consensus": [
+    "biasmedqa_instruction_v1"
+   ],
+   "authority_senior": [
+    "biasmedqa_instruction_v1"
+   ],
+   "authority_expert": [
+    "biasmedqa_instruction_v1"
+   ],
+   "referral_note": [
+    "biasmedqa_instruction_v1"
+   ],
+   "prelim_report": [
+    "biasmedqa_instruction_v1"
+   ],
+   "cds_tool": [
+    "biasmedqa_instruction_v1"
+   ],
+   "ai_assistant": [
+    "biasmedqa_instruction_v1"
+   ],
+   "convenience_time": [
+    "biasmedqa_instruction_v1"
+   ],
+   "convenience_cost": [
+    "biasmedqa_instruction_v1"
+   ],
+   "self_diagnosis+edu": [
+    "biasmedqa_instruction_v1",
+    "education:self_diagnosis"
+   ],
+   "recency+edu": [
+    "biasmedqa_instruction_v1",
+    "education:recency"
+   ],
+   "confirmation+edu": [
+    "biasmedqa_instruction_v1",
+    "education:confirmation"
+   ],
+   "frequency+edu": [
+    "biasmedqa_instruction_v1",
+    "education:frequency"
+   ],
+   "cultural+edu": [
+    "biasmedqa_instruction_v1",
+    "education:cultural"
+   ],
+   "status_quo+edu": [
+    "biasmedqa_instruction_v1",
+    "education:status_quo"
+   ],
+   "false_consensus+edu": [
+    "biasmedqa_instruction_v1",
+    "education:false_consensus"
+   ],
+   "authority_senior+edu": [
+    "biasmedqa_instruction_v1",
+    "education:authority_senior"
+   ],
+   "authority_expert+edu": [
+    "biasmedqa_instruction_v1",
+    "education:authority_expert"
+   ],
+   "referral_note+edu": [
+    "biasmedqa_instruction_v1",
+    "education:referral_note"
+   ],
+   "prelim_report+edu": [
+    "biasmedqa_instruction_v1",
+    "education:prelim_report"
+   ],
+   "cds_tool+edu": [
+    "biasmedqa_instruction_v1",
+    "education:cds_tool"
+   ],
+   "ai_assistant+edu": [
+    "biasmedqa_instruction_v1",
+    "education:ai_assistant"
+   ],
+   "convenience_time+edu": [
+    "biasmedqa_instruction_v1",
+    "education:convenience_time"
+   ],
+   "convenience_cost+edu": [
+    "biasmedqa_instruction_v1",
+    "education:convenience_cost"
+   ],
+   "self_diagnosis+gen": [
+    "biasmedqa_instruction_v1",
+    "generic_warning_v1"
+   ],
+   "recency+gen": [
+    "biasmedqa_instruction_v1",
+    "generic_warning_v1"
+   ],
+   "confirmation+gen": [
+    "biasmedqa_instruction_v1",
+    "generic_warning_v1"
+   ],
+   "frequency+gen": [
+    "biasmedqa_instruction_v1",
+    "generic_warning_v1"
+   ],
+   "cultural+gen": [
+    "biasmedqa_instruction_v1",
+    "generic_warning_v1"
+   ],
+   "status_quo+gen": [
+    "biasmedqa_instruction_v1",
+    "generic_warning_v1"
+   ],
+   "false_consensus+gen": [
+    "biasmedqa_instruction_v1",
+    "generic_warning_v1"
+   ],
+   "authority_senior+gen": [
+    "biasmedqa_instruction_v1",
+    "generic_warning_v1"
+   ],
+   "authority_expert+gen": [
+    "biasmedqa_instruction_v1",
+    "generic_warning_v1"
+   ],
+   "referral_note+gen": [
+    "biasmedqa_instruction_v1",
+    "generic_warning_v1"
+   ],
+   "prelim_report+gen": [
+    "biasmedqa_instruction_v1",
+    "generic_warning_v1"
+   ],
+   "cds_tool+gen": [
+    "biasmedqa_instruction_v1",
+    "generic_warning_v1"
+   ],
+   "ai_assistant+gen": [
+    "biasmedqa_instruction_v1",
+    "generic_warning_v1"
+   ],
+   "convenience_time+gen": [
+    "biasmedqa_instruction_v1",
+    "generic_warning_v1"
+   ],
+   "convenience_cost+gen": [
+    "biasmedqa_instruction_v1",
+    "generic_warning_v1"
+   ]
+  },
+  "split": "test",
+  "options": 4,
+  "runtime_s": 9911.0
+ }
+}

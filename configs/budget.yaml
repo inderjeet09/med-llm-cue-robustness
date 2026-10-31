@@ -1,0 +1,4 @@
+# Azure spending caps (USD). Global cap stays at 25 until it is raised.
+global_cap_usd: 25.0
+default_run_cap_usd: 2.0       # per-run hard cap unless a run config overrides it
+approval_threshold_usd: 5.0    # runs estimated above this need explicit approval

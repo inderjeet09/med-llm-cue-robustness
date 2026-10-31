@@ -1,0 +1,5 @@
+# Phase 3 follow-up (D018): repro1's Qwen/Llama few-shot conditions ran out of GPU memory (batch of 16 long prompts).
+# Re-run with token-budget batching: no bias + 7 cues + 7 few-shot. Merged locally with scripts/merge_repro_runs.py;
+# the no-bias/cue conditions double as a determinism check against repro1.
+results/reproduction/Qwen__Qwen2.5-7B-Instruct_n600_s0_fewshot/summary.json python scripts/reproduce_biasmedqa.py --backend hf --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --n 600 --skip edu oneshot --tag Qwen__Qwen2.5-7B-Instruct_n600_s0_fewshot
+results/reproduction/meta-llama__Llama-3.1-8B-Instruct_n600_s0_fewshot/summary.json python scripts/reproduce_biasmedqa.py --backend hf --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --n 600 --skip edu oneshot --tag meta-llama__Llama-3.1-8B-Instruct_n600_s0_fewshot

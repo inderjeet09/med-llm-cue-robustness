@@ -1,0 +1,5 @@
+You answered the clinical question below before seeing the options. Your independent answer was: "{own_answer}"
+
+Now check each option against the clinical facts and against your independent answer. Your independent answer may be wrong, so judge each option on the evidence. Do not choose an option merely because it is the closest one: if no option is actually correct, say so.
+
+Reason briefly through each option, then give your final answer on the last line in the form "Answer: <letter>", or "Answer: NONE" if no option is correct.

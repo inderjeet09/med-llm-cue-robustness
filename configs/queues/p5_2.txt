@@ -1,0 +1,12 @@
+# Phase 5 batch P5-2 (docs/preregistration.md B8): CIFT seeds 1-2 + SFT-clean seeds 0-2, Qwen and Llama, TEST. Frozen settings (D020).
+# Most important first (CIFT seeds complete the main arm). ~12 h wall: whatever is not launched before MAX_HOURS resumes in the next session.
+results/main/meta-llama__Llama-3.1-8B-Instruct/cift_s1_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm cift --seed 1 --split test
+results/main/Qwen__Qwen2.5-7B-Instruct/cift_s1_test/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm cift --seed 1 --split test
+results/main/meta-llama__Llama-3.1-8B-Instruct/cift_s2_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm cift --seed 2 --split test
+results/main/Qwen__Qwen2.5-7B-Instruct/cift_s2_test/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm cift --seed 2 --split test
+results/main/meta-llama__Llama-3.1-8B-Instruct/sft_clean_s0_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm sft_clean --seed 0 --split test
+results/main/Qwen__Qwen2.5-7B-Instruct/sft_clean_s0_test/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm sft_clean --seed 0 --split test
+results/main/meta-llama__Llama-3.1-8B-Instruct/sft_clean_s1_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm sft_clean --seed 1 --split test
+results/main/Qwen__Qwen2.5-7B-Instruct/sft_clean_s1_test/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm sft_clean --seed 1 --split test
+results/main/meta-llama__Llama-3.1-8B-Instruct/sft_clean_s2_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm sft_clean --seed 2 --split test
+results/main/Qwen__Qwen2.5-7B-Instruct/sft_clean_s2_test/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm sft_clean --seed 2 --split test

@@ -1,0 +1,90 @@
+{
+ "model": "m42-health/Llama3-Med42-8B",
+ "arm": "warn_generic",
+ "seed": 0,
+ "split": "test",
+ "n": 1273,
+ "accuracy": {
+  "clean": 58.680282796543594,
+  "self_diagnosis": 59.54438334642577,
+  "recency": 50.74626865671642,
+  "confirmation": 57.18774548311076,
+  "frequency": 47.604084838963075,
+  "cultural": 53.57423409269442,
+  "status_quo": 50.58915946582875,
+  "false_consensus": 56.00942655145326,
+  "authority_senior": 51.13904163393559,
+  "authority_expert": 39.827179890023565,
+  "referral_note": 44.46190102120974,
+  "prelim_report": 54.20267085624509,
+  "cds_tool": 50.903377847604084,
+  "ai_assistant": 39.355852317360565,
+  "convenience_time": 56.48075412411626,
+  "convenience_cost": 52.553024351924584
+ },
+ "mean_letter_mass": {
+  "clean": 0.9986026105876992,
+  "self_diagnosis": 0.9983735364998595,
+  "recency": 0.9986966556905296,
+  "confirmation": 0.9990874171163374,
+  "frequency": 0.9984918452582767,
+  "cultural": 0.9970356242764867,
+  "status_quo": 0.9988872538564342,
+  "false_consensus": 0.9977604413444567,
+  "authority_senior": 0.9985766597179944,
+  "authority_expert": 0.9990978153877528,
+  "referral_note": 0.9989506930042605,
+  "prelim_report": 0.9990099653051485,
+  "cds_tool": 0.9986997715900569,
+  "ai_assistant": 0.9991516490574437,
+  "convenience_time": 0.9987769626484831,
+  "convenience_cost": 0.9989621370024131
+ },
+ "misleading_acc_train_cues": 53.60790034788464,
+ "misleading_acc_heldout_cues": 48.615475255302435,
+ "train": null,
+ "times": {
+  "load_s": 14.3,
+  "eval_s": 3164.5
+ },
+ "provenance": {
+  "git_commit": "8f15db8",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "unknown"
+  ],
+  "git_code_dirty": true,
+  "script": "scripts/run_main.py",
+  "command": "python3 scripts/run_main.py --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --arm warn_generic --split test",
+  "args": {
+   "model": "m42-health/Llama3-Med42-8B",
+   "revision": "ceab7e7ee4b9dbde7ba82867f34274db51487d83",
+   "arm": "warn_generic",
+   "seed": 0,
+   "split": "test",
+   "n_eval": null,
+   "n_pairs": 2000,
+   "pair_seed": 1,
+   "prefix_eval": 1,
+   "transfer": null,
+   "batch_size": 16,
+   "max_batch_tokens": 8192,
+   "load_4bit": null,
+   "out": null
+  },
+  "seed": 0,
+  "device": "cuda",
+  "date": "2026-10-23T16:10:55",
+  "host": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "python": "3.13.15",
+  "numpy": "2.1.3",
+  "torch": "2.11.0+cu128",
+  "model_revision": "ceab7e7ee4b9dbde7ba82867f34274db51487d83",
+  "runtime_s": 3179.0,
+  "inference": {
+   "batch_size": 16,
+   "max_batch_tokens": 8192,
+   "prefix_eval": 1
+  }
+ }
+}

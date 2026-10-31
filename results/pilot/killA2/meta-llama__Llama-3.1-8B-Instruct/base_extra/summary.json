@@ -1,0 +1,95 @@
+{
+ "accuracy": {
+  "clean+edu:false_consensus": 63.66666666666667,
+  "clean+edu:frequency": 63.33333333333333,
+  "clean+edu:recency": 64.33333333333333,
+  "false_consensus+helpful+edu": 33.666666666666664,
+  "frequency+helpful+edu": 73.0,
+  "recency+helpful+edu": 61.33333333333333
+ },
+ "mean_letter_mass": {
+  "clean+edu:false_consensus": 0.9993718542655309,
+  "clean+edu:frequency": 0.9996270581086477,
+  "clean+edu:recency": 0.9997762248913447,
+  "false_consensus+helpful+edu": 0.9988019345204036,
+  "frequency+helpful+edu": 0.9994943726062775,
+  "recency+helpful+edu": 0.9995754800240199
+ },
+ "cue_follow_rate": {
+  "false_consensus+helpful+edu": 33.666666666666664,
+  "frequency+helpful+edu": 73.0,
+  "recency+helpful+edu": 61.33333333333333
+ },
+ "n": 300,
+ "train": null,
+ "provenance": {
+  "git_commit": "a460ff4",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "unknown"
+  ],
+  "git_code_dirty": true,
+  "script": "scripts/kill_test_a2.py",
+  "command": "python3 scripts/kill_test_a2.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --mode base_extra",
+  "args": {
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+   "mode": "base_extra",
+   "arm": "all7",
+   "n_pairs": 2000,
+   "pair_seed": 1,
+   "train_seed": 0,
+   "epochs": 1.0,
+   "lr": 0.0002,
+   "lam": 1.0,
+   "lora_r": 16,
+   "micro_pairs": 4,
+   "accum": 4,
+   "grad_ckpt": 1,
+   "log_every": 5,
+   "n_eval": 300,
+   "eval_seed": 0,
+   "batch_size": 8,
+   "load_4bit": null,
+   "out": null
+  },
+  "seed": 0,
+  "device": "cuda",
+  "date": "2026-10-18T06:32:30",
+  "host": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "python": "3.13.15",
+  "numpy": "2.1.3",
+  "torch": "2.11.0+cu128",
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "templates": {
+   "clean+edu:false_consensus": [
+    "biasmedqa_instruction_v1",
+    "education:false_consensus"
+   ],
+   "clean+edu:frequency": [
+    "biasmedqa_instruction_v1",
+    "education:frequency"
+   ],
+   "clean+edu:recency": [
+    "biasmedqa_instruction_v1",
+    "education:recency"
+   ],
+   "false_consensus+helpful+edu": [
+    "biasmedqa_instruction_v1",
+    "education:false_consensus"
+   ],
+   "frequency+helpful+edu": [
+    "biasmedqa_instruction_v1",
+    "education:frequency"
+   ],
+   "recency+helpful+edu": [
+    "biasmedqa_instruction_v1",
+    "education:recency"
+   ]
+  },
+  "split_eval": "dev",
+  "split_train": "train",
+  "runtime_s": 871.3
+ }
+}

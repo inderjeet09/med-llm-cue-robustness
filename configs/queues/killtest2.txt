@@ -1,0 +1,7 @@
+# Kill test A stage 2 (pre-registered in docs/preregistration.md): DECISIVE arm (all7) for both models + the
+# education prompt's side costs (base_extra). Secondary arms (heldout4, sft_clean) run in killtest2b only if all7 passes.
+# Model revisions pinned to the stage-1 hub commits. Longest jobs first so both GPUs stay busy.
+results/pilot/killA2/Qwen__Qwen2.5-7B-Instruct/all7_s0/summary.json python scripts/kill_test_a2.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm all7
+results/pilot/killA2/meta-llama__Llama-3.1-8B-Instruct/all7_s0/summary.json python scripts/kill_test_a2.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm all7
+results/pilot/killA2/Qwen__Qwen2.5-7B-Instruct/base_extra/summary.json python scripts/kill_test_a2.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --mode base_extra
+results/pilot/killA2/meta-llama__Llama-3.1-8B-Instruct/base_extra/summary.json python scripts/kill_test_a2.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --mode base_extra

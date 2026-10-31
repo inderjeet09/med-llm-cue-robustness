@@ -1,0 +1,5 @@
+# Phase 5 batch P5-4 part 2c: Med42-8B BCT seeds 0-2 on TEST (recommended after D023). Frozen settings (D020).
+# 3 jobs ~2.8 h each on 2 GPUs -> ~5.7 h wall. Runs in parallel with p5_4b (other account).
+results/main/m42-health__Llama3-Med42-8B/bct_s0_test/summary.json python scripts/run_main.py --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --arm bct --seed 0 --split test
+results/main/m42-health__Llama3-Med42-8B/bct_s1_test/summary.json python scripts/run_main.py --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --arm bct --seed 1 --split test
+results/main/m42-health__Llama3-Med42-8B/bct_s2_test/summary.json python scripts/run_main.py --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --arm bct --seed 2 --split test

@@ -1,0 +1,164 @@
+{
+ "note": "EXPLORATORY (not pre-registered): CIFT vs BCT, two-level bootstrap seeds x questions, test split",
+ "results": {
+  "Qwen__Qwen2.5-7B-Instruct": {
+   "clean": {
+    "diff_pp": 3.822990311599894,
+    "ci95_pp": [
+     1.832940560356111,
+     5.865409793139564
+    ]
+   },
+   "train_cues": {
+    "diff_pp": 1.855384730482923,
+    "ci95_pp": [
+     -0.10492649534283054,
+     3.842067856207682
+    ]
+   },
+   "heldout_cues": {
+    "diff_pp": 0.9001047394606054,
+    "ci95_pp": [
+     -1.4308392249279835,
+     3.119599371563239
+    ]
+   },
+   "helpful": {
+    "diff_pp": 10.703063629222298,
+    "ci95_pp": [
+     6.271111547525517,
+     15.040013747054212
+    ]
+   },
+   "residual_drop_heldout": {
+    "diff_pp": 2.9228855721393034,
+    "ci95_pp": [
+     0.9620483110761981,
+     4.8156421838177526
+    ]
+   },
+   "transfer_misleading_context": {
+    "diff_pp": 7.396825396825396,
+    "ci95_pp": [
+     3.5222222222222217,
+     11.112698412698412
+    ]
+   }
+  },
+  "meta-llama__Llama-3.1-8B-Instruct": {
+   "clean": {
+    "diff_pp": 4.26813301911495,
+    "ci95_pp": [
+     2.0928253469494615,
+     6.31055250065462
+    ]
+   },
+   "train_cues": {
+    "diff_pp": 2.113492686941232,
+    "ci95_pp": [
+     -0.04881607002581749,
+     4.321531440541659
+    ]
+   },
+   "heldout_cues": {
+    "diff_pp": 1.008117308195866,
+    "ci95_pp": [
+     -1.4584151610369283,
+     3.3946222833202304
+    ]
+   },
+   "helpful": {
+    "diff_pp": 8.722833202409008,
+    "ci95_pp": [
+     6.10721065724011,
+     11.282485598324174
+    ]
+   },
+   "residual_drop_heldout": {
+    "diff_pp": 3.260015710919088,
+    "ci95_pp": [
+     1.2757757266300078,
+     5.397437156323645
+    ]
+   },
+   "transfer_misleading_context": {
+    "diff_pp": 4.984126984126985,
+    "ci95_pp": [
+     1.84047619047619,
+     8.16111111111111
+    ]
+   }
+  },
+  "m42-health__Llama3-Med42-8B": {
+   "clean": {
+    "diff_pp": 1.7282010997643371,
+    "ci95_pp": [
+     -0.6546216286986042,
+     4.164048180151874
+    ]
+   },
+   "train_cues": {
+    "diff_pp": 0.8304342946919507,
+    "ci95_pp": [
+     -1.3583398795496218,
+     3.015935360790027
+    ]
+   },
+   "heldout_cues": {
+    "diff_pp": 0.7560879811469023,
+    "ci95_pp": [
+     -1.4630793401413937,
+     3.060847080387531
+    ]
+   },
+   "helpful": {
+    "diff_pp": 6.549489395129616,
+    "ci95_pp": [
+     4.405276250327309,
+     8.749018067556946
+    ]
+   },
+   "residual_drop_heldout": {
+    "diff_pp": 0.9721131186174393,
+    "ci95_pp": [
+     -0.44874312647289843,
+     2.4716057868551964
+    ]
+   },
+   "transfer_misleading_context": {
+    "diff_pp": 6.412698412698415,
+    "ci95_pp": [
+     3.3325396825396822,
+     9.714285714285714
+    ]
+   }
+  }
+ },
+ "provenance": {
+  "git_commit": "unknown",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "unknown"
+  ],
+  "git_code_dirty": true,
+  "script": "scripts/analyze_exploratory.py",
+  "command": "python3 scripts/analyze_exploratory.py",
+  "args": {
+   "root": "/private/tmp/claude-501/-Users-inderjeet09-Desktop-Research-MedLLM-Cue-Robustness-public-release/18182090-ed3f-4c41-8ca1-297c34d75f47/scratchpad/check3/results/main"
+  },
+  "seed": null,
+  "device": null,
+  "date": "2026-10-31T08:27:14",
+  "host": "macOS-26.3-arm64-arm-64bit",
+  "python": "3.11.17",
+  "numpy": "2.4.6",
+  "torch": "2.14.1",
+  "libraries": {
+   "transformers": "5.20.1",
+   "peft": "0.21.2",
+   "accelerate": "1.15.0",
+   "bitsandbytes": null,
+   "datasets": "5.1.0"
+  }
+ }
+}

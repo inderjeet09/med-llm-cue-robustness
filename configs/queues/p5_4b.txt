@@ -1,0 +1,8 @@
+# Phase 5 batch P5-4 part 2b: Med42-8B trained arms on TEST: CIFT seeds 0-2 + SFT-clean seeds 0-2. Frozen settings (D020).
+# 6 jobs; CIFT ~3.3 h, SFT ~2.6 h; interleaved so each GPU gets 3 jobs -> ~9 h wall.
+results/main/m42-health__Llama3-Med42-8B/cift_s0_test/summary.json python scripts/run_main.py --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --arm cift --seed 0 --split test
+results/main/m42-health__Llama3-Med42-8B/sft_clean_s0_test/summary.json python scripts/run_main.py --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --arm sft_clean --seed 0 --split test
+results/main/m42-health__Llama3-Med42-8B/cift_s1_test/summary.json python scripts/run_main.py --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --arm cift --seed 1 --split test
+results/main/m42-health__Llama3-Med42-8B/sft_clean_s1_test/summary.json python scripts/run_main.py --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --arm sft_clean --seed 1 --split test
+results/main/m42-health__Llama3-Med42-8B/cift_s2_test/summary.json python scripts/run_main.py --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --arm cift --seed 2 --split test
+results/main/m42-health__Llama3-Med42-8B/sft_clean_s2_test/summary.json python scripts/run_main.py --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --arm sft_clean --seed 2 --split test

@@ -1,0 +1,245 @@
+{
+ "n": 600,
+ "accuracy_strict": {
+  "nobias": 63.5,
+  "self_diagnosis": 54.833333333333336,
+  "recency": 47.333333333333336,
+  "confirmation": 58.166666666666664,
+  "frequency": 43.833333333333336,
+  "cultural": 52.666666666666664,
+  "status_quo": 49.333333333333336,
+  "false_consensus": 49.666666666666664,
+  "self_diagnosis+edu": 56.166666666666664,
+  "recency+edu": 51.16666666666667,
+  "confirmation+edu": 59.833333333333336,
+  "frequency+edu": 52.166666666666664,
+  "cultural+edu": 47.66666666666667,
+  "status_quo+edu": 55.166666666666664,
+  "false_consensus+edu": 52.166666666666664
+ },
+ "accuracy_excl_nonresponse": {
+  "nobias": 63.5,
+  "self_diagnosis": 54.833333333333336,
+  "recency": 47.333333333333336,
+  "confirmation": 58.166666666666664,
+  "frequency": 43.833333333333336,
+  "cultural": 52.666666666666664,
+  "status_quo": 49.333333333333336,
+  "false_consensus": 49.666666666666664,
+  "self_diagnosis+edu": 56.166666666666664,
+  "recency+edu": 51.16666666666667,
+  "confirmation+edu": 59.833333333333336,
+  "frequency+edu": 52.166666666666664,
+  "cultural+edu": 47.66666666666667,
+  "status_quo+edu": 55.166666666666664,
+  "false_consensus+edu": 52.166666666666664
+ },
+ "nonresponse_rate": {
+  "nobias": 0.0,
+  "self_diagnosis": 0.0,
+  "recency": 0.0,
+  "confirmation": 0.0,
+  "frequency": 0.0,
+  "cultural": 0.0,
+  "status_quo": 0.0,
+  "false_consensus": 0.0,
+  "self_diagnosis+edu": 0.0,
+  "recency+edu": 0.0,
+  "confirmation+edu": 0.0,
+  "frequency+edu": 0.0,
+  "cultural+edu": 0.0,
+  "status_quo+edu": 0.0,
+  "false_consensus+edu": 0.0
+ },
+ "paper_style_table_excl_nonresponse": {
+  "none": {
+   "nobias": 63.5,
+   "self_diagnosis": 54.833333333333336,
+   "recency": 47.333333333333336,
+   "confirmation": 58.166666666666664,
+   "frequency": 43.833333333333336,
+   "cultural": 52.666666666666664,
+   "status_quo": 49.333333333333336,
+   "false_consensus": 49.666666666666664,
+   "avg": 50.833333333333336
+  },
+  "edu": {
+   "nobias": 63.5,
+   "self_diagnosis": 56.166666666666664,
+   "recency": 51.16666666666667,
+   "confirmation": 59.833333333333336,
+   "frequency": 52.166666666666664,
+   "cultural": 47.66666666666667,
+   "status_quo": 55.166666666666664,
+   "false_consensus": 52.166666666666664,
+   "avg": 53.47619047619048
+  }
+ },
+ "drops_vs_nobias_strict": {
+  "self_diagnosis": {
+   "drop_pp": 8.666666666666668,
+   "ci95_pp": [
+    5.333333333333334,
+    12.0
+   ],
+   "mcnemar_p": 1.481143728223155e-06,
+   "paper_ztest_p": 0.0022582415169688902
+  },
+  "recency": {
+   "drop_pp": 16.166666666666664,
+   "ci95_pp": [
+    12.5,
+    19.833333333333332
+   ],
+   "mcnemar_p": 1.3966293565787205e-17,
+   "paper_ztest_p": 1.766370942026359e-08
+  },
+  "confirmation": {
+   "drop_pp": 5.333333333333334,
+   "ci95_pp": [
+    1.9958333333333336,
+    8.666666666666668
+   ],
+   "mcnemar_p": 0.0019928055857140587,
+   "paper_ztest_p": 0.0584276685894573
+  },
+  "frequency": {
+   "drop_pp": 19.666666666666664,
+   "ci95_pp": [
+    16.166666666666664,
+    23.166666666666664
+   ],
+   "mcnemar_p": 3.0170654412331762e-25,
+   "paper_ztest_p": 8.425064641166606e-12
+  },
+  "cultural": {
+   "drop_pp": 10.833333333333334,
+   "ci95_pp": [
+    7.333333333333333,
+    14.499999999999998
+   ],
+   "mcnemar_p": 5.683941372411479e-10,
+   "paper_ztest_p": 0.0001430692832308425
+  },
+  "status_quo": {
+   "drop_pp": 14.166666666666666,
+   "ci95_pp": [
+    10.333333333333334,
+    18.0
+   ],
+   "mcnemar_p": 1.0497375514568332e-13,
+   "paper_ztest_p": 7.482789159845286e-07
+  },
+  "false_consensus": {
+   "drop_pp": 13.833333333333334,
+   "ci95_pp": [
+    10.333333333333334,
+    17.333333333333336
+   ],
+   "mcnemar_p": 6.260285489771429e-14,
+   "paper_ztest_p": 1.3375430963229573e-06
+  }
+ },
+ "avg_drop_pp_excl": 12.666666666666664,
+ "mitigation_gain_pp_excl": {
+  "edu": 2.642857142857146
+ },
+ "meta": {
+  "backend": "hf",
+  "model_revision": "ceab7e7ee4b9dbde7ba82867f34274db51487d83",
+  "device": "cuda",
+  "nobias_letter_mass": 0.9996710639198622
+ },
+ "provenance": {
+  "git_commit": "3f06ae1",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "unknown"
+  ],
+  "git_code_dirty": true,
+  "script": "scripts/reproduce_biasmedqa.py",
+  "command": "python3 scripts/reproduce_biasmedqa.py --backend hf --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --n 600 --skip oneshot fewshot",
+  "args": {
+   "backend": "hf",
+   "model": "m42-health/Llama3-Med42-8B",
+   "revision": "ceab7e7ee4b9dbde7ba82867f34274db51487d83",
+   "split": "dev",
+   "n": 600,
+   "seed": 0,
+   "skip": [
+    "oneshot",
+    "fewshot"
+   ],
+   "batch_size": 16,
+   "workers": 8,
+   "max_tokens": 5,
+   "run_cap": null,
+   "min_letter_mass": 0.5,
+   "tag": null
+  },
+  "seed": 0,
+  "device": null,
+  "date": "2026-10-18T15:27:43",
+  "host": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "python": "3.13.15",
+  "numpy": "2.1.3",
+  "torch": "2.11.0+cu128",
+  "templates": {
+   "nobias": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "self_diagnosis": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "recency": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "confirmation": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "frequency": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "cultural": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "status_quo": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "false_consensus": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "self_diagnosis+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:self_diagnosis"
+   ],
+   "recency+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:recency"
+   ],
+   "confirmation+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:confirmation"
+   ],
+   "frequency+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:frequency"
+   ],
+   "cultural+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:cultural"
+   ],
+   "status_quo+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:status_quo"
+   ],
+   "false_consensus+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:false_consensus"
+   ]
+  },
+  "split": "dev",
+  "options": 5,
+  "runtime_s": 3113.8
+ }
+}

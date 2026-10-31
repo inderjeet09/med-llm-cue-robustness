@@ -1,0 +1,1 @@
+Answer the following medical multiple-choice question. Think through the problem step by step, then give your final answer on the last line in the form "Answer: <letter>".

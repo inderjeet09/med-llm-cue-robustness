@@ -1,0 +1,6 @@
+# Phase 3: faithful BiasMedQA reproduction (5-option MedQA DEV, 600-question subset, seed 0; D017).
+# Qwen and Llama: no mitigation + education + few-shot (one-shot skipped on GPU to save quota; run on the API model).
+# Med42 (third-model candidate): no mitigation + education; the script stops early if letter scoring is invalid.
+results/reproduction/Qwen__Qwen2.5-7B-Instruct_n600_s0/summary.json python scripts/reproduce_biasmedqa.py --backend hf --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --n 600 --skip oneshot
+results/reproduction/meta-llama__Llama-3.1-8B-Instruct_n600_s0/summary.json python scripts/reproduce_biasmedqa.py --backend hf --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --n 600 --skip oneshot
+results/reproduction/m42-health__Llama3-Med42-8B_n600_s0/summary.json python scripts/reproduce_biasmedqa.py --backend hf --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --n 600 --skip oneshot fewshot

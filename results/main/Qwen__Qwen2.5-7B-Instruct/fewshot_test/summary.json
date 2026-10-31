@@ -1,0 +1,90 @@
+{
+ "model": "Qwen/Qwen2.5-7B-Instruct",
+ "arm": "fewshot",
+ "seed": 0,
+ "split": "test",
+ "n": 1273,
+ "accuracy": {
+  "clean": 56.95208169677927,
+  "self_diagnosis": 58.287509819324434,
+  "recency": 50.43205027494109,
+  "confirmation": 53.102906520031425,
+  "frequency": 54.59544383346425,
+  "cultural": 41.3197172034564,
+  "status_quo": 51.13904163393559,
+  "false_consensus": 58.05184603299293,
+  "authority_senior": 21.99528672427337,
+  "authority_expert": 21.052631578947366,
+  "referral_note": 29.53652788688138,
+  "prelim_report": 38.9630793401414,
+  "cds_tool": 39.9057344854674,
+  "ai_assistant": 53.967007069913585,
+  "convenience_time": 48.54673998428908,
+  "convenience_cost": 51.610369206598584
+ },
+ "mean_letter_mass": {
+  "clean": 0.9998233846483133,
+  "self_diagnosis": 0.9999952726446543,
+  "recency": 0.999993828742034,
+  "confirmation": 0.9999470231763415,
+  "frequency": 0.999995786564985,
+  "cultural": 0.9999997765176988,
+  "status_quo": 0.999997894406225,
+  "false_consensus": 0.999974806198246,
+  "authority_senior": 0.9999991880096232,
+  "authority_expert": 0.9999956543859495,
+  "referral_note": 0.9999938494842631,
+  "prelim_report": 0.9999955765206516,
+  "cds_tool": 0.999996053919676,
+  "ai_assistant": 0.9999094036556283,
+  "convenience_time": 0.9999660725024209,
+  "convenience_cost": 0.9999897697734158
+ },
+ "misleading_acc_train_cues": 52.41835933116373,
+ "misleading_acc_heldout_cues": 38.19717203456402,
+ "train": null,
+ "times": {
+  "load_s": 280.3,
+  "eval_s": 17629.2
+ },
+ "provenance": {
+  "git_commit": "c289a69",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "unknown"
+  ],
+  "git_code_dirty": true,
+  "script": "scripts/run_main.py",
+  "command": "python3 scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm fewshot --split test",
+  "args": {
+   "model": "Qwen/Qwen2.5-7B-Instruct",
+   "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+   "arm": "fewshot",
+   "seed": 0,
+   "split": "test",
+   "n_eval": null,
+   "n_pairs": 2000,
+   "pair_seed": 1,
+   "prefix_eval": 1,
+   "transfer": null,
+   "batch_size": 16,
+   "max_batch_tokens": 8192,
+   "load_4bit": null,
+   "out": null
+  },
+  "seed": 0,
+  "device": "cuda",
+  "date": "2026-10-20T19:15:42",
+  "host": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "python": "3.13.15",
+  "numpy": "2.1.3",
+  "torch": "2.11.0+cu128",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "runtime_s": 17909.9,
+  "inference": {
+   "batch_size": 16,
+   "max_batch_tokens": 8192,
+   "prefix_eval": 1
+  }
+ }
+}

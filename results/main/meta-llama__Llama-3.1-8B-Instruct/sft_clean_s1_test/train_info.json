@@ -1,0 +1,30 @@
+{
+ "objective": "sft_clean",
+ "seed": 1,
+ "steps": 125,
+ "train_minutes": 45.23,
+ "trainable_params": 41943040,
+ "nonfinite_microbatches_skipped": 0,
+ "hyperparameters": {
+  "lr": 0.0002,
+  "epochs": 1.0,
+  "lora_r": 16,
+  "micro_pairs": 4,
+  "accum": 4,
+  "lam": 1.0,
+  "grad_ckpt": 1,
+  "log_every": 5
+ },
+ "arm": "sft_clean",
+ "pair_arm": "sft_clean",
+ "helpful_every": 3,
+ "n_pairs": 2000,
+ "n_helpful_pairs": 0,
+ "first_pair_ids": [
+  "train-00009",
+  "train-00013",
+  "train-00023",
+  "train-00025",
+  "train-00034"
+ ]
+}

@@ -1,0 +1,398 @@
+{
+ "n": 10,
+ "accuracy_strict": {
+  "nobias": 70.0,
+  "self_diagnosis": 70.0,
+  "recency": 70.0,
+  "confirmation": 80.0,
+  "frequency": 70.0,
+  "cultural": 80.0,
+  "status_quo": 90.0,
+  "false_consensus": 90.0,
+  "self_diagnosis+edu": 80.0,
+  "recency+edu": 80.0,
+  "confirmation+edu": 60.0,
+  "frequency+edu": 90.0,
+  "cultural+edu": 70.0,
+  "status_quo+edu": 80.0,
+  "false_consensus+edu": 90.0,
+  "self_diagnosis+oneshot": 90.0,
+  "recency+oneshot": 80.0,
+  "confirmation+oneshot": 90.0,
+  "frequency+oneshot": 80.0,
+  "cultural+oneshot": 90.0,
+  "status_quo+oneshot": 70.0,
+  "false_consensus+oneshot": 90.0,
+  "self_diagnosis+fewshot": 90.0,
+  "recency+fewshot": 80.0,
+  "confirmation+fewshot": 60.0,
+  "frequency+fewshot": 70.0,
+  "cultural+fewshot": 80.0,
+  "status_quo+fewshot": 70.0,
+  "false_consensus+fewshot": 70.0
+ },
+ "accuracy_excl_nonresponse": {
+  "nobias": 70.0,
+  "self_diagnosis": 70.0,
+  "recency": 70.0,
+  "confirmation": 80.0,
+  "frequency": 70.0,
+  "cultural": 80.0,
+  "status_quo": 90.0,
+  "false_consensus": 90.0,
+  "self_diagnosis+edu": 80.0,
+  "recency+edu": 80.0,
+  "confirmation+edu": 60.0,
+  "frequency+edu": 90.0,
+  "cultural+edu": 70.0,
+  "status_quo+edu": 80.0,
+  "false_consensus+edu": 90.0,
+  "self_diagnosis+oneshot": 90.0,
+  "recency+oneshot": 80.0,
+  "confirmation+oneshot": 90.0,
+  "frequency+oneshot": 80.0,
+  "cultural+oneshot": 90.0,
+  "status_quo+oneshot": 70.0,
+  "false_consensus+oneshot": 90.0,
+  "self_diagnosis+fewshot": 90.0,
+  "recency+fewshot": 80.0,
+  "confirmation+fewshot": 60.0,
+  "frequency+fewshot": 70.0,
+  "cultural+fewshot": 80.0,
+  "status_quo+fewshot": 70.0,
+  "false_consensus+fewshot": 70.0
+ },
+ "nonresponse_rate": {
+  "nobias": 0.0,
+  "self_diagnosis": 0.0,
+  "recency": 0.0,
+  "confirmation": 0.0,
+  "frequency": 0.0,
+  "cultural": 0.0,
+  "status_quo": 0.0,
+  "false_consensus": 0.0,
+  "self_diagnosis+edu": 0.0,
+  "recency+edu": 0.0,
+  "confirmation+edu": 0.0,
+  "frequency+edu": 0.0,
+  "cultural+edu": 0.0,
+  "status_quo+edu": 0.0,
+  "false_consensus+edu": 0.0,
+  "self_diagnosis+oneshot": 0.0,
+  "recency+oneshot": 0.0,
+  "confirmation+oneshot": 0.0,
+  "frequency+oneshot": 0.0,
+  "cultural+oneshot": 0.0,
+  "status_quo+oneshot": 0.0,
+  "false_consensus+oneshot": 0.0,
+  "self_diagnosis+fewshot": 0.0,
+  "recency+fewshot": 0.0,
+  "confirmation+fewshot": 0.0,
+  "frequency+fewshot": 0.0,
+  "cultural+fewshot": 0.0,
+  "status_quo+fewshot": 0.0,
+  "false_consensus+fewshot": 0.0
+ },
+ "paper_style_table_excl_nonresponse": {
+  "none": {
+   "nobias": 70.0,
+   "self_diagnosis": 70.0,
+   "recency": 70.0,
+   "confirmation": 80.0,
+   "frequency": 70.0,
+   "cultural": 80.0,
+   "status_quo": 90.0,
+   "false_consensus": 90.0,
+   "avg": 78.57142857142857
+  },
+  "edu": {
+   "nobias": 70.0,
+   "self_diagnosis": 80.0,
+   "recency": 80.0,
+   "confirmation": 60.0,
+   "frequency": 90.0,
+   "cultural": 70.0,
+   "status_quo": 80.0,
+   "false_consensus": 90.0,
+   "avg": 78.57142857142857
+  },
+  "oneshot": {
+   "nobias": 70.0,
+   "self_diagnosis": 90.0,
+   "recency": 80.0,
+   "confirmation": 90.0,
+   "frequency": 80.0,
+   "cultural": 90.0,
+   "status_quo": 70.0,
+   "false_consensus": 90.0,
+   "avg": 84.28571428571429
+  },
+  "fewshot": {
+   "nobias": 70.0,
+   "self_diagnosis": 90.0,
+   "recency": 80.0,
+   "confirmation": 60.0,
+   "frequency": 70.0,
+   "cultural": 80.0,
+   "status_quo": 70.0,
+   "false_consensus": 70.0,
+   "avg": 74.28571428571429
+  }
+ },
+ "drops_vs_nobias_strict": {
+  "self_diagnosis": {
+   "drop_pp": 0.0,
+   "ci95_pp": [
+    -30.0,
+    30.0
+   ],
+   "mcnemar_p": 1.0,
+   "paper_ztest_p": 1.0
+  },
+  "recency": {
+   "drop_pp": 0.0,
+   "ci95_pp": [
+    -30.0,
+    30.0
+   ],
+   "mcnemar_p": 1.0,
+   "paper_ztest_p": 1.0
+  },
+  "confirmation": {
+   "drop_pp": -10.0,
+   "ci95_pp": [
+    -30.0,
+    0.0
+   ],
+   "mcnemar_p": 1.0,
+   "paper_ztest_p": 0.605576616335346
+  },
+  "frequency": {
+   "drop_pp": 0.0,
+   "ci95_pp": [
+    -30.0,
+    30.0
+   ],
+   "mcnemar_p": 1.0,
+   "paper_ztest_p": 1.0
+  },
+  "cultural": {
+   "drop_pp": -10.0,
+   "ci95_pp": [
+    -30.0,
+    0.0
+   ],
+   "mcnemar_p": 1.0,
+   "paper_ztest_p": 0.605576616335346
+  },
+  "status_quo": {
+   "drop_pp": -20.0,
+   "ci95_pp": [
+    -50.0,
+    0.0
+   ],
+   "mcnemar_p": 0.5,
+   "paper_ztest_p": 0.2635524772829726
+  },
+  "false_consensus": {
+   "drop_pp": -20.0,
+   "ci95_pp": [
+    -50.0,
+    0.0
+   ],
+   "mcnemar_p": 0.5,
+   "paper_ztest_p": 0.2635524772829726
+  }
+ },
+ "avg_drop_pp_excl": -8.57142857142857,
+ "mitigation_gain_pp_excl": {
+  "edu": 0.0,
+  "oneshot": 5.714285714285722,
+  "fewshot": -4.285714285714278
+ },
+ "meta": {
+  "backend": "azure",
+  "api_cost_usd_this_run": 0.055,
+  "model_versions": [
+   [
+    "gpt-4.1-mini-2025-04-14",
+    "fp_8957c4f4dd"
+   ],
+   [
+    "gpt-4.1-mini-2025-04-14",
+    "fp_92f9364fa2"
+   ]
+  ]
+ },
+ "provenance": {
+  "git_commit": "e398f3990027e8aa4c0802346699bbb4b9854062",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "prompts/README.md",
+   "results/costs/api_ledger.csv",
+   "scripts/prepare_medqa.py",
+   "src/data/medqa.py",
+   "src/llm/hf_runner.py",
+   "src/llm/prompts.py"
+  ],
+  "git_code_dirty": true,
+  "script": "scripts/reproduce_biasmedqa.py",
+  "command": "python3 scripts/reproduce_biasmedqa.py --backend azure --n 10 --tag pilot_gpt41mini_n10 --run_cap 0.5",
+  "args": {
+   "backend": "azure",
+   "model": null,
+   "revision": null,
+   "split": "dev",
+   "n": 10,
+   "seed": 0,
+   "skip": [],
+   "batch_size": 16,
+   "workers": 8,
+   "max_tokens": 5,
+   "run_cap": 0.5,
+   "min_letter_mass": 0.5,
+   "tag": "pilot_gpt41mini_n10"
+  },
+  "seed": 0,
+  "device": null,
+  "date": "2026-10-18T18:48:12",
+  "host": "macOS-26.3-arm64-arm-64bit",
+  "python": "3.11.17",
+  "numpy": "2.4.6",
+  "torch": "2.14.1",
+  "templates": {
+   "nobias": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "self_diagnosis": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "recency": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "confirmation": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "frequency": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "cultural": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "status_quo": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "false_consensus": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "self_diagnosis+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:self_diagnosis"
+   ],
+   "recency+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:recency"
+   ],
+   "confirmation+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:confirmation"
+   ],
+   "frequency+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:frequency"
+   ],
+   "cultural+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:cultural"
+   ],
+   "status_quo+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:status_quo"
+   ],
+   "false_consensus+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:false_consensus"
+   ],
+   "self_diagnosis+oneshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-07117|self_diagnosis-",
+    "biasmedqa_next_question_v1"
+   ],
+   "recency+oneshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-09360|recency-",
+    "biasmedqa_next_question_v1"
+   ],
+   "confirmation+oneshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-06072|confirmation-",
+    "biasmedqa_next_question_v1"
+   ],
+   "frequency+oneshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-08909|frequency-",
+    "biasmedqa_next_question_v1"
+   ],
+   "cultural+oneshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-02271|cultural-",
+    "biasmedqa_next_question_v1"
+   ],
+   "status_quo+oneshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-04632|status_quo-",
+    "biasmedqa_next_question_v1"
+   ],
+   "false_consensus+oneshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-08974|false_consensus-",
+    "biasmedqa_next_question_v1"
+   ],
+   "self_diagnosis+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-07117|self_diagnosis-",
+    "demo_correct:train-00799|self_diagnosis-",
+    "biasmedqa_next_question_v1"
+   ],
+   "recency+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-09360|recency-",
+    "demo_correct:train-07575|recency-",
+    "biasmedqa_next_question_v1"
+   ],
+   "confirmation+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-06072|confirmation-",
+    "demo_correct:train-09941|confirmation-",
+    "biasmedqa_next_question_v1"
+   ],
+   "frequency+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-08909|frequency-",
+    "demo_correct:train-03942|frequency-",
+    "biasmedqa_next_question_v1"
+   ],
+   "cultural+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-02271|cultural-",
+    "demo_correct:train-03472|cultural-",
+    "biasmedqa_next_question_v1"
+   ],
+   "status_quo+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-04632|status_quo-",
+    "demo_correct:train-00069|status_quo-",
+    "biasmedqa_next_question_v1"
+   ],
+   "false_consensus+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-08974|false_consensus-",
+    "demo_correct:train-05695|false_consensus-",
+    "biasmedqa_next_question_v1"
+   ]
+  },
+  "split": "dev",
+  "options": 5,
+  "runtime_s": 57.6
+ }
+}

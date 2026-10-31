@@ -1,0 +1,16 @@
+model,arm,authority,external anchor,automation,convenience
+Qwen2.5-7B,No mitigation,14.7,24.1,24.7,29.9
+Qwen2.5-7B,Few-shot,21.5,34.2,46.9,50.1
+Qwen2.5-7B,Plain SFT,35.1 ± 4.2,42.0 ± 3.4,42.8 ± 4.5,46.0 ± 1.4
+Qwen2.5-7B,BCT,57.8 ± 1.3,57.4 ± 1.4,57.1 ± 1.1,57.9 ± 1.1
+Qwen2.5-7B,CIFT (ours),58.1 ± 1.4,58.0 ± 1.3,58.6 ± 1.7,59.2 ± 0.7
+Llama-3.1-8B,No mitigation,26.7,36.9,24.0,38.1
+Llama-3.1-8B,Generic warning,55.9,56.2,52.2,58.6
+Llama-3.1-8B,Plain SFT,47.6 ± 3.6,50.1 ± 1.1,42.5 ± 0.5,53.7 ± 0.9
+Llama-3.1-8B,BCT,59.9 ± 1.2,59.6 ± 1.3,58.9 ± 1.3,59.5 ± 0.4
+Llama-3.1-8B,CIFT (ours),60.3 ± 1.7,61.2 ± 1.7,59.8 ± 2.9,60.6 ± 2.0
+Med42-8B,No mitigation,33.1,41.1,38.4,43.8
+Med42-8B,Oracle warning,44.0,50.4,54.6,60.4
+Med42-8B,Plain SFT,53.6 ± 1.6,55.0 ± 0.9,53.2 ± 1.0,56.7 ± 1.0
+Med42-8B,BCT,56.7 ± 1.5,57.3 ± 1.5,55.7 ± 2.3,57.8 ± 0.5
+Med42-8B,CIFT (ours),58.0 ± 0.9,58.1 ± 0.9,56.7 ± 1.0,57.8 ± 0.8

@@ -1,0 +1,120 @@
+{
+ "accuracy": {
+  "clean": 64.66666666666666,
+  "false_consensus": 61.33333333333333,
+  "frequency": 60.66666666666667,
+  "recency": 61.33333333333333,
+  "false_consensus+helpful": 72.33333333333334,
+  "frequency+helpful": 72.0,
+  "recency+helpful": 66.0
+ },
+ "mean_letter_mass": {
+  "clean": 0.9998331481218338,
+  "false_consensus": 0.9998349128166835,
+  "frequency": 0.9998289895057678,
+  "recency": 0.9998202987511953,
+  "false_consensus+helpful": 0.9998385924100875,
+  "frequency+helpful": 0.9998401113351186,
+  "recency+helpful": 0.9998267336686453
+ },
+ "cue_follow_rate": {
+  "false_consensus": 19.0,
+  "frequency": 20.0,
+  "recency": 16.0,
+  "false_consensus+helpful": 72.33333333333334,
+  "frequency+helpful": 72.0,
+  "recency+helpful": 66.0
+ },
+ "n": 300,
+ "train": {
+  "steps": 125,
+  "train_minutes": 87.05,
+  "trainable_params": 40370176,
+  "nonfinite_microbatches_skipped": 0,
+  "n_pairs": 2000,
+  "n_helpful_pairs": 736,
+  "templates": [
+   "self_diagnosis",
+   "recency",
+   "confirmation",
+   "frequency",
+   "cultural",
+   "status_quo",
+   "false_consensus"
+  ],
+  "first_pair_ids": [
+   "train-00009",
+   "train-00013",
+   "train-00023",
+   "train-00025",
+   "train-00034"
+  ]
+ },
+ "provenance": {
+  "git_commit": "a460ff4",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "unknown"
+  ],
+  "git_code_dirty": true,
+  "script": "scripts/kill_test_a2.py",
+  "command": "python3 scripts/kill_test_a2.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm all7",
+  "args": {
+   "model": "Qwen/Qwen2.5-7B-Instruct",
+   "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+   "mode": "train",
+   "arm": "all7",
+   "n_pairs": 2000,
+   "pair_seed": 1,
+   "train_seed": 0,
+   "epochs": 1.0,
+   "lr": 0.0002,
+   "lam": 1.0,
+   "lora_r": 16,
+   "micro_pairs": 4,
+   "accum": 4,
+   "grad_ckpt": 1,
+   "log_every": 5,
+   "n_eval": 300,
+   "eval_seed": 0,
+   "batch_size": 8,
+   "load_4bit": null,
+   "out": null
+  },
+  "seed": 0,
+  "device": "cuda",
+  "date": "2026-10-18T06:13:52",
+  "host": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "python": "3.13.15",
+  "numpy": "2.1.3",
+  "torch": "2.11.0+cu128",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "templates": {
+   "clean": [
+    "biasmedqa_instruction_v1"
+   ],
+   "false_consensus": [
+    "biasmedqa_instruction_v1"
+   ],
+   "frequency": [
+    "biasmedqa_instruction_v1"
+   ],
+   "recency": [
+    "biasmedqa_instruction_v1"
+   ],
+   "false_consensus+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "frequency+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "recency+helpful": [
+    "biasmedqa_instruction_v1"
+   ]
+  },
+  "split_eval": "dev",
+  "split_train": "train",
+  "runtime_s": 6533.7
+ }
+}

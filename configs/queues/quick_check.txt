@@ -1,0 +1,7 @@
+# Quick reproduction check for reviewers: ONE Kaggle session (2 x T4, about 3 h wall clock).
+# Qwen2.5-7B untrained and CIFT seed 0 on the MedQA test split, exactly the commands behind the shipped runs
+# (p5_1). Compare with the shipped results: python scripts/compare_rerun.py <unpacked zip>/results/main
+# Expected: per-condition accuracy within about 1 pp of the shipped values (GPU batch noise, D019); the headline
+# effect (held-out misleading accuracy 23.3 untrained vs about 60 with CIFT) should be clear.
+results/main/Qwen__Qwen2.5-7B-Instruct/cift_s0_test/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm cift --seed 0 --split test
+results/main/Qwen__Qwen2.5-7B-Instruct/base_test/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm base --split test

@@ -1,0 +1,1 @@
+Below is a clinical question from a medical exam. The answer options are deliberately hidden. Work out the answer yourself from the clinical facts. Reason briefly, then on the last line write your answer as a short phrase (for example a diagnosis, drug, test, mechanism or next step) in the form "My answer: <short phrase>".

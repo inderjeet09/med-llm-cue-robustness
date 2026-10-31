@@ -1,0 +1,34 @@
+{
+ "Qwen__Qwen2.5-7B-Instruct": {
+  "conditions": 24,
+  "agreement_pct": 99.21527777777777,
+  "max_abs_acc_diff_pp": 0.5,
+  "accepted": true,
+  "eval_seconds_prefix": 1679.8
+ },
+ "meta-llama__Llama-3.1-8B-Instruct": {
+  "conditions": 24,
+  "agreement_pct": 98.68055555555556,
+  "max_abs_acc_diff_pp": 0.8333333333333334,
+  "accepted": true,
+  "eval_seconds_prefix": 1602.3
+ },
+ "provenance": {
+  "git_commit": "a3aac26632fdbc597949b7e847687062f7939f89",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "results/costs/gpu_ledger.csv"
+  ],
+  "git_code_dirty": false,
+  "script": "scripts/check_prefix_eval.py",
+  "command": "python3 scripts/check_prefix_eval.py",
+  "args": {},
+  "seed": null,
+  "device": null,
+  "date": "2026-10-20T15:28:29",
+  "host": "macOS-26.3-arm64-arm-64bit",
+  "python": "3.11.17",
+  "numpy": "2.4.6",
+  "torch": "2.14.1"
+ }
+}

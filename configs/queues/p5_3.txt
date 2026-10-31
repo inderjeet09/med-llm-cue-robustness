@@ -1,0 +1,8 @@
+# Phase 5 batch P5-3 (docs/preregistration.md B4): BCT (Chua et al. 2024) seeds 0-2, Qwen + Llama, TEST. Frozen settings (D020).
+# 6 jobs, ~2.6 h each, 3 per GPU -> ~8 h wall.
+results/main/meta-llama__Llama-3.1-8B-Instruct/bct_s0_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm bct --seed 0 --split test
+results/main/Qwen__Qwen2.5-7B-Instruct/bct_s0_test/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm bct --seed 0 --split test
+results/main/meta-llama__Llama-3.1-8B-Instruct/bct_s1_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm bct --seed 1 --split test
+results/main/Qwen__Qwen2.5-7B-Instruct/bct_s1_test/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm bct --seed 1 --split test
+results/main/meta-llama__Llama-3.1-8B-Instruct/bct_s2_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm bct --seed 2 --split test
+results/main/Qwen__Qwen2.5-7B-Instruct/bct_s2_test/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm bct --seed 2 --split test

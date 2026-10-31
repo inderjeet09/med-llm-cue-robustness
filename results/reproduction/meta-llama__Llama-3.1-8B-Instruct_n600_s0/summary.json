@@ -1,0 +1,374 @@
+{
+ "n": 600,
+ "accuracy_strict": {
+  "false_consensus+fewshot": 51.16666666666667,
+  "confirmation": 47.5,
+  "nobias": 58.166666666666664,
+  "cultural": 43.666666666666664,
+  "false_consensus+edu": 45.666666666666664,
+  "self_diagnosis+edu": 48.833333333333336,
+  "confirmation+edu": 55.00000000000001,
+  "confirmation+fewshot": 48.16666666666667,
+  "recency+edu": 45.666666666666664,
+  "cultural+edu": 42.333333333333336,
+  "cultural+fewshot": 45.5,
+  "self_diagnosis": 36.0,
+  "self_diagnosis+fewshot": 43.5,
+  "false_consensus": 23.166666666666664,
+  "frequency": 24.166666666666668,
+  "recency+fewshot": 34.5,
+  "frequency+fewshot": 27.166666666666668,
+  "status_quo+fewshot": 42.5,
+  "recency": 32.33333333333333,
+  "status_quo+edu": 53.166666666666664,
+  "frequency+edu": 38.666666666666664,
+  "status_quo": 31.333333333333336
+ },
+ "accuracy_excl_nonresponse": {
+  "false_consensus+fewshot": 51.16666666666667,
+  "confirmation": 47.5,
+  "nobias": 58.166666666666664,
+  "cultural": 43.666666666666664,
+  "false_consensus+edu": 45.666666666666664,
+  "self_diagnosis+edu": 48.833333333333336,
+  "confirmation+edu": 55.00000000000001,
+  "confirmation+fewshot": 48.16666666666667,
+  "recency+edu": 45.666666666666664,
+  "cultural+edu": 42.333333333333336,
+  "cultural+fewshot": 45.5,
+  "self_diagnosis": 36.0,
+  "self_diagnosis+fewshot": 43.5,
+  "false_consensus": 23.166666666666664,
+  "frequency": 24.166666666666668,
+  "recency+fewshot": 34.5,
+  "frequency+fewshot": 27.166666666666668,
+  "status_quo+fewshot": 42.5,
+  "recency": 32.33333333333333,
+  "status_quo+edu": 53.166666666666664,
+  "frequency+edu": 38.666666666666664,
+  "status_quo": 31.333333333333336
+ },
+ "nonresponse_rate": {
+  "false_consensus+fewshot": 0.0,
+  "confirmation": 0.0,
+  "nobias": 0.0,
+  "cultural": 0.0,
+  "false_consensus+edu": 0.0,
+  "self_diagnosis+edu": 0.0,
+  "confirmation+edu": 0.0,
+  "confirmation+fewshot": 0.0,
+  "recency+edu": 0.0,
+  "cultural+edu": 0.0,
+  "cultural+fewshot": 0.0,
+  "self_diagnosis": 0.0,
+  "self_diagnosis+fewshot": 0.0,
+  "false_consensus": 0.0,
+  "frequency": 0.0,
+  "recency+fewshot": 0.0,
+  "frequency+fewshot": 0.0,
+  "status_quo+fewshot": 0.0,
+  "recency": 0.0,
+  "status_quo+edu": 0.0,
+  "frequency+edu": 0.0,
+  "status_quo": 0.0
+ },
+ "paper_style_table_excl_nonresponse": {
+  "none": {
+   "nobias": 58.166666666666664,
+   "self_diagnosis": 36.0,
+   "recency": 32.33333333333333,
+   "confirmation": 47.5,
+   "frequency": 24.166666666666668,
+   "cultural": 43.666666666666664,
+   "status_quo": 31.333333333333336,
+   "false_consensus": 23.166666666666664,
+   "avg": 34.023809523809526
+  },
+  "edu": {
+   "nobias": 58.166666666666664,
+   "self_diagnosis": 48.833333333333336,
+   "recency": 45.666666666666664,
+   "confirmation": 55.00000000000001,
+   "frequency": 38.666666666666664,
+   "cultural": 42.333333333333336,
+   "status_quo": 53.166666666666664,
+   "false_consensus": 45.666666666666664,
+   "avg": 47.04761904761905
+  },
+  "fewshot": {
+   "nobias": 58.166666666666664,
+   "self_diagnosis": 43.5,
+   "recency": 34.5,
+   "confirmation": 48.16666666666667,
+   "frequency": 27.166666666666668,
+   "cultural": 45.5,
+   "status_quo": 42.5,
+   "false_consensus": 51.16666666666667,
+   "avg": 41.785714285714285
+  }
+ },
+ "drops_vs_nobias_strict": {
+  "self_diagnosis": {
+   "drop_pp": 22.166666666666668,
+   "ci95_pp": [
+    18.166666666666668,
+    26.337499999999974
+   ],
+   "mcnemar_p": 1.7646469777664257e-25,
+   "paper_ztest_p": 1.4501513373118044e-14
+  },
+  "recency": {
+   "drop_pp": 25.833333333333336,
+   "ci95_pp": [
+    22.0,
+    29.833333333333336
+   ],
+   "mcnemar_p": 4.353572179330797e-36,
+   "paper_ztest_p": 2.481620368897877e-19
+  },
+  "confirmation": {
+   "drop_pp": 10.666666666666668,
+   "ci95_pp": [
+    7.333333333333333,
+    13.833333333333334
+   ],
+   "mcnemar_p": 8.988322916747511e-10,
+   "paper_ztest_p": 0.00021476108883228476
+  },
+  "frequency": {
+   "drop_pp": 34.0,
+   "ci95_pp": [
+    30.0,
+    38.333333333333336
+   ],
+   "mcnemar_p": 3.002641054664875e-50,
+   "paper_ztest_p": 5.3442570191591395e-33
+  },
+  "cultural": {
+   "drop_pp": 14.499999999999998,
+   "ci95_pp": [
+    11.0,
+    18.166666666666668
+   ],
+   "mcnemar_p": 2.667293660294377e-15,
+   "paper_ztest_p": 5.066118565451259e-07
+  },
+  "status_quo": {
+   "drop_pp": 26.833333333333332,
+   "ci95_pp": [
+    22.833333333333332,
+    31.0
+   ],
+   "mcnemar_p": 4.9712594213861025e-36,
+   "paper_ztest_p": 9.016254167583029e-21
+  },
+  "false_consensus": {
+   "drop_pp": 35.0,
+   "ci95_pp": [
+    31.0,
+    39.17083333333331
+   ],
+   "mcnemar_p": 6.290652532360368e-52,
+   "paper_ztest_p": 5.428967722336972e-35
+  }
+ },
+ "avg_drop_pp_excl": 24.14285714285714,
+ "mitigation_gain_pp_excl": {
+  "edu": 13.023809523809526,
+  "fewshot": 7.761904761904759
+ },
+ "meta": {
+  "backend": "hf",
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "device": "cuda",
+  "nobias_letter_mass": 0.9998882648348808,
+  "merged": {
+   "main_dir": "results/reproduction/meta-llama__Llama-3.1-8B-Instruct_n600_s0",
+   "extra_dir": "results/reproduction/meta-llama__Llama-3.1-8B-Instruct_n600_s0_fewshot",
+   "conditions_from_extra": [
+    "confirmation+fewshot",
+    "cultural+fewshot",
+    "false_consensus+fewshot",
+    "frequency+fewshot",
+    "recency+fewshot",
+    "self_diagnosis+fewshot",
+    "status_quo+fewshot"
+   ],
+   "overlap_agreement": {
+    "confirmation": {
+     "n": 600,
+     "same_pred": 592,
+     "max_prob_diff": 0.06106346845626831
+    },
+    "cultural": {
+     "n": 600,
+     "same_pred": 584,
+     "max_prob_diff": 0.09280914068222046
+    },
+    "false_consensus": {
+     "n": 600,
+     "same_pred": 588,
+     "max_prob_diff": 0.09542235732078552
+    },
+    "frequency": {
+     "n": 600,
+     "same_pred": 593,
+     "max_prob_diff": 0.08840399980545044
+    },
+    "nobias": {
+     "n": 600,
+     "same_pred": 594,
+     "max_prob_diff": 0.09239816665649414
+    },
+    "recency": {
+     "n": 600,
+     "same_pred": 584,
+     "max_prob_diff": 0.07628720998764038
+    },
+    "self_diagnosis": {
+     "n": 600,
+     "same_pred": 586,
+     "max_prob_diff": 0.10908287763595581
+    },
+    "status_quo": {
+     "n": 600,
+     "same_pred": 589,
+     "max_prob_diff": 0.08510452508926392
+    }
+   }
+  }
+ },
+ "provenance": {
+  "git_commit": "1bcd37ef859962d35788f90ace4b2ca69f15db1f",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "results/costs/gpu_ledger.csv",
+   "results/reproduction/Qwen__Qwen2.5-7B-Instruct_n600_s0/records.jsonl",
+   "results/reproduction/meta-llama__Llama-3.1-8B-Instruct_n600_s0/records.jsonl"
+  ],
+  "git_code_dirty": false,
+  "script": "scripts/merge_repro_runs.py",
+  "command": "python3 scripts/merge_repro_runs.py results/reproduction/meta-llama__Llama-3.1-8B-Instruct_n600_s0 results/reproduction/meta-llama__Llama-3.1-8B-Instruct_n600_s0_fewshot --take_from_extra fewshot",
+  "args": {
+   "main_dir": "results/reproduction/meta-llama__Llama-3.1-8B-Instruct_n600_s0",
+   "extra_dir": "results/reproduction/meta-llama__Llama-3.1-8B-Instruct_n600_s0_fewshot",
+   "take_from_extra": [
+    "fewshot"
+   ]
+  },
+  "seed": null,
+  "device": null,
+  "date": "2026-10-19T17:26:42",
+  "host": "macOS-26.3-arm64-arm-64bit",
+  "python": "3.11.17",
+  "numpy": "2.4.6",
+  "torch": "2.14.1",
+  "extra_run_provenance": {
+   "git_commit": "76fe3ca",
+   "git_dirty": true,
+   "git_dirty_files": [
+    "unknown"
+   ],
+   "git_code_dirty": true,
+   "script": "scripts/reproduce_biasmedqa.py",
+   "command": "python3 scripts/reproduce_biasmedqa.py --backend hf --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --n 600 --skip edu oneshot --tag meta-llama__Llama-3.1-8B-Instruct_n600_s0_fewshot",
+   "args": {
+    "backend": "hf",
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "split": "dev",
+    "n": 600,
+    "seed": 0,
+    "skip": [
+     "edu",
+     "oneshot"
+    ],
+    "batch_size": 16,
+    "max_batch_tokens": 8192,
+    "workers": 8,
+    "max_tokens": 5,
+    "run_cap": null,
+    "min_letter_mass": 0.5,
+    "tag": "meta-llama__Llama-3.1-8B-Instruct_n600_s0_fewshot"
+   },
+   "seed": 0,
+   "device": null,
+   "date": "2026-10-18T20:56:33",
+   "host": "Linux-6.18.48+-x86_64-with-glibc2.39",
+   "python": "3.13.15",
+   "numpy": "2.1.3",
+   "torch": "2.11.0+cu128",
+   "templates": {
+    "nobias": [
+     "biasmedqa_faithful_instruction_v1"
+    ],
+    "self_diagnosis": [
+     "biasmedqa_faithful_instruction_v1"
+    ],
+    "recency": [
+     "biasmedqa_faithful_instruction_v1"
+    ],
+    "confirmation": [
+     "biasmedqa_faithful_instruction_v1"
+    ],
+    "frequency": [
+     "biasmedqa_faithful_instruction_v1"
+    ],
+    "cultural": [
+     "biasmedqa_faithful_instruction_v1"
+    ],
+    "status_quo": [
+     "biasmedqa_faithful_instruction_v1"
+    ],
+    "false_consensus": [
+     "biasmedqa_faithful_instruction_v1"
+    ],
+    "self_diagnosis+fewshot": [
+     "biasmedqa_faithful_instruction_v1",
+     "demo_incorrect:train-07117|self_diagnosis-",
+     "demo_correct:train-00799|self_diagnosis-",
+     "biasmedqa_next_question_v1"
+    ],
+    "recency+fewshot": [
+     "biasmedqa_faithful_instruction_v1",
+     "demo_incorrect:train-09360|recency-",
+     "demo_correct:train-07575|recency-",
+     "biasmedqa_next_question_v1"
+    ],
+    "confirmation+fewshot": [
+     "biasmedqa_faithful_instruction_v1",
+     "demo_incorrect:train-06072|confirmation-",
+     "demo_correct:train-09941|confirmation-",
+     "biasmedqa_next_question_v1"
+    ],
+    "frequency+fewshot": [
+     "biasmedqa_faithful_instruction_v1",
+     "demo_incorrect:train-08909|frequency-",
+     "demo_correct:train-03942|frequency-",
+     "biasmedqa_next_question_v1"
+    ],
+    "cultural+fewshot": [
+     "biasmedqa_faithful_instruction_v1",
+     "demo_incorrect:train-02271|cultural-",
+     "demo_correct:train-03472|cultural-",
+     "biasmedqa_next_question_v1"
+    ],
+    "status_quo+fewshot": [
+     "biasmedqa_faithful_instruction_v1",
+     "demo_incorrect:train-04632|status_quo-",
+     "demo_correct:train-00069|status_quo-",
+     "biasmedqa_next_question_v1"
+    ],
+    "false_consensus+fewshot": [
+     "biasmedqa_faithful_instruction_v1",
+     "demo_incorrect:train-08974|false_consensus-",
+     "demo_correct:train-05695|false_consensus-",
+     "biasmedqa_next_question_v1"
+    ]
+   },
+   "split": "dev",
+   "options": 5,
+   "runtime_s": 6817.6
+  }
+ }
+}

@@ -1,0 +1,31 @@
+# Azure OpenAI prices, USD per 1M tokens. NEVER edit by guessing — re-verify from the source below.
+# Source: official Azure Retail Prices API (same data as the pricing page, which renders prices client-side):
+#   https://prices.azure.com/api/retail/prices?$filter=productName eq 'Azure OpenAI' and contains(meterName,'gpt 4.1 mini')
+#   Human-readable page: https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/
+# Checked against the Retail Prices API before the first paid call. Standard (pay-as-you-go), non-batch, non-fine-tuned.
+source_url: "https://prices.azure.com/api/retail/prices"
+models:
+  gpt-4.1-mini:
+    global:   {input: 0.40, cached_input: 0.10, output: 1.60}
+    datazone: {input: 0.44, cached_input: 0.11, output: 1.76}   # commercial data zones (US gov: 0.55/0.138/2.20)
+    regional:
+      eastus: {input: 0.44, cached_input: 0.11, output: 1.76}
+      eastus2: {input: 0.44, cached_input: 0.11, output: 1.76}
+      westus: {input: 0.44, cached_input: 0.11, output: 1.76}
+      westus2: {input: 0.44, cached_input: 0.11, output: 1.76}
+      westus3: {input: 0.44, cached_input: 0.11, output: 1.76}
+      northcentralus: {input: 0.44, cached_input: 0.11, output: 1.76}
+      southcentralus: {input: 0.44, cached_input: 0.11, output: 1.76}
+      australiaeast: {input: 0.44, cached_input: 0.11, output: 1.76}
+      southindia: {input: 0.44, cached_input: 0.11, output: 1.76}
+      canadaeast: {input: 0.484, cached_input: 0.121, output: 1.936}
+      francecentral: {input: 0.484, cached_input: 0.121, output: 1.936}
+      japaneast: {input: 0.484, cached_input: 0.121, output: 1.936}
+      swedencentral: {input: 0.484, cached_input: 0.121, output: 1.936}
+      switzerlandnorth: {input: 0.484, cached_input: 0.121, output: 1.936}
+      uksouth: {input: 0.484, cached_input: 0.121, output: 1.936}
+      northeurope: {input: 0.528, cached_input: 0.132, output: 2.112}
+      westeurope: {input: 0.528, cached_input: 0.132, output: 2.112}
+    # Used until the deployment type/region is confirmed: the HIGHEST listed standard price,
+    # so the ledger can only over-state cost, never under-state it.
+    conservative: {input: 0.55, cached_input: 0.138, output: 2.20}

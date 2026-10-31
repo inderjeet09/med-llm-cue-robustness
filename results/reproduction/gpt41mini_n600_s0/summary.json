@@ -1,0 +1,395 @@
+{
+ "n": 600,
+ "accuracy_strict": {
+  "nobias": 78.33333333333333,
+  "self_diagnosis": 78.66666666666666,
+  "recency": 72.83333333333334,
+  "confirmation": 76.0,
+  "frequency": 70.83333333333334,
+  "cultural": 73.33333333333333,
+  "status_quo": 73.0,
+  "false_consensus": 77.5,
+  "self_diagnosis+edu": 81.5,
+  "recency+edu": 74.83333333333333,
+  "confirmation+edu": 75.66666666666667,
+  "frequency+edu": 76.33333333333333,
+  "cultural+edu": 74.16666666666667,
+  "status_quo+edu": 76.0,
+  "false_consensus+edu": 77.5,
+  "self_diagnosis+oneshot": 80.66666666666666,
+  "recency+oneshot": 75.83333333333333,
+  "confirmation+oneshot": 77.0,
+  "frequency+oneshot": 72.83333333333334,
+  "cultural+oneshot": 74.66666666666667,
+  "status_quo+oneshot": 70.16666666666667,
+  "false_consensus+oneshot": 80.66666666666666,
+  "self_diagnosis+fewshot": 79.66666666666666,
+  "recency+fewshot": 74.66666666666667,
+  "confirmation+fewshot": 75.83333333333333,
+  "frequency+fewshot": 75.5,
+  "cultural+fewshot": 74.0,
+  "status_quo+fewshot": 71.66666666666667,
+  "false_consensus+fewshot": 79.16666666666666
+ },
+ "accuracy_excl_nonresponse": {
+  "nobias": 78.59531772575251,
+  "self_diagnosis": 78.92976588628763,
+  "recency": 73.07692307692307,
+  "confirmation": 76.2541806020067,
+  "frequency": 71.07023411371237,
+  "cultural": 73.57859531772574,
+  "status_quo": 73.24414715719062,
+  "false_consensus": 77.75919732441471,
+  "self_diagnosis+edu": 81.77257525083613,
+  "recency+edu": 75.20938023450586,
+  "confirmation+edu": 76.1744966442953,
+  "frequency+edu": 76.71691792294807,
+  "cultural+edu": 74.66442953020133,
+  "status_quo+edu": 76.38190954773869,
+  "false_consensus+edu": 77.88944723618091,
+  "self_diagnosis+oneshot": 80.66666666666666,
+  "recency+oneshot": 75.83333333333333,
+  "confirmation+oneshot": 77.0,
+  "frequency+oneshot": 72.83333333333334,
+  "cultural+oneshot": 74.66666666666667,
+  "status_quo+oneshot": 70.16666666666667,
+  "false_consensus+oneshot": 80.66666666666666,
+  "self_diagnosis+fewshot": 79.66666666666666,
+  "recency+fewshot": 74.66666666666667,
+  "confirmation+fewshot": 75.83333333333333,
+  "frequency+fewshot": 75.5,
+  "cultural+fewshot": 74.0,
+  "status_quo+fewshot": 71.66666666666667,
+  "false_consensus+fewshot": 79.16666666666666
+ },
+ "nonresponse_rate": {
+  "nobias": 0.33333333333333337,
+  "self_diagnosis": 0.33333333333333337,
+  "recency": 0.33333333333333337,
+  "confirmation": 0.33333333333333337,
+  "frequency": 0.33333333333333337,
+  "cultural": 0.33333333333333337,
+  "status_quo": 0.33333333333333337,
+  "false_consensus": 0.33333333333333337,
+  "self_diagnosis+edu": 0.33333333333333337,
+  "recency+edu": 0.5,
+  "confirmation+edu": 0.6666666666666667,
+  "frequency+edu": 0.5,
+  "cultural+edu": 0.6666666666666667,
+  "status_quo+edu": 0.5,
+  "false_consensus+edu": 0.5,
+  "self_diagnosis+oneshot": 0.0,
+  "recency+oneshot": 0.0,
+  "confirmation+oneshot": 0.0,
+  "frequency+oneshot": 0.0,
+  "cultural+oneshot": 0.0,
+  "status_quo+oneshot": 0.0,
+  "false_consensus+oneshot": 0.0,
+  "self_diagnosis+fewshot": 0.0,
+  "recency+fewshot": 0.0,
+  "confirmation+fewshot": 0.0,
+  "frequency+fewshot": 0.0,
+  "cultural+fewshot": 0.0,
+  "status_quo+fewshot": 0.0,
+  "false_consensus+fewshot": 0.0
+ },
+ "paper_style_table_excl_nonresponse": {
+  "none": {
+   "nobias": 78.59531772575251,
+   "self_diagnosis": 78.92976588628763,
+   "recency": 73.07692307692307,
+   "confirmation": 76.2541806020067,
+   "frequency": 71.07023411371237,
+   "cultural": 73.57859531772574,
+   "status_quo": 73.24414715719062,
+   "false_consensus": 77.75919732441471,
+   "avg": 74.84472049689441
+  },
+  "edu": {
+   "nobias": 78.59531772575251,
+   "self_diagnosis": 81.77257525083613,
+   "recency": 75.20938023450586,
+   "confirmation": 76.1744966442953,
+   "frequency": 76.71691792294807,
+   "cultural": 74.66442953020133,
+   "status_quo": 76.38190954773869,
+   "false_consensus": 77.88944723618091,
+   "avg": 76.9727366238152
+  },
+  "oneshot": {
+   "nobias": 78.59531772575251,
+   "self_diagnosis": 80.66666666666666,
+   "recency": 75.83333333333333,
+   "confirmation": 77.0,
+   "frequency": 72.83333333333334,
+   "cultural": 74.66666666666667,
+   "status_quo": 70.16666666666667,
+   "false_consensus": 80.66666666666666,
+   "avg": 75.97619047619048
+  },
+  "fewshot": {
+   "nobias": 78.59531772575251,
+   "self_diagnosis": 79.66666666666666,
+   "recency": 74.66666666666667,
+   "confirmation": 75.83333333333333,
+   "frequency": 75.5,
+   "cultural": 74.0,
+   "status_quo": 71.66666666666667,
+   "false_consensus": 79.16666666666666,
+   "avg": 75.78571428571429
+  }
+ },
+ "drops_vs_nobias_strict": {
+  "self_diagnosis": {
+   "drop_pp": -0.33333333333333337,
+   "ci95_pp": [
+    -2.666666666666667,
+    2.0
+   ],
+   "mcnemar_p": 0.8898839652765371,
+   "paper_ztest_p": 0.8882370921844445
+  },
+  "recency": {
+   "drop_pp": 5.5,
+   "ci95_pp": [
+    2.833333333333333,
+    8.166666666666666
+   ],
+   "mcnemar_p": 8.768662462846019e-05,
+   "paper_ztest_p": 0.026587729948058005
+  },
+  "confirmation": {
+   "drop_pp": 2.3333333333333335,
+   "ci95_pp": [
+    -0.16666666666666669,
+    5.004166666666644
+   ],
+   "mcnemar_p": 0.09795444051950736,
+   "paper_ztest_p": 0.3356458951679917
+  },
+  "frequency": {
+   "drop_pp": 7.5,
+   "ci95_pp": [
+    5.0,
+    10.337499999999977
+   ],
+   "mcnemar_p": 6.26942884485106e-08,
+   "paper_ztest_p": 0.002848718860363209
+  },
+  "cultural": {
+   "drop_pp": 5.0,
+   "ci95_pp": [
+    2.5,
+    7.666666666666666
+   ],
+   "mcnemar_p": 0.0002268823828832806,
+   "paper_ztest_p": 0.04307492454409354
+  },
+  "status_quo": {
+   "drop_pp": 5.333333333333334,
+   "ci95_pp": [
+    2.833333333333333,
+    8.0
+   ],
+   "mcnemar_p": 4.223704562267977e-05,
+   "paper_ztest_p": 0.03133339984799371
+  },
+  "false_consensus": {
+   "drop_pp": 0.8333333333333334,
+   "ci95_pp": [
+    -1.6666666666666667,
+    3.3333333333333335
+   ],
+   "mcnemar_p": 0.5966417603730826,
+   "paper_ztest_p": 0.7278686818123076
+  }
+ },
+ "avg_drop_pp_excl": 3.7505972288580978,
+ "mitigation_gain_pp_excl": {
+  "edu": 2.128016126920784,
+  "oneshot": 1.131469979296071,
+  "fewshot": 0.9409937888198812
+ },
+ "meta": {
+  "backend": "azure",
+  "api_cost_usd_this_run": 3.3627,
+  "model_versions": [
+   [
+    "gpt-4.1-mini-2025-04-14",
+    "fp_8957c4f4dd"
+   ],
+   [
+    "gpt-4.1-mini-2025-04-14",
+    "fp_92f9364fa2"
+   ]
+  ]
+ },
+ "provenance": {
+  "git_commit": "0a6098260ebc9562b9e3b459836fd5a9d39b7a1b",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "experiments/repro_gpt41mini/run.log",
+   "results/costs/api_ledger.csv",
+   "results/reproduction/gpt41mini_n600_s0/records.jsonl"
+  ],
+  "git_code_dirty": false,
+  "script": "scripts/reproduce_biasmedqa.py",
+  "command": "python scripts/reproduce_biasmedqa.py --backend azure --n 600 --tag gpt41mini_n600_s0 --run_cap 4.5",
+  "args": {
+   "backend": "azure",
+   "model": null,
+   "revision": null,
+   "split": "dev",
+   "n": 600,
+   "seed": 0,
+   "skip": [],
+   "batch_size": 16,
+   "workers": 8,
+   "max_tokens": 5,
+   "run_cap": 4.5,
+   "min_letter_mass": 0.5,
+   "tag": "gpt41mini_n600_s0"
+  },
+  "seed": 0,
+  "device": null,
+  "date": "2026-10-18T19:19:58",
+  "host": "macOS-26.3-arm64-arm-64bit",
+  "python": "3.11.17",
+  "numpy": "2.4.6",
+  "torch": "2.14.1",
+  "templates": {
+   "nobias": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "self_diagnosis": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "recency": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "confirmation": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "frequency": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "cultural": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "status_quo": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "false_consensus": [
+    "biasmedqa_faithful_instruction_v1"
+   ],
+   "self_diagnosis+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:self_diagnosis"
+   ],
+   "recency+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:recency"
+   ],
+   "confirmation+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:confirmation"
+   ],
+   "frequency+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:frequency"
+   ],
+   "cultural+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:cultural"
+   ],
+   "status_quo+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:status_quo"
+   ],
+   "false_consensus+edu": [
+    "biasmedqa_faithful_instruction_v1",
+    "education:false_consensus"
+   ],
+   "self_diagnosis+oneshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-07117|self_diagnosis-",
+    "biasmedqa_next_question_v1"
+   ],
+   "recency+oneshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-09360|recency-",
+    "biasmedqa_next_question_v1"
+   ],
+   "confirmation+oneshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-06072|confirmation-",
+    "biasmedqa_next_question_v1"
+   ],
+   "frequency+oneshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-08909|frequency-",
+    "biasmedqa_next_question_v1"
+   ],
+   "cultural+oneshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-02271|cultural-",
+    "biasmedqa_next_question_v1"
+   ],
+   "status_quo+oneshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-04632|status_quo-",
+    "biasmedqa_next_question_v1"
+   ],
+   "false_consensus+oneshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-08974|false_consensus-",
+    "biasmedqa_next_question_v1"
+   ],
+   "self_diagnosis+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-07117|self_diagnosis-",
+    "demo_correct:train-00799|self_diagnosis-",
+    "biasmedqa_next_question_v1"
+   ],
+   "recency+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-09360|recency-",
+    "demo_correct:train-07575|recency-",
+    "biasmedqa_next_question_v1"
+   ],
+   "confirmation+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-06072|confirmation-",
+    "demo_correct:train-09941|confirmation-",
+    "biasmedqa_next_question_v1"
+   ],
+   "frequency+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-08909|frequency-",
+    "demo_correct:train-03942|frequency-",
+    "biasmedqa_next_question_v1"
+   ],
+   "cultural+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-02271|cultural-",
+    "demo_correct:train-03472|cultural-",
+    "biasmedqa_next_question_v1"
+   ],
+   "status_quo+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-04632|status_quo-",
+    "demo_correct:train-00069|status_quo-",
+    "biasmedqa_next_question_v1"
+   ],
+   "false_consensus+fewshot": [
+    "biasmedqa_faithful_instruction_v1",
+    "demo_incorrect:train-08974|false_consensus-",
+    "demo_correct:train-05695|false_consensus-",
+    "biasmedqa_next_question_v1"
+   ]
+  },
+  "split": "dev",
+  "options": 5,
+  "runtime_s": 1895.7
+ }
+}

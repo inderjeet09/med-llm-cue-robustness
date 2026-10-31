@@ -1,0 +1,174 @@
+{
+ "n": 300,
+ "accuracy": {
+  "cot": {
+   "original": 92.66666666666666,
+   "original_said_NONE": 0.0,
+   "nota": 64.0,
+   "nota_said_NONE": 0.33333333333333337,
+   "removed": 5.0
+  },
+  "handler_base": {
+   "original": 82.66666666666667,
+   "original_said_NONE": 0.0,
+   "nota": 40.666666666666664,
+   "nota_said_NONE": 0.33333333333333337,
+   "removed": 11.333333333333332
+  },
+  "handler_safety": {
+   "original": 82.33333333333334,
+   "original_said_NONE": 0.0,
+   "nota": 39.666666666666664,
+   "nota_said_NONE": 0.33333333333333337,
+   "removed": 14.000000000000002
+  },
+  "gtv": {
+   "original": 91.33333333333333,
+   "original_said_NONE": 1.6666666666666667,
+   "nota": 75.0,
+   "nota_said_NONE": 0.0,
+   "removed": 63.0
+  }
+ },
+ "unparsed_pct": {
+  "cot": {
+   "original": 1.0,
+   "nota": 1.6666666666666667,
+   "removed": 4.0
+  },
+  "handler_base": {
+   "original": 1.0,
+   "nota": 1.0,
+   "removed": 1.3333333333333335
+  },
+  "handler_safety": {
+   "original": 1.0,
+   "nota": 1.0,
+   "removed": 1.3333333333333335
+  },
+  "gtv": {
+   "original": 1.3333333333333335,
+   "nota": 1.0,
+   "removed": 1.3333333333333335
+  }
+ },
+ "note": "removed-variant accuracy = abstention rate (gold is NONE)",
+ "kill_test_B": {
+  "nota_drop_pp": 28.666666666666657,
+  "nota_drop_ci": {
+   "diff_pp": 28.666666666666668,
+   "ci95_pp": [
+    23.658333333333335,
+    34.0
+   ]
+  },
+  "gtv_recovery_fraction": 0.38372093023255827,
+  "gtv_nota_gain": {
+   "diff_pp": 11.0,
+   "ci95_pp": [
+    6.333333333333334,
+    15.333333333333332
+   ]
+  },
+  "gtv_clean_cost_pp": 1.3333333333333286,
+  "gtv_clean_cost_ci": {
+   "diff_pp": 1.3333333333333335,
+   "ci95_pp": [
+    -2.0,
+    4.666666666666667
+   ]
+  },
+  "criterion": "nota_drop_pp >= 20 and recovery >= 0.5 and clean_cost_pp <= 2",
+  "GO": false,
+  "gtv_vs_handler_safety": {
+   "original": {
+    "diff_pp": 9.0,
+    "ci95_pp": [
+     5.0,
+     13.333333333333334
+    ]
+   },
+   "nota": {
+    "diff_pp": 35.333333333333336,
+    "ci95_pp": [
+     29.666666666666668,
+     41.0
+    ]
+   },
+   "removed": {
+    "diff_pp": 49.0,
+    "ci95_pp": [
+     43.333333333333336,
+     54.333333333333336
+    ]
+   }
+  }
+ },
+ "provenance": {
+  "git_commit": "6944cca45031e6d8ce18d0c2dab136b53844c6b8",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "results/costs/api_ledger.csv"
+  ],
+  "git_code_dirty": false,
+  "script": "scripts/kill_test_b.py",
+  "command": "python scripts/kill_test_b.py --backend azure --n 300 --tag azure_gpt41mini_300 --run_cap 3.50",
+  "args": {
+   "backend": "azure",
+   "model": null,
+   "n": 300,
+   "seed": 0,
+   "conditions": [
+    "cot",
+    "handler_base",
+    "handler_safety",
+    "gtv"
+   ],
+   "tag": "azure_gpt41mini_300",
+   "out": null,
+   "workers": 8,
+   "batch_size": 8,
+   "run_cap": 3.5
+  },
+  "seed": 0,
+  "device": "api",
+  "date": "2026-10-17T11:33:19",
+  "host": "macOS-26.3-arm64-arm-64bit",
+  "python": "3.11.17",
+  "numpy": "2.4.6",
+  "torch": "2.14.1",
+  "model": "azure:gpt-4.1-mini",
+  "model_revision": "api",
+  "templates": {
+   "cot": [
+    "cot_mcq_v1"
+   ],
+   "handler_base": [
+    "handler_baseline_v1"
+   ],
+   "handler_safety": [
+    "handler_safety_v1"
+   ],
+   "gtv": [
+    "gtv_step1_v1",
+    "gtv_step2_v1"
+   ]
+  },
+  "max_tokens": {
+   "cot": 1024,
+   "handler": 400,
+   "gtv1": 512,
+   "gtv2": 1024
+  },
+  "decoding": "greedy / temperature 0, seed 0",
+  "split": "dev (Handler MedQA-NOTA items excluded)",
+  "runtime_s": 5011.7,
+  "api_cost_usd_this_run": 2.359444,
+  "api_calls": 3900,
+  "api_cache_hits": 129,
+  "api_model_versions": [
+   "gpt-4.1-mini-2025-04-14"
+  ],
+  "api_price_basis": "global"
+ }
+}

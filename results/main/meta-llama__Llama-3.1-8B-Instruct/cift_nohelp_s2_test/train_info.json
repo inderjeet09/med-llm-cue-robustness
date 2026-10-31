@@ -1,0 +1,30 @@
+{
+ "objective": "cift",
+ "seed": 2,
+ "steps": 125,
+ "train_minutes": 98.35,
+ "trainable_params": 41943040,
+ "nonfinite_microbatches_skipped": 0,
+ "hyperparameters": {
+  "lr": 0.0002,
+  "epochs": 1.0,
+  "lora_r": 16,
+  "micro_pairs": 4,
+  "accum": 4,
+  "lam": 1.0,
+  "grad_ckpt": 1,
+  "log_every": 5
+ },
+ "arm": "cift_nohelp",
+ "pair_arm": "all7",
+ "helpful_every": 0,
+ "n_pairs": 2000,
+ "n_helpful_pairs": 0,
+ "first_pair_ids": [
+  "train-00009",
+  "train-00013",
+  "train-00023",
+  "train-00025",
+  "train-00034"
+ ]
+}

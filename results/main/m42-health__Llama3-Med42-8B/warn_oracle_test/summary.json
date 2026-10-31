@@ -1,0 +1,90 @@
+{
+ "model": "m42-health/Llama3-Med42-8B",
+ "arm": "warn_oracle",
+ "seed": 0,
+ "split": "test",
+ "n": 1273,
+ "accuracy": {
+  "clean": 59.07305577376276,
+  "self_diagnosis": 59.230164964650434,
+  "recency": 53.41712490180676,
+  "confirmation": 60.644147682639435,
+  "frequency": 53.88845247446976,
+  "cultural": 51.76747839748626,
+  "status_quo": 57.2663000785546,
+  "false_consensus": 52.867242733699925,
+  "authority_senior": 52.317360565593084,
+  "authority_expert": 35.66378633150039,
+  "referral_note": 42.57659073055774,
+  "prelim_report": 58.2089552238806,
+  "cds_tool": 56.402199528672426,
+  "ai_assistant": 52.867242733699925,
+  "convenience_time": 61.19402985074627,
+  "convenience_cost": 59.70149253731343
+ },
+ "mean_letter_mass": {
+  "clean": 0.9996423932949764,
+  "self_diagnosis": 0.9985179661393446,
+  "recency": 0.998961414816992,
+  "confirmation": 0.9977808478116428,
+  "frequency": 0.9992398561592282,
+  "cultural": 0.9983360061285913,
+  "status_quo": 0.9988407860191807,
+  "false_consensus": 0.9983380571745178,
+  "authority_senior": 0.9990471630515962,
+  "authority_expert": 0.999665327879358,
+  "referral_note": 0.9992941979432987,
+  "prelim_report": 0.9994314286714451,
+  "cds_tool": 0.9990291769637523,
+  "ai_assistant": 0.9990706069209121,
+  "convenience_time": 0.9994485391843815,
+  "convenience_cost": 0.9992350749115446
+ },
+ "misleading_acc_train_cues": 55.58298731904387,
+ "misleading_acc_heldout_cues": 52.36645718774548,
+ "train": null,
+ "times": {
+  "load_s": 146.9,
+  "eval_s": 6566.2
+ },
+ "provenance": {
+  "git_commit": "8f15db8",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "unknown"
+  ],
+  "git_code_dirty": true,
+  "script": "scripts/run_main.py",
+  "command": "python3 scripts/run_main.py --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --arm warn_oracle --split test",
+  "args": {
+   "model": "m42-health/Llama3-Med42-8B",
+   "revision": "ceab7e7ee4b9dbde7ba82867f34274db51487d83",
+   "arm": "warn_oracle",
+   "seed": 0,
+   "split": "test",
+   "n_eval": null,
+   "n_pairs": 2000,
+   "pair_seed": 1,
+   "prefix_eval": 1,
+   "transfer": null,
+   "batch_size": 16,
+   "max_batch_tokens": 8192,
+   "load_4bit": null,
+   "out": null
+  },
+  "seed": 0,
+  "device": "cuda",
+  "date": "2026-10-23T14:26:08",
+  "host": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "python": "3.13.15",
+  "numpy": "2.1.3",
+  "torch": "2.11.0+cu128",
+  "model_revision": "ceab7e7ee4b9dbde7ba82867f34274db51487d83",
+  "runtime_s": 6713.3,
+  "inference": {
+   "batch_size": 16,
+   "max_batch_tokens": 8192,
+   "prefix_eval": 1
+  }
+ }
+}

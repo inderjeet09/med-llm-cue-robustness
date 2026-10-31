@@ -1,0 +1,86 @@
+{
+ "note": "Llama ablations, CIFT minus ablation, two-level bootstrap; H4 heldout_vs_nokl and helpful_vs_nohelp are pre-registered, the rest exploratory",
+ "results": {
+  "cift_nokl": {
+   "clean": [
+    0.6022518984027281,
+    -0.8379156847342251,
+    2.0686043466876085
+   ],
+   "train_cues": [
+    1.413982717989004,
+    -1.2385441214977815,
+    3.921931694908914
+   ],
+   "heldout_cues": [
+    1.688923802042419,
+    -1.7675602251898317,
+    4.916453914637332
+   ],
+   "helpful": [
+    -0.8411887928777118,
+    -4.764172558261317,
+    3.5841352448284973
+   ],
+   "transfer_misleading": [
+    -1.17460317460317,
+    -3.619841269841272,
+    1.1111111111111127
+   ]
+  },
+  "cift_nohelp": {
+   "clean": [
+    0.47132757266300507,
+    -1.466352448284891,
+    2.2780832678711675
+   ],
+   "train_cues": [
+    -6.583623237197478,
+    -8.442935697452606,
+    -4.791175700445155
+   ],
+   "heldout_cues": [
+    -7.282665619272056,
+    -9.528099633411887,
+    -5.063334642576586
+   ],
+   "helpful": [
+    30.22388059701493,
+    26.957318669808856,
+    33.16329536527887
+   ],
+   "transfer_misleading": [
+    -5.61904761904762,
+    -7.810317460317459,
+    -3.460317460317458
+   ]
+  }
+ },
+ "provenance": {
+  "git_commit": "unknown",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "unknown"
+  ],
+  "git_code_dirty": true,
+  "script": "scripts/analyze_exploratory.py",
+  "command": "python3 scripts/analyze_exploratory.py",
+  "args": {
+   "root": "/private/tmp/claude-501/-Users-inderjeet09-Desktop-Research-MedLLM-Cue-Robustness-public-release/18182090-ed3f-4c41-8ca1-297c34d75f47/scratchpad/check3/results/main"
+  },
+  "seed": null,
+  "device": null,
+  "date": "2026-10-31T08:27:14",
+  "host": "macOS-26.3-arm64-arm-64bit",
+  "python": "3.11.17",
+  "numpy": "2.4.6",
+  "torch": "2.14.1",
+  "libraries": {
+   "transformers": "5.20.1",
+   "peft": "0.21.2",
+   "accelerate": "1.15.0",
+   "bitsandbytes": null,
+   "datasets": "5.1.0"
+  }
+ }
+}

@@ -1,0 +1,32 @@
+.env
+data/
+.cache/
+experiments/
+cloud/kaggle_upload/
+cloud/*.zip
+*.safetensors
+*.bin
+*.pt
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+results/costs/api_cache/
+# manuscript held back until acceptance (then add the accepted-manuscript PDF)
+paper/
+# local assistant/editor settings
+.claude/
+CLAUDE.md
+.vscode/
+# unpacked copies made by scripts/unpack_results.py (the .gz files are the tracked originals) and reviewer re-runs
+results/**/*.jsonl
+results/costs/api_ledger.csv
+reruns/
+# added after the repository link and co-author details are final (see release plan)
+CITATION.cff

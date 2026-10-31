@@ -1,0 +1,9 @@
+# Phase 5 batch P5-4 part 1 (docs/preregistration.md B4, amendment "Med42's dev prompt-arm selection moves to P5-4"): Med42-8B.
+# DEV: prompt arms (generic, oracle, few-shot) -> best prompt by the frozen rule. TEST: untrained baselines (base, generic,
+# oracle). Few-shot on test only if dev selects it (part 2). ~4.3 h wall, balanced over 2 GPUs.
+results/main/m42-health__Llama3-Med42-8B/fewshot_dev/summary.json python scripts/run_main.py --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --arm fewshot --split dev
+results/main/m42-health__Llama3-Med42-8B/warn_oracle_test/summary.json python scripts/run_main.py --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --arm warn_oracle --split test
+results/main/m42-health__Llama3-Med42-8B/warn_oracle_dev/summary.json python scripts/run_main.py --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --arm warn_oracle --split dev
+results/main/m42-health__Llama3-Med42-8B/base_test/summary.json python scripts/run_main.py --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --arm base --split test
+results/main/m42-health__Llama3-Med42-8B/warn_generic_test/summary.json python scripts/run_main.py --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --arm warn_generic --split test
+results/main/m42-health__Llama3-Med42-8B/warn_generic_dev/summary.json python scripts/run_main.py --model m42-health/Llama3-Med42-8B --revision ceab7e7ee4b9dbde7ba82867f34274db51487d83 --arm warn_generic --split dev

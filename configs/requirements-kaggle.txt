@@ -1,0 +1,10 @@
+# GPU libraries installed by cloud/kaggle_batch.ipynb on top of Kaggle's image (which provides torch).
+# Exact pins = the versions in environment.yml, under which all unit tests pass. bitsandbytes is not in environment.yml
+# (no CUDA on Mac), so it has a lower bound only; the installed version is written to every summary.json
+# (provenance -> libraries). The runs shipped in results/ predate these pins: their versions of these libraries were not
+# recorded (only python and torch are, in each summary.json).
+transformers==5.20.1
+peft==0.21.2
+accelerate==1.15.0
+bitsandbytes>=0.45
+python-dotenv==1.2.4

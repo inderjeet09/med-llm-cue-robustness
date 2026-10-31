@@ -1,0 +1,5 @@
+# Phase 5 P5-2 completion: the 3 SFT-clean jobs cut by the 12-h session limit in p5_2 (Qwen s1, s2; Llama s2). TEST.
+# The two Qwen jobs go first so they run back to back on one GPU while Llama runs on the other (~5.4 h wall).
+results/main/Qwen__Qwen2.5-7B-Instruct/sft_clean_s1_test/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm sft_clean --seed 1 --split test
+results/main/meta-llama__Llama-3.1-8B-Instruct/sft_clean_s2_test/summary.json python scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm sft_clean --seed 2 --split test
+results/main/Qwen__Qwen2.5-7B-Instruct/sft_clean_s2_test/summary.json python scripts/run_main.py --model Qwen/Qwen2.5-7B-Instruct --revision a09a35458c702b33eeacc393d103063234e8bc28 --arm sft_clean --seed 2 --split test

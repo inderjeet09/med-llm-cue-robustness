@@ -1,0 +1,90 @@
+{
+ "model": "meta-llama/Llama-3.1-8B-Instruct",
+ "arm": "warn_generic",
+ "seed": 0,
+ "split": "test",
+ "n": 1273,
+ "accuracy": {
+  "clean": 58.75883739198743,
+  "self_diagnosis": 59.46582875098193,
+  "recency": 52.63157894736842,
+  "confirmation": 59.230164964650434,
+  "frequency": 50.667714061272584,
+  "cultural": 53.57423409269442,
+  "status_quo": 54.28122545168892,
+  "false_consensus": 61.03692065985861,
+  "authority_senior": 57.18774548311076,
+  "authority_expert": 54.59544383346425,
+  "referral_note": 53.967007069913585,
+  "prelim_report": 58.444619010212094,
+  "cds_tool": 57.34485467399843,
+  "ai_assistant": 47.13275726630008,
+  "convenience_time": 60.95836606441477,
+  "convenience_cost": 56.24509033778477
+ },
+ "mean_letter_mass": {
+  "clean": 0.999562757369204,
+  "self_diagnosis": 0.9997022887523588,
+  "recency": 0.9998050763301745,
+  "confirmation": 0.9997657242948768,
+  "frequency": 0.9996728145598616,
+  "cultural": 0.9997279911835364,
+  "status_quo": 0.9998290947077317,
+  "false_consensus": 0.999689102032385,
+  "authority_senior": 0.9997797811115622,
+  "authority_expert": 0.9996953475035183,
+  "referral_note": 0.9997247533356216,
+  "prelim_report": 0.9998391091308534,
+  "cds_tool": 0.9998641008012237,
+  "ai_assistant": 0.9996829010423299,
+  "convenience_time": 0.9998311708503508,
+  "convenience_cost": 0.9996224600596402
+ },
+ "misleading_acc_train_cues": 55.841095275502184,
+ "misleading_acc_heldout_cues": 55.73448546739984,
+ "train": null,
+ "times": {
+  "load_s": 73.2,
+  "eval_s": 3118.4
+ },
+ "provenance": {
+  "git_commit": "c289a69",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "unknown"
+  ],
+  "git_code_dirty": true,
+  "script": "scripts/run_main.py",
+  "command": "python3 scripts/run_main.py --model meta-llama/Llama-3.1-8B-Instruct --revision 0e9e39f249a16976918f6564b8830bc894c89659 --arm warn_generic --split test",
+  "args": {
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+   "arm": "warn_generic",
+   "seed": 0,
+   "split": "test",
+   "n_eval": null,
+   "n_pairs": 2000,
+   "pair_seed": 1,
+   "prefix_eval": 1,
+   "transfer": null,
+   "batch_size": 16,
+   "max_batch_tokens": 8192,
+   "load_4bit": null,
+   "out": null
+  },
+  "seed": 0,
+  "device": "cuda",
+  "date": "2026-10-20T23:16:51",
+  "host": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "python": "3.13.15",
+  "numpy": "2.1.3",
+  "torch": "2.11.0+cu128",
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "runtime_s": 3191.9,
+  "inference": {
+   "batch_size": 16,
+   "max_batch_tokens": 8192,
+   "prefix_eval": 1
+  }
+ }
+}

@@ -1,0 +1,180 @@
+{
+ "n": 300,
+ "accuracy": {
+  "clean": 44.333333333333336,
+  "false_consensus": 22.0,
+  "false_consensus+edu": 23.0,
+  "false_consensus+fewshot": 25.333333333333336,
+  "false_consensus+helpful": 79.0,
+  "frequency": 11.0,
+  "frequency+edu": 18.666666666666668,
+  "frequency+fewshot": 26.666666666666668,
+  "frequency+helpful": 87.66666666666667,
+  "recency": 20.666666666666668,
+  "recency+edu": 23.333333333333332,
+  "recency+fewshot": 26.333333333333332,
+  "recency+helpful": 73.33333333333333
+ },
+ "mean_letter_mass": {
+  "clean": 0.10702109803135196,
+  "false_consensus": 0.11658085451771816,
+  "false_consensus+edu": 0.1277862941287458,
+  "false_consensus+fewshot": 0.0030335307072770473,
+  "false_consensus+helpful": 0.12327389175072312,
+  "frequency": 0.10156166108325124,
+  "frequency+edu": 0.0940474429136763,
+  "frequency+fewshot": 0.002411972753276738,
+  "frequency+helpful": 0.10706688088054458,
+  "recency": 0.11232347225459914,
+  "recency+edu": 0.11611850898868094,
+  "recency+fewshot": 0.0025713631617448602,
+  "recency+helpful": 0.11956811706845959
+ },
+ "cue_follow_rate": {
+  "false_consensus": 57.99999999999999,
+  "frequency": 77.0,
+  "recency": 56.00000000000001
+ },
+ "drops_pp": {
+  "false_consensus": {
+   "diff": 22.333333333333332,
+   "ci95": [
+    16.333333333333332,
+    28.00833333333329
+   ],
+   "n": 300,
+   "mcnemar": {
+    "a_only": 83,
+    "b_only": 16,
+    "p": 4.3895864999965015e-12
+   }
+  },
+  "frequency": {
+   "diff": 33.33333333333333,
+   "ci95": [
+    28.000000000000004,
+    39.0
+   ],
+   "n": 300,
+   "mcnemar": {
+    "a_only": 103,
+    "b_only": 3,
+    "p": 4.895670777801599e-27
+   }
+  },
+  "recency": {
+   "diff": 23.666666666666668,
+   "ci95": [
+    18.333333333333332,
+    29.666666666666668
+   ],
+   "n": 300,
+   "mcnemar": {
+    "a_only": 81,
+    "b_only": 10,
+    "p": 5.900498071536332e-15
+   }
+  }
+ },
+ "best_mitigation": {
+  "false_consensus": {
+   "best_mitigation": "fewshot",
+   "acc": 25.333333333333336,
+   "recovery_fraction": 0.14925373134328368
+  },
+  "frequency": {
+   "best_mitigation": "fewshot",
+   "acc": 26.666666666666668,
+   "recovery_fraction": 0.47000000000000003
+  },
+  "recency": {
+   "best_mitigation": "fewshot",
+   "acc": 26.333333333333332,
+   "recovery_fraction": 0.23943661971830973
+  }
+ },
+ "kill_test_A_stage1": {
+  "mean_drop_pp": 26.444444444444446,
+  "pooled_best_mitigation_recovery": 0.3109243697478991,
+  "criterion": "mean_drop_pp >= 10 and recovery < 0.5",
+  "GO": true
+ },
+ "provenance": {
+  "git_commit": "6944cca",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "unknown"
+  ],
+  "git_code_dirty": true,
+  "script": "scripts/kill_test_a.py",
+  "command": "python3 scripts/kill_test_a.py --model aaditya/Llama3-OpenBioLLM-8B --n 300",
+  "args": {
+   "model": "aaditya/Llama3-OpenBioLLM-8B",
+   "n": 300,
+   "seed": 0,
+   "batch_size": 8,
+   "load_4bit": null,
+   "revision": null,
+   "out": null
+  },
+  "seed": 0,
+  "device": "cuda",
+  "date": "2026-10-17T13:47:19",
+  "host": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "python": "3.13.15",
+  "numpy": "2.1.3",
+  "torch": "2.11.0+cu128",
+  "model": "aaditya/Llama3-OpenBioLLM-8B",
+  "model_revision": "70d6bb521cab6ca755b675ade38831eedf89d31c",
+  "templates": {
+   "clean": [
+    "biasmedqa_instruction_v1"
+   ],
+   "false_consensus": [
+    "biasmedqa_instruction_v1"
+   ],
+   "false_consensus+edu": [
+    "biasmedqa_instruction_v1",
+    "education:false_consensus"
+   ],
+   "false_consensus+fewshot": [
+    "biasmedqa_instruction_v1",
+    "fewshot:train-08974|false_consensus-,train-05695|false_consensus-"
+   ],
+   "false_consensus+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "frequency": [
+    "biasmedqa_instruction_v1"
+   ],
+   "frequency+edu": [
+    "biasmedqa_instruction_v1",
+    "education:frequency"
+   ],
+   "frequency+fewshot": [
+    "biasmedqa_instruction_v1",
+    "fewshot:train-08909|frequency-,train-03942|frequency-"
+   ],
+   "frequency+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "recency": [
+    "biasmedqa_instruction_v1"
+   ],
+   "recency+edu": [
+    "biasmedqa_instruction_v1",
+    "education:recency"
+   ],
+   "recency+fewshot": [
+    "biasmedqa_instruction_v1",
+    "fewshot:train-09360|recency-,train-07575|recency-"
+   ],
+   "recency+helpful": [
+    "biasmedqa_instruction_v1"
+   ]
+  },
+  "runtime_s": 2365.1,
+  "split": "dev",
+  "dataset_revision": "see data/raw/medqa_us4/PREPARED.json"
+ }
+}

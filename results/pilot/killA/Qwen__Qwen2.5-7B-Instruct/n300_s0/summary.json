@@ -1,0 +1,180 @@
+{
+ "n": 300,
+ "accuracy": {
+  "clean": 59.66666666666667,
+  "false_consensus": 39.0,
+  "false_consensus+edu": 52.33333333333333,
+  "false_consensus+fewshot": 41.66666666666667,
+  "false_consensus+helpful": 81.33333333333333,
+  "frequency": 31.0,
+  "frequency+edu": 44.666666666666664,
+  "frequency+fewshot": 30.666666666666664,
+  "frequency+helpful": 89.0,
+  "recency": 32.33333333333333,
+  "recency+edu": 41.66666666666667,
+  "recency+fewshot": 33.666666666666664,
+  "recency+helpful": 86.33333333333333
+ },
+ "mean_letter_mass": {
+  "clean": 0.9998003214597702,
+  "false_consensus": 0.9996228345235189,
+  "false_consensus+edu": 0.9981459661324819,
+  "false_consensus+fewshot": 0.9999728137254715,
+  "false_consensus+helpful": 0.9994941365718841,
+  "frequency": 0.9999359699090322,
+  "frequency+edu": 0.9984114784002304,
+  "frequency+fewshot": 0.9999844487508138,
+  "frequency+helpful": 0.9999856712420782,
+  "recency": 0.9996849195162455,
+  "recency+edu": 0.9979196953773498,
+  "recency+fewshot": 0.9999604362249375,
+  "recency+helpful": 0.999970254500707
+ },
+ "cue_follow_rate": {
+  "false_consensus": 47.0,
+  "frequency": 57.666666666666664,
+  "recency": 56.333333333333336
+ },
+ "drops_pp": {
+  "false_consensus": {
+   "diff": 20.666666666666668,
+   "ci95": [
+    15.666666666666668,
+    26.0
+   ],
+   "n": 300,
+   "mcnemar": {
+    "a_only": 70,
+    "b_only": 8,
+    "p": 1.7449045276511964e-13
+   }
+  },
+  "frequency": {
+   "diff": 28.666666666666668,
+   "ci95": [
+    23.333333333333332,
+    34.00833333333329
+   ],
+   "n": 300,
+   "mcnemar": {
+    "a_only": 89,
+    "b_only": 3,
+    "p": 5.244963240504083e-23
+   }
+  },
+  "recency": {
+   "diff": 27.333333333333332,
+   "ci95": [
+    22.0,
+    32.33333333333333
+   ],
+   "n": 300,
+   "mcnemar": {
+    "a_only": 84,
+    "b_only": 2,
+    "p": 9.672843288041967e-23
+   }
+  }
+ },
+ "best_mitigation": {
+  "false_consensus": {
+   "best_mitigation": "edu",
+   "acc": 52.33333333333333,
+   "recovery_fraction": 0.6451612903225803
+  },
+  "frequency": {
+   "best_mitigation": "edu",
+   "acc": 44.666666666666664,
+   "recovery_fraction": 0.4767441860465115
+  },
+  "recency": {
+   "best_mitigation": "edu",
+   "acc": 41.66666666666667,
+   "recovery_fraction": 0.3414634146341466
+  }
+ },
+ "kill_test_A_stage1": {
+  "mean_drop_pp": 25.55555555555556,
+  "pooled_best_mitigation_recovery": 0.4739130434782612,
+  "criterion": "mean_drop_pp >= 10 and recovery < 0.5",
+  "GO": true
+ },
+ "provenance": {
+  "git_commit": "6944cca",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "unknown"
+  ],
+  "git_code_dirty": true,
+  "script": "scripts/kill_test_a.py",
+  "command": "python3 scripts/kill_test_a.py --model Qwen/Qwen2.5-7B-Instruct --n 300",
+  "args": {
+   "model": "Qwen/Qwen2.5-7B-Instruct",
+   "n": 300,
+   "seed": 0,
+   "batch_size": 8,
+   "load_4bit": null,
+   "revision": null,
+   "out": null
+  },
+  "seed": 0,
+  "device": "cuda",
+  "date": "2026-10-17T12:25:56",
+  "host": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "python": "3.13.15",
+  "numpy": "2.1.3",
+  "torch": "2.11.0+cu128",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "templates": {
+   "clean": [
+    "biasmedqa_instruction_v1"
+   ],
+   "false_consensus": [
+    "biasmedqa_instruction_v1"
+   ],
+   "false_consensus+edu": [
+    "biasmedqa_instruction_v1",
+    "education:false_consensus"
+   ],
+   "false_consensus+fewshot": [
+    "biasmedqa_instruction_v1",
+    "fewshot:train-08974|false_consensus-,train-05695|false_consensus-"
+   ],
+   "false_consensus+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "frequency": [
+    "biasmedqa_instruction_v1"
+   ],
+   "frequency+edu": [
+    "biasmedqa_instruction_v1",
+    "education:frequency"
+   ],
+   "frequency+fewshot": [
+    "biasmedqa_instruction_v1",
+    "fewshot:train-08909|frequency-,train-03942|frequency-"
+   ],
+   "frequency+helpful": [
+    "biasmedqa_instruction_v1"
+   ],
+   "recency": [
+    "biasmedqa_instruction_v1"
+   ],
+   "recency+edu": [
+    "biasmedqa_instruction_v1",
+    "education:recency"
+   ],
+   "recency+fewshot": [
+    "biasmedqa_instruction_v1",
+    "fewshot:train-09360|recency-,train-07575|recency-"
+   ],
+   "recency+helpful": [
+    "biasmedqa_instruction_v1"
+   ]
+  },
+  "runtime_s": 2326.0,
+  "split": "dev",
+  "dataset_revision": "see data/raw/medqa_us4/PREPARED.json"
+ }
+}

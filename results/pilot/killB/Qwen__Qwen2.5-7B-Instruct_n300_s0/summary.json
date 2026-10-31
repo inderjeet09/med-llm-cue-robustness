@@ -1,0 +1,167 @@
+{
+ "n": 300,
+ "accuracy": {
+  "cot": {
+   "original": 60.66666666666667,
+   "original_said_NONE": 0.0,
+   "nota": 33.0,
+   "nota_said_NONE": 0.0,
+   "removed": 1.3333333333333335
+  },
+  "handler_base": {
+   "original": 56.00000000000001,
+   "original_said_NONE": 9.0,
+   "nota": 69.66666666666667,
+   "nota_said_NONE": 2.3333333333333335,
+   "removed": 27.0
+  },
+  "handler_safety": {
+   "original": 52.0,
+   "original_said_NONE": 16.666666666666664,
+   "nota": 75.0,
+   "nota_said_NONE": 4.333333333333334,
+   "removed": 50.0
+  },
+  "gtv": {
+   "original": 58.666666666666664,
+   "original_said_NONE": 9.0,
+   "nota": 43.666666666666664,
+   "nota_said_NONE": 3.0,
+   "removed": 29.666666666666668
+  }
+ },
+ "unparsed_pct": {
+  "cot": {
+   "original": 0.0,
+   "nota": 0.0,
+   "removed": 0.33333333333333337
+  },
+  "handler_base": {
+   "original": 0.0,
+   "nota": 0.0,
+   "removed": 0.0
+  },
+  "handler_safety": {
+   "original": 0.0,
+   "nota": 0.0,
+   "removed": 0.0
+  },
+  "gtv": {
+   "original": 0.6666666666666667,
+   "nota": 0.0,
+   "removed": 1.0
+  }
+ },
+ "note": "removed-variant accuracy = abstention rate (gold is NONE)",
+ "kill_test_B": {
+  "nota_drop_pp": 27.66666666666667,
+  "nota_drop_ci": {
+   "diff_pp": 27.666666666666668,
+   "ci95_pp": [
+    20.333333333333332,
+    34.66666666666667
+   ]
+  },
+  "gtv_recovery_fraction": 0.38554216867469865,
+  "gtv_nota_gain": {
+   "diff_pp": 10.666666666666668,
+   "ci95_pp": [
+    4.333333333333334,
+    17.333333333333336
+   ]
+  },
+  "gtv_clean_cost_pp": 2.000000000000007,
+  "gtv_clean_cost_ci": {
+   "diff_pp": 2.0,
+   "ci95_pp": [
+    -3.6666666666666665,
+    7.666666666666666
+   ]
+  },
+  "criterion": "nota_drop_pp >= 20 and recovery >= 0.5 and clean_cost_pp <= 2",
+  "GO": false,
+  "gtv_vs_handler_safety": {
+   "original": {
+    "diff_pp": 6.666666666666667,
+    "ci95_pp": [
+     1.0,
+     12.333333333333334
+    ]
+   },
+   "nota": {
+    "diff_pp": -31.333333333333336,
+    "ci95_pp": [
+     -37.666666666666664,
+     -25.0
+    ]
+   },
+   "removed": {
+    "diff_pp": -20.333333333333332,
+    "ci95_pp": [
+     -27.333333333333332,
+     -13.666666666666666
+    ]
+   }
+  }
+ },
+ "provenance": {
+  "git_commit": "6944cca",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "unknown"
+  ],
+  "git_code_dirty": true,
+  "script": "scripts/kill_test_b.py",
+  "command": "python3 scripts/kill_test_b.py --backend hf --model Qwen/Qwen2.5-7B-Instruct --n 300 --batch_size 16",
+  "args": {
+   "backend": "hf",
+   "model": "Qwen/Qwen2.5-7B-Instruct",
+   "n": 300,
+   "seed": 0,
+   "conditions": [
+    "cot",
+    "handler_base",
+    "handler_safety",
+    "gtv"
+   ],
+   "tag": "Qwen__Qwen2.5-7B-Instruct_n300_s0",
+   "out": null,
+   "workers": 8,
+   "batch_size": 16,
+   "run_cap": null
+  },
+  "seed": 0,
+  "device": "cuda",
+  "date": "2026-10-17T18:22:24",
+  "host": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "python": "3.13.15",
+  "numpy": "2.1.3",
+  "torch": "2.11.0+cu128",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "templates": {
+   "cot": [
+    "cot_mcq_v1"
+   ],
+   "handler_base": [
+    "handler_baseline_v1"
+   ],
+   "handler_safety": [
+    "handler_safety_v1"
+   ],
+   "gtv": [
+    "gtv_step1_v1",
+    "gtv_step2_v1"
+   ]
+  },
+  "max_tokens": {
+   "cot": 1024,
+   "handler": 400,
+   "gtv1": 512,
+   "gtv2": 1024
+  },
+  "decoding": "greedy / temperature 0, seed 0",
+  "split": "dev (Handler MedQA-NOTA items excluded)",
+  "runtime_s": 23579.8
+ }
+}
