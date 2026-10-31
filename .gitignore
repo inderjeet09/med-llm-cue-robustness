@@ -1,5 +1,6 @@
 .env
-data/
+# downloaded datasets (top-level only: src/data/ and results/data/ are part of the repo)
+/data/
 .cache/
 experiments/
 cloud/kaggle_upload/

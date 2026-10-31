@@ -1,0 +1,21 @@
+{
+ "n_items": 1050,
+ "context_words_median": 167.0,
+ "hf_revision": "8f345fc82b278e79e1aef40ca16e0831f5b446e2",
+ "provenance": {
+  "git_commit": "eb2aca2b7c2dcddb1c7002f034ae8fdf28156688",
+  "git_dirty": false,
+  "git_dirty_files": [],
+  "git_code_dirty": false,
+  "script": "scripts/transfer_stats.py",
+  "command": "python3 scripts/transfer_stats.py",
+  "args": {},
+  "seed": null,
+  "device": null,
+  "date": "2026-10-24T22:21:51",
+  "host": "macOS-26.3-arm64-arm-64bit",
+  "python": "3.11.17",
+  "numpy": "2.4.6",
+  "torch": "2.14.1"
+ }
+}

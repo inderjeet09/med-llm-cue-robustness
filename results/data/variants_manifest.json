@@ -1,0 +1,94 @@
+{
+ "templates_sha256": "427d2cba6de073ef4f445f3b3383abe53f8c6bcaa851bb127dafefdb9d76b4e1",
+ "biasmedqa": [
+  "self_diagnosis",
+  "recency",
+  "confirmation",
+  "frequency",
+  "cultural",
+  "status_quo",
+  "false_consensus"
+ ],
+ "new_biases": [
+  "authority_senior",
+  "authority_expert",
+  "referral_note",
+  "prelim_report",
+  "cds_tool",
+  "ai_assistant",
+  "convenience_time",
+  "convenience_cost"
+ ],
+ "splits": {
+  "train": {
+   "source_questions": 10178,
+   "variant_rows": 335874,
+   "written": false,
+   "issues": {
+    "clean: duplicate option texts": 2,
+    "mis: duplicate option texts": 30,
+    "help: duplicate option texts": 30,
+    "nota: correct option text still present": 1,
+    "removed: correct option text still present": 1,
+    "nota: duplicate option texts": 1,
+    "removed: duplicate option texts": 1
+   },
+   "issue_examples": {
+    "clean: duplicate option texts": "train-01318|clean",
+    "mis: duplicate option texts": "train-01318|mis:self_diagnosis",
+    "help: duplicate option texts": "train-01318|help:self_diagnosis",
+    "nota: correct option text still present": "train-01318|nota",
+    "removed: correct option text still present": "train-01318|removed",
+    "nota: duplicate option texts": "train-03960|nota",
+    "removed: duplicate option texts": "train-03960|removed"
+   },
+   "nota_ambiguous_questions": 32,
+   "file_sha256": null
+  },
+  "dev": {
+   "source_questions": 1272,
+   "variant_rows": 41976,
+   "written": true,
+   "issues": {},
+   "issue_examples": {},
+   "nota_ambiguous_questions": 4,
+   "file_sha256": "567cb8466e9b8a70ef1f2a3ca310403635a43400a3ff21037daac262f7dd2c9b"
+  },
+  "test": {
+   "source_questions": 1273,
+   "variant_rows": 42009,
+   "written": true,
+   "issues": {},
+   "issue_examples": {},
+   "nota_ambiguous_questions": 1,
+   "file_sha256": "21b350b04348bc1fc170b04e13cbdec4c407a85babf62fb57e23211b26885778"
+  }
+ },
+ "medqa_duplicates": {
+  "groups_total": 2,
+  "groups_within_split_only": 2,
+  "groups_across_splits": 0,
+  "train_ids_overlapping_dev_or_test": [],
+  "examples_across": []
+ },
+ "provenance": {
+  "git_commit": "24122db8796ce598b1c02813495a61cef413171b",
+  "git_dirty": true,
+  "git_dirty_files": [
+   "src/data/bias.py",
+   "src/llm/prompts.py",
+   "src/training/pairs.py"
+  ],
+  "git_code_dirty": true,
+  "script": "scripts/make_variants.py",
+  "command": "python3 scripts/make_variants.py",
+  "args": {},
+  "seed": null,
+  "device": null,
+  "date": "2026-10-18T17:21:47",
+  "host": "macOS-26.3-arm64-arm-64bit",
+  "python": "3.11.17",
+  "numpy": "2.4.6",
+  "torch": "2.14.1"
+ }
+}
